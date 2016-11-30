@@ -955,7 +955,7 @@ static NSMapTable *pathToObject=NULL;
 }
 
 -(NSString *)description {
-   return [NSString stringWithFormat:@"<%@[0x%lx] path: %@ resourcePath: %@ isLoaded: %@>", isa, self, _path, _resourcePath, (_isLoaded ? @"YES" : @"NO")];
+   return [NSString stringWithFormat:@"<%@[0x%lx] path: %@ resourcePath: %@ isLoaded: %@>", [self class], self, _path, _resourcePath, (_isLoaded ? @"YES" : @"NO")];
 }
 
 @end

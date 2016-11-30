@@ -73,7 +73,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 -reversedSortDescriptor {
-   return [[[isa alloc] initWithKey:_key ascending:!_ascending selector:_selector] autorelease];
+   return [[[[self class] alloc] initWithKey:_key ascending:!_ascending selector:_selector] autorelease];
 }
 
 - (void)encodeWithCoder:(NSCoder *)coder { 

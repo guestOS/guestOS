@@ -67,27 +67,27 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 -constantValue {
-   [NSException raise:NSInvalidArgumentException format:@"-[%@ %s] is not of NSConstantValueExpressionType",isa,sel_getName(_cmd)];
+   [NSException raise:NSInvalidArgumentException format:@"-[%@ %s] is not of NSConstantValueExpressionType",[self class],sel_getName(_cmd)];
    return nil;
 }
 
 -(NSString *)variable {
-   [NSException raise:NSInvalidArgumentException format:@"-[%@ %s] is not of NSVariableExpressionType",isa,sel_getName(_cmd)];
+   [NSException raise:NSInvalidArgumentException format:@"-[%@ %s] is not of NSVariableExpressionType",[self class],sel_getName(_cmd)];
    return nil;
 }
 
 -(NSString *)keyPath {
-   [NSException raise:NSInvalidArgumentException format:@"-[%@ %s] is not of NSKeyPathExpressionType",isa,sel_getName(_cmd)];
+   [NSException raise:NSInvalidArgumentException format:@"-[%@ %s] is not of NSKeyPathExpressionType",[self class],sel_getName(_cmd)];
    return nil;
 }
 
 -(NSString *)function {
-   [NSException raise:NSInvalidArgumentException format:@"-[%@ %s] is not of NSFunctionExpressionType",isa,sel_getName(_cmd)];
+   [NSException raise:NSInvalidArgumentException format:@"-[%@ %s] is not of NSFunctionExpressionType",[self class],sel_getName(_cmd)];
    return nil;
 }
 
 -(NSArray *)arguments {
-   [NSException raise:NSInvalidArgumentException format:@"-[%@ %s] is not of NSFunctionExpressionType",isa,sel_getName(_cmd)];
+   [NSException raise:NSInvalidArgumentException format:@"-[%@ %s] is not of NSFunctionExpressionType",[self class],sel_getName(_cmd)];
    return nil;
 }
 

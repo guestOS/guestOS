@@ -23,21 +23,24 @@
       </BuildActionEntries>
    </BuildAction>
    <TestAction
+      buildConfiguration = "Darwin-x86_64"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      buildConfiguration = "Windows-i386">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <AdditionalOptions>
+      </AdditionalOptions>
    </TestAction>
    <LaunchAction
+      buildConfiguration = "Darwin-x86_64"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Darwin-x86_64"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
       <MacroExpansion>
          <BuildableReference
@@ -52,10 +55,10 @@
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
+      buildConfiguration = "Darwin-x86_64"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Windows-i386"
       debugDocumentVersioning = "YES">
       <MacroExpansion>
          <BuildableReference
@@ -68,10 +71,10 @@
       </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Windows-i386">
+      buildConfiguration = "Darwin-x86_64">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Windows-i386"
+      buildConfiguration = "Darwin-x86_64"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

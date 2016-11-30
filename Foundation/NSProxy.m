@@ -54,8 +54,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 -(void)doesNotRecognizeSelector:(SEL)selector {
 	[NSException raise:NSInvalidArgumentException
-				format:@"%c[%@ %@]: selector not recognized", class_isMetaClass(isa)?'+':'-',
-	 NSStringFromClass(isa),NSStringFromSelector(selector)];
+				format:@"%c[%@ %@]: selector not recognized", class_isMetaClass(objc_getClass(self))?'+':'-',
+	 NSStringFromClass([self class]),NSStringFromSelector(selector)];
 }
 
 -(NSMethodSignature *)methodSignatureForSelector:(SEL)selector {
@@ -101,12 +101,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 
 -(Class)class {
-   return isa;
+   return object_getClass(self);
 }
 
 
 -(Class)superclass {
-   return class_getSuperclass(isa);
+   return class_getSuperclass([self class]);
 }
 
 
@@ -230,7 +230,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 
 -(NSString *)description {
-   return NSStringWithFormat(@"<%@: 0x%0x>",NSStringFromClass(isa),self);
+   return NSStringWithFormat(@"<%@: 0x%0x>",NSStringFromClass([self class]),self);
 }
 
 -(NSString *)debugDescription {

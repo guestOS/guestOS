@@ -13,7 +13,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #import "objc_sel.h"
 #import "objc_class.h"
 #import <string.h>
-#import "ObjCException.h"
+//#import "ObjCException.h" FIXME!
 #import <Foundation/NSRaiseException.h>
 
 /*

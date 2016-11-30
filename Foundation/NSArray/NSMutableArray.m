@@ -512,7 +512,7 @@ static NSComparisonResult compareObjectsUsingDescriptors(id A, id B, void *descr
 
 -(void)filterUsingPredicate:(NSPredicate *)predicate {
    if(predicate==nil){
-    [NSException raise:NSInvalidArgumentException format:@"-[%@ %s] predicate is nil",isa,_cmd];
+    [NSException raise:NSInvalidArgumentException format:@"-[%@ %s] predicate is nil",[self class],_cmd];
     return;
    }
 

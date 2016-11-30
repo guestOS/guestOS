@@ -1,5 +1,5 @@
 #ifndef WINDOWS
-#include_next < pthread.h >
+#include_next <pthread.h>
 #else
 #ifndef PTHREAD_H
 #define PTHREAD_H

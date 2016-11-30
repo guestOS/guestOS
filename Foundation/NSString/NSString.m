@@ -759,7 +759,7 @@ static inline void reverseString(unichar *buf, NSUInteger len) {
     }
     
     if(range.location+range.length>[self length]) {
-        [NSException raise:NSRangeException format:@"-[%@ %s] range %d,%d beyond length %d",isa,sel_getName(_cmd),range.location,range.length,[self length]];
+        [NSException raise:NSRangeException format:@"-[%@ %s] range %d,%d beyond length %d",[self class],sel_getName(_cmd),range.location,range.length,[self length]];
     }
     
     unichar  *buffer = NSZoneMalloc(NULL, sizeof(unichar) * length);
@@ -1036,7 +1036,7 @@ static inline void reverseString(unichar *buf, NSUInteger len) {
    unichar *unicode;
 
    if(NSMaxRange(range)>[self length])
-    [NSException raise:NSRangeException format:@"-[%@ %s] range %d,%d beyond length %d",isa,sel_getName(_cmd),range.location,range.length,[self length]];
+    [NSException raise:NSRangeException format:@"-[%@ %s] range %d,%d beyond length %d",[self class],sel_getName(_cmd),range.location,range.length,[self length]];
 
    if(range.length==0)
     return @"";
@@ -1052,7 +1052,7 @@ static inline void reverseString(unichar *buf, NSUInteger len) {
    NSRange range={location,[self length]-location};
 
    if(location>[self length])
-    [NSException raise:NSRangeException format:@"-[%@ %s] index %d beyond length %d",isa,sel_getName(_cmd),location,[self length]];
+    [NSException raise:NSRangeException format:@"-[%@ %s] index %d beyond length %d",[self class],sel_getName(_cmd),location,[self length]];
 
    return [self substringWithRange:range];
 }
@@ -1064,7 +1064,7 @@ static inline void reverseString(unichar *buf, NSUInteger len) {
     return [[self copy] autorelease];
 
    if(location>[self length])
-    [NSException raise:NSRangeException format:@"-[%@ %s] index %d beyond length %d",isa,sel_getName(_cmd),location,[self length]];
+    [NSException raise:NSRangeException format:@"-[%@ %s] index %d beyond length %d",[self class],sel_getName(_cmd),location,[self length]];
 
    return [self substringWithRange:range];
 }

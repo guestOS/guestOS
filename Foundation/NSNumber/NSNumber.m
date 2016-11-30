@@ -522,7 +522,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 -(NSString *)descriptionWithLocale:(NSDictionary *)locale {
    NSInvalidAbstractInvocation();
-   return [NSString stringWithFormat:@"<%@ %p>",isa,self];
+   return [NSString stringWithFormat:@"<%@ %p>",[self class],self];
 }
 
 -(NSString *)description {

@@ -13,6 +13,9 @@
 
 #import "objc_class.h"
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-objc-isa-usage"
+
 static id objc_lookUpMetaClass(const char *name) {
    Class c=objc_lookUpClass(name);
    if(c)
@@ -60,3 +63,5 @@ BOOL _objc_checkObject(volatile id object)
    
    return NO;
 }
+
+#pragma clang diagnostic pop
