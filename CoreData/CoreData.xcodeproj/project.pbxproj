@@ -511,6 +511,63 @@
 			};
 			name = "Windows-i386";
 		};
+		BFFF97F41DEF1F6C00067F30 /* Darwin-i386 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = "Darwin-i386";
+		};
+		BFFF97F51DEF1F6C00067F30 /* Darwin-i386 */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEC0A3681709354A002A60B7 /* darwin-i386-framework.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = Info.plist;
+				OTHER_CFLAGS = (
+					"-DCOREDATA_INSIDE_BUILD",
+					"$(OTHER_CFLAGS)",
+				);
+				PRODUCT_NAME = CoreData;
+			};
+			name = "Darwin-i386";
+		};
+		BFFF97F61DEF1F7B00067F30 /* Linux-i386 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = "Linux-i386";
+		};
+		BFFF97F71DEF1F7B00067F30 /* Linux-i386 */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEC0A36D1709354A002A60B7 /* linux-i386-framework.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = Info.plist;
+				OTHER_CFLAGS = (
+					"-DCOREDATA_INSIDE_BUILD",
+					"$(OTHER_CFLAGS)",
+				);
+				PRODUCT_NAME = CoreData;
+			};
+			name = "Linux-i386";
+		};
+		BFFF97F81DEF1F8A00067F30 /* FreeBSD-i386 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = "FreeBSD-i386";
+		};
+		BFFF97F91DEF1F8A00067F30 /* FreeBSD-i386 */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEC0A36B1709354A002A60B7 /* freebsd-i386-framework.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = Info.plist;
+				OTHER_CFLAGS = (
+					"-DCOREDATA_INSIDE_BUILD",
+					"$(OTHER_CFLAGS)",
+				);
+				PRODUCT_NAME = CoreData;
+			};
+			name = "FreeBSD-i386";
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -518,6 +575,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB91AE08733DA50010E9CD /* Windows-i386 */,
+				BFFF97F51DEF1F6C00067F30 /* Darwin-i386 */,
+				BFFF97F71DEF1F7B00067F30 /* Linux-i386 */,
+				BFFF97F91DEF1F8A00067F30 /* FreeBSD-i386 */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Windows-i386";
@@ -526,6 +586,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB91B208733DA50010E9CD /* Windows-i386 */,
+				BFFF97F41DEF1F6C00067F30 /* Darwin-i386 */,
+				BFFF97F61DEF1F7B00067F30 /* Linux-i386 */,
+				BFFF97F81DEF1F8A00067F30 /* FreeBSD-i386 */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Windows-i386";

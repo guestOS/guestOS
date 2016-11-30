@@ -338,6 +338,7 @@
 		1DEB91B308733DA50010E9CD /* Windows-i386 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				WARNING_CFLAGS = "-Wno-deprecated-objc-isa-usage";
 			};
 			name = "Windows-i386";
 		};
@@ -353,12 +354,14 @@
 		7E891EBC0D4961EA008150D3 /* Linux-i386 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				WARNING_CFLAGS = "-Wno-deprecated-objc-isa-usage";
 			};
 			name = "Linux-i386";
 		};
 		CFC5B3CA1AF464BC00FBB52A /* Solaris-sparc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				WARNING_CFLAGS = "-Wno-deprecated-objc-isa-usage";
 			};
 			name = "Solaris-sparc";
 		};
@@ -374,6 +377,7 @@
 		CFC5B3D51AF464C300FBB52A /* Darwin-i386 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				WARNING_CFLAGS = "-Wno-deprecated-objc-isa-usage";
 			};
 			name = "Darwin-i386";
 		};
@@ -389,6 +393,7 @@
 		CFC5B3E01AF464D500FBB52A /* Darwin-x86_64 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				WARNING_CFLAGS = "-Wno-deprecated-objc-isa-usage";
 			};
 			name = "Darwin-x86_64";
 		};
@@ -404,6 +409,7 @@
 		CFC5B3EB1AF464E900FBB52A /* Linux-arm */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				WARNING_CFLAGS = "-Wno-deprecated-objc-isa-usage";
 			};
 			name = "Linux-arm";
 		};
@@ -419,6 +425,7 @@
 		CFC5B3F61AF464F600FBB52A /* FreeBSD-i386 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				WARNING_CFLAGS = "-Wno-deprecated-objc-isa-usage";
 			};
 			name = "FreeBSD-i386";
 		};
