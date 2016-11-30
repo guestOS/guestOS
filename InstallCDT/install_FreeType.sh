@@ -1,4 +1,6 @@
 #!/bin/sh
+cd "`dirname \"$0\"`"
+
 ./install_zlib.sh
 
 installResources=`pwd`/Resources
