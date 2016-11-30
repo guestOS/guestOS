@@ -88,12 +88,14 @@ else
 	wordSize="32"
 fi
 
+specificationsDirectory=~/"Library/Application Support/Developer/Shared/Xcode/Specifications"
+
 /bin/echo "Welcome to The Cocotron's InstallCDT script"
 
-if [ -w ~/Library/Application\ Support/Developer/Shared/Xcode/Specifications ];then
+if [ -w "$specificationsDirectory" ];then
 	/bin/echo "Permissions properly set up, continuing install."
 else
-	/bin/echo "For this script to complete successfully, the directory ~/Library/Application Support/Developer/Shared/Xcode/Specifications must be writeable by you, and we've detected that it isn't.  "
+	/bin/echo "For this script to complete successfully, the directory $specificationsDirectory must be writeable by you, and we've detected that it isn't.  "
 	exit 1
 fi
 

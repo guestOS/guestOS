@@ -29,7 +29,7 @@ compiler=$7
 compilerVersion=$8
 
 
-destinationDirectory="~/Library/Application Support/Developer/Shared/Xcode/Specifications"
+destinationDirectory=~/"Library/Application Support/Developer/Shared/Xcode/Specifications"
 mkdir -p "$destinationDirectory"
 
 hostTriple=
