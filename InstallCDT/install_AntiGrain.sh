@@ -1,4 +1,6 @@
 #!/bin/sh
+cd "`dirname \"$0\"`"
+
 ./install_FreeType.sh
 
 installResources=`pwd`/Resources
@@ -12,6 +14,8 @@ if [ ""$1"" = "" ];then
 else
 	AGG_VERSION=$1
 fi
+
+set -eu
 
 PREFIX=`pwd`/../system/i386-mingw32msvc/agg-$AGG_VERSION
 BUILD=/tmp/build_AntiGrain
@@ -35,7 +39,7 @@ cd ..
 
 # Create a Makefile.in.Cocotron
 cat > Makefile.in.Cocotron <<EOF
-AGGLIBS= -lagg 
+AGGLIBS= -lagg
 AGGCXXFLAGS = -O3
 CXX = /Developer/Cocotron/1.0/Windows/i386/gcc-4.3.1/bin/i386-pc-mingw32msvc-g++
 C = /Developer/Cocotron/1.0/Windows/i386/gcc-4.3.1/bin/i386-pc-mingw32msvc-gcc
