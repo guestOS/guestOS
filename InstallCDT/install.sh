@@ -116,8 +116,8 @@ productVersion=1.0
 binutilsVersion=2.21-20111025
 mingwRuntimeVersion=3.20
 mingwAPIVersion=3.17-2
-gmpVersion=4.2.3
-mpfrVersion=2.3.2
+gmpVersion=6.1.1
+mpfrVersion=3.1.5
 
 binutilsConfigureFlags=""
 
@@ -199,7 +199,8 @@ toolFolder=$productFolder/bin
 PATH="$resultFolder/bin:$PATH"
 
 downloadCompilerIfNeeded(){
-	$scriptResources/downloadFilesIfNeeded.sh $downloadFolder "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/cocotron-tools-gpl3/$compiler-$compilerVersion$compilerVersionDate.tar.bz2 https://ftp.gnu.org/gnu/gmp/gmp-$gmpVersion.tar.bz2 https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/cocotron-binutils-2-21/binutils-$binutilsVersion.tar.gz https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/cocotron-tools-gpl3/mpfr-$mpfrVersion.tar.bz2"
+	$scriptResources/downloadFilesIfNeeded.sh $downloadFolder "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/cocotron-tools-gpl3/$compiler-$compilerVersion$compilerVersionDate.tar.bz2 https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/cocotron-binutils-2-21/binutils-$binutilsVersion.tar.gz"
+	$scriptResources/downloadFilesIfNeeded.sh $downloadFolder "https://ftp.gnu.org/gnu/gmp/gmp-$gmpVersion.tar.bz2 https://ftp.gnu.org/gnu/mpfr/mpfr-$mpfrVersion.tar.bz2"
 	$scriptResources/unarchiveFiles.sh $downloadFolder $sourceFolder "$compiler-$compilerVersion$compilerVersionDate binutils-$binutilsVersion gmp-$gmpVersion mpfr-$mpfrVersion"
 }
 
@@ -285,7 +286,7 @@ if [ "$compiler" = "gcc" ]; then
 	mkdir -p $buildFolder/$compiler-$compilerVersion
 	pushd $buildFolder/$compiler-$compilerVersion
 
-	CFLAGS="-m${wordSize}" $sourceFolder/$compiler-$compilerVersion/configure -v --prefix="$resultFolder" --target=$compilerTarget \
+	CFLAGS="-m${wordSize} -std=gnu89" $sourceFolder/$compiler-$compilerVersion/configure -v --prefix="$resultFolder" --target=$compilerTarget \
 		--with-gnu-as --with-gnu-ld --with-headers=$resultFolder/$compilerTarget/include \
 		--without-newlib --disable-multilib --disable-libssp --disable-nls --enable-languages="$enableLanguages" \
 		--with-gmp=$buildFolder/gmp-$gmpVersion --enable-decimal-float --with-mpfr=$resultFolder --enable-checking=release \
