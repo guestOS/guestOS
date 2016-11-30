@@ -39,7 +39,13 @@ do
    exit 1
  fi
 
- echo -n "Unarchiving $locationOfFile$extension ..."
- (cd $destinationFolder;gnutar $unarchiveFlags $locationOfFile$extension)
+ if [ -n "$(which gnutar)" ] ; then
+   command=gnutar
+ else
+   command=tar
+ fi
+
+ echo -n "Unarchiving $locationOfFile$extension using $command ..."
+ (cd $destinationFolder;$command $unarchiveFlags $locationOfFile$extension)
  echo " done."
 done

@@ -90,10 +90,10 @@ fi
 
 /bin/echo "Welcome to The Cocotron's InstallCDT script"
 
-if [ -w /Library/Application\ Support/Developer/Shared/Xcode/Specifications ];then
+if [ -w ~/Library/Application\ Support/Developer/Shared/Xcode/Specifications ];then
 	/bin/echo "Permissions properly set up, continuing install."
 else
-	/bin/echo "For this script to complete successfully, the directory /Library/Application Support/Developer/Shared/Xcode/Specifications must be writeable by you, and we've detected that it isn't.  "
+	/bin/echo "For this script to complete successfully, the directory ~/Library/Application Support/Developer/Shared/Xcode/Specifications must be writeable by you, and we've detected that it isn't.  "
 	exit 1
 fi
 
@@ -199,12 +199,12 @@ toolFolder=$productFolder/bin
 PATH="$resultFolder/bin:$PATH"
 
 downloadCompilerIfNeeded(){
-	$scriptResources/downloadFilesIfNeeded.sh $downloadFolder "http://cocotron-tools-gpl3.googlecode.com/files/$compiler-$compilerVersion$compilerVersionDate.tar.bz2 http://ftp.sunet.se/pub/gnu/gmp/gmp-$gmpVersion.tar.bz2 http://cocotron-binutils-2-21.googlecode.com/files/binutils-$binutilsVersion.tar.gz http://cocotron-tools-gpl3.googlecode.com/files/mpfr-$mpfrVersion.tar.bz2"
+	$scriptResources/downloadFilesIfNeeded.sh $downloadFolder "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/cocotron-tools-gpl3/$compiler-$compilerVersion$compilerVersionDate.tar.bz2 https://ftp.gnu.org/gnu/gmp/gmp-$gmpVersion.tar.bz2 https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/cocotron-binutils-2-21/binutils-$binutilsVersion.tar.gz https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/cocotron-tools-gpl3/mpfr-$mpfrVersion.tar.bz2"
 	$scriptResources/unarchiveFiles.sh $downloadFolder $sourceFolder "$compiler-$compilerVersion$compilerVersionDate binutils-$binutilsVersion gmp-$gmpVersion mpfr-$mpfrVersion"
 }
 
 createWindowsInterfaceIfNeeded(){
-	"$scriptResources/downloadFilesIfNeeded.sh" $downloadFolder "http://cocotron-tools-gpl3.googlecode.com/files/mingwrt-$mingwRuntimeVersion-mingw32-dev.tar.gz http://cocotron-tools-gpl3.googlecode.com/files/w32api-$mingwAPIVersion-mingw32-dev.tar.gz"
+	"$scriptResources/downloadFilesIfNeeded.sh" $downloadFolder "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/cocotron-tools-gpl3/mingwrt-$mingwRuntimeVersion-mingw32-dev.tar.gz https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/cocotron-tools-gpl3/w32api-$mingwAPIVersion-mingw32-dev.tar.gz"
 
 	"$scriptResources/unarchiveFiles.sh" $downloadFolder $interfaceFolder "mingwrt-$mingwRuntimeVersion-mingw32-dev w32api-$mingwAPIVersion-mingw32-dev"
 }
@@ -230,12 +230,19 @@ createDarwinInterfaceIfNeeded(){
 }
 
 copyPlatformInterface(){
+	if [ -n "$(which gnutar)" ] ; then
+		command=gnutar
+	else
+		echo "Using tar instead of gnutar"
+		command=tar
+	fi
+
 	if [ ! -d $interfaceFolder ];then
 		/bin/echo "Interface (headers, libraries, etc.) not present at "$interfaceFolder", exiting"
 		exit 1
 	else
 		mkdir -p $resultFolder/$compilerTarget
-		(cd $interfaceFolder;gnutar -cf - *) | (cd $resultFolder/$compilerTarget;gnutar -xf -)
+		(cd $interfaceFolder;$command -cf - *) | (cd $resultFolder/$compilerTarget;$command -xf -)
 	fi
 }
 
@@ -244,7 +251,7 @@ configureAndInstall_binutils() {
 	rm -rf $buildFolder/binutils-$binutilsVersion
 	mkdir -p $buildFolder/binutils-$binutilsVersion
 	pushd $buildFolder/binutils-$binutilsVersion
-	CFLAGS="-m${wordSize} -Wformat=0 -Wno-error=deprecated-declarations -Wno-error=unused-value" $sourceFolder/binutils-$binutilsVersion/configure --prefix="$resultFolder" --target=$compilerTarget $binutilsConfigureFlags
+	CFLAGS="-m${wordSize} -Wformat=0 -Wno-error=deprecated-declarations -Wno-error=unused-value -Wno-error" $sourceFolder/binutils-$binutilsVersion/configure --prefix="$resultFolder" --target=$compilerTarget $binutilsConfigureFlags
 	make
 	make install
 	popd
@@ -259,7 +266,7 @@ configureAndInstall_gmpAndMpfr() {
 	make
 	make install
 	popd
-	
+
     /bin/echo "Configuring and building mpfr "$mpfrVersion
 	rm -rf $buildFolder/mpfr-$mpfrVersion
 	mkdir -p $buildFolder/mpfr-$mpfrVersion
@@ -273,7 +280,7 @@ configureAndInstall_gmpAndMpfr() {
 configureAndInstall_compiler() {
 	/bin/echo "Configuring, building and installing $compiler "$compilerVersion
 
-if [ "$compiler" = "gcc" ]; then	
+if [ "$compiler" = "gcc" ]; then
 	rm -rf $buildFolder/$compiler-$compilerVersion
 	mkdir -p $buildFolder/$compiler-$compilerVersion
 	pushd $buildFolder/$compiler-$compilerVersion
@@ -284,17 +291,17 @@ if [ "$compiler" = "gcc" ]; then
 		--with-gmp=$buildFolder/gmp-$gmpVersion --enable-decimal-float --with-mpfr=$resultFolder --enable-checking=release \
 		--enable-objc-gc \
 		$compilerConfigureFlags
-	make 
+	make
 	make install
 	popd
 
-elif [ "$compiler" = "llvm-clang" ]; then	
+elif [ "$compiler" = "llvm-clang" ]; then
 	if [ ! -e "$productFolder/$compiler-$compilerVersion/bin/clang" ]; then
 		rm -rf $productFolder/build/$compiler-$compilerVersion
 		mkdir -p $productFolder/build/$compiler-$compilerVersion
 		pushd $productFolder/build/$compiler-$compilerVersion
 		$sourceFolder/$compiler-$compilerVersion/configure --enable-optimized --prefix="$productFolder/$compiler-$compilerVersion"
-		make 
+		make
 		make install
 		popd
 	else
@@ -328,7 +335,7 @@ stripBinaries() {
 
 "create"$targetPlatform"InterfaceIfNeeded"
 downloadCompilerIfNeeded
-       
+
 /bin/echo -n "Copying the platform interface.  This could take a while.."
 if [ $targetPlatform != "Darwin" ]; then
 	copyPlatformInterface
@@ -354,7 +361,7 @@ cc "$toolResources/retargetBundle.m" -framework Foundation -o $toolFolder/retarg
 
 if [ "$compiler" = "gcc" ]; then
 	(cd $resultFolder/..;ln -fs $compiler-$compilerVersion g++-$compilerVersion)
-elif [ "$compiler" = "llvm-clang" ]; then	
+elif [ "$compiler" = "llvm-clang" ]; then
 	(cd $resultFolder/..;ln -fs $compiler-$compilerVersion llvm-clang++-$compilerVersion)
 else
 	/bin/echo "Unknown compiler $compiler"
@@ -362,7 +369,7 @@ else
 fi
 
 if [ "$compiler" = "llvm-clang" ]; then
-# you need to install also gcc because -ccc-gcc-name is required for cross compiling with clang (this is required for choosing the right assembler 'as' tool. 
+# you need to install also gcc because -ccc-gcc-name is required for cross compiling with clang (this is required for choosing the right assembler 'as' tool.
 # there is no flag for referencing only this tool :-(
 /bin/echo -n "Creating clang script for architecture $targetArchitecture ..."
 /bin/echo '#!/bin/sh' > $installFolder/$productName/$productVersion/$targetPlatform/$targetArchitecture/llvm-clang-$compilerVersion/bin/$compilerTarget-llvm-clang
@@ -371,6 +378,6 @@ if [ "$compiler" = "llvm-clang" ]; then
 chmod +x $installFolder/$productName/$productVersion/$targetPlatform/$targetArchitecture/llvm-clang-$compilerVersion/bin/$compilerTarget-llvm-clang
 /bin/echo "done."
 fi
-echo 
+echo
 
 /bin/echo "Script completed"
