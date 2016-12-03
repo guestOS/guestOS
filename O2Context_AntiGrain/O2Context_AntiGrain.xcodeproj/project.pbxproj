@@ -346,87 +346,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1DEB911B08733D790010E9CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE1DDD52171110D9003B3AF8 /* windows-i386-bundle.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				EXECUTABLE_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Windows";
-				EXECUTABLE_SUFFIX = .1.0.dll;
-				GCC_ENABLE_SSE3_EXTENSIONS = YES;
-				HEADER_SEARCH_PATHS = (
-					"$DSTROOT/include",
-					"$DSTROOT/agg/include/",
-				);
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = /Frameworks/AppKit.framework/Resources;
-				LIBRARY_SEARCH_PATHS = (
-					"$DSTROOT/agg",
-					"$(DERIVED_FILE_DIR)",
-					"\"$(DEVELOPER_DIR)/Cocotron/1.0/PlatformInterfaces/i386-mingw32msvc/lib\"",
-				);
-				OTHER_CFLAGS = (
-					"-D__SSE2__",
-					"-D__SSE__",
-					"-D__LITTLE_ENDIAN__",
-				);
-				OTHER_LDFLAGS = (
-					"-static",
-					"-lagg",
-					$OTHER_LDFLAGS,
-				);
-				PRODUCT_NAME = O2Context_AntiGrain;
-				WRAPPER_EXTENSION = cgContext;
-			};
-			name = Debug;
-		};
-		1DEB911C08733D790010E9CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE1DDD52171110D9003B3AF8 /* windows-i386-bundle.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				EXECUTABLE_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Windows";
-				EXECUTABLE_SUFFIX = .1.0.dll;
-				GCC_ENABLE_SSE3_EXTENSIONS = YES;
-				HEADER_SEARCH_PATHS = (
-					"$DSTROOT/include",
-					"$DSTROOT/agg/include/",
-				);
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = /Frameworks/AppKit.framework/Resources;
-				LIBRARY_SEARCH_PATHS = (
-					"$DSTROOT/agg",
-					"$(DERIVED_FILE_DIR)",
-					"\"$(DEVELOPER_DIR)/Cocotron/1.0/PlatformInterfaces/i386-mingw32msvc/lib\"",
-				);
-				OTHER_CFLAGS = (
-					"-D__SSE2__",
-					"-D__SSE__",
-					"-D__LITTLE_ENDIAN__",
-				);
-				OTHER_LDFLAGS = (
-					"-static",
-					"-lagg",
-					$OTHER_LDFLAGS,
-				);
-				PRODUCT_NAME = O2Context_AntiGrain;
-				WRAPPER_EXTENSION = cgContext;
-			};
-			name = Release;
-		};
-		1DEB911F08733D790010E9CD /* Debug */ = {
+		BFB43C781DEF792D000DBE51 /* Windows-i386 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_OPTIMIZATION_LEVEL = 0;
 			};
-			name = Debug;
+			name = "Windows-i386";
 		};
-		1DEB912008733D790010E9CD /* Release */ = {
+		BFB43C791DEF792D000DBE51 /* Windows-i386 */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE1DDD52171110D9003B3AF8 /* windows-i386-bundle.xcconfig */;
 			buildSettings = {
-				GCC_OPTIMIZATION_LEVEL = 3;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				EXECUTABLE_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Windows";
+				EXECUTABLE_SUFFIX = .1.0.dll;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				HEADER_SEARCH_PATHS = (
+					$DSTROOT/include,
+					"$DSTROOT/agg-2.4/include/",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = /Frameworks/AppKit.framework/Resources;
+				LIBRARY_SEARCH_PATHS = (
+					"$DSTROOT/agg-2.4",
+					"$(DERIVED_FILE_DIR)",
+					"\"$(DEVELOPER_DIR)/Cocotron/1.0/PlatformInterfaces/i386-mingw32msvc/lib\"",
+				);
+				OTHER_CFLAGS = (
+					"-D__SSE2__",
+					"-D__SSE__",
+					"-D__LITTLE_ENDIAN__",
+				);
+				OTHER_LDFLAGS = (
+					"-static",
+					"-lagg",
+					$OTHER_LDFLAGS,
+				);
+				PRODUCT_NAME = O2Context_AntiGrain;
+				WRAPPER_EXTENSION = cgContext;
 			};
-			name = Release;
+			name = "Windows-i386";
 		};
 /* End XCBuildConfiguration section */
 
@@ -434,20 +393,18 @@
 		1DEB911A08733D790010E9CD /* Build configuration list for PBXNativeTarget "O2Context_AntiGrain-Windows-i386" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DEB911B08733D790010E9CD /* Debug */,
-				1DEB911C08733D790010E9CD /* Release */,
+				BFB43C791DEF792D000DBE51 /* Windows-i386 */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Windows-i386";
 		};
 		1DEB911E08733D790010E9CD /* Build configuration list for PBXProject "O2Context_AntiGrain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DEB911F08733D790010E9CD /* Debug */,
-				1DEB912008733D790010E9CD /* Release */,
+				BFB43C781DEF792D000DBE51 /* Windows-i386 */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Windows-i386";
 		};
 /* End XCConfigurationList section */
 	};

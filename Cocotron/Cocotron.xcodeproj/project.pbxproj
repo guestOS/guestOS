@@ -13,11 +13,11 @@
 			buildPhases = (
 			);
 			dependencies = (
-				FE1FC01611E7807A00A9A87A /* PBXTargetDependency */,
+				BFB43C821DF33C53000DBE51 /* PBXTargetDependency */,
 				FE5C83A0121D89CD0063E96F /* PBXTargetDependency */,
 				FE081AA214107EF900A3DE85 /* PBXTargetDependency */,
 				FE0513EF121E06DF0097BA92 /* PBXTargetDependency */,
-				FE0819131386F95800C06956 /* PBXTargetDependency */,
+				BFB43C801DEF7A83000DBE51 /* PBXTargetDependency */,
 			);
 			name = "Cocotron-Windows-i386";
 			productName = "Cocotron-Windows-i386";
@@ -25,6 +25,27 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXContainerItemProxy section */
+		BFB43C7D1DEF7A72000DBE51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE1FBFFC11E7806100A9A87A /* Cocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BFFF97EC1DEF1E3900067F30;
+			remoteInfo = Cocoa;
+		};
+		BFB43C7F1DEF7A83000DBE51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE0818F11386F93F00C06956 /* O2Context_AntiGrain.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D57630D048677EA00EA77CD;
+			remoteInfo = "O2Context_AntiGrain-Windows-i386";
+		};
+		BFB43C811DF33C53000DBE51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE1FBFFC11E7806100A9A87A /* Cocoa.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BFFF97D91DEF1E3900067F30;
+			remoteInfo = Cocoa;
+		};
 		FE0513EC121E06DA0097BA92 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FE0513E4121E06D90097BA92 /* Security.xcodeproj */;
@@ -46,13 +67,6 @@
 			remoteGlobalIDString = 8D576316048677EA00EA77CD;
 			remoteInfo = "O2Context_AntiGrain-Windows-i386";
 		};
-		FE0819121386F95800C06956 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE0818F11386F93F00C06956 /* O2Context_AntiGrain.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D57630D048677EA00EA77CD;
-			remoteInfo = "O2Context_AntiGrain-Windows-i386";
-		};
 		FE081A9F14107EF000A3DE85 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FE081A9B14107EF000A3DE85 /* NSSpellEngine_hunspell.xcodeproj */;
@@ -66,41 +80,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = NSSpellEngine_hunspell;
-		};
-		FE1FC00911E7806100A9A87A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE1FBFFC11E7806100A9A87A /* Cocoa.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FE01AB210C5D9C3400AEA51A;
-			remoteInfo = "Cocoa-Windows-i386";
-		};
-		FE1FC00B11E7806100A9A87A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE1FBFFC11E7806100A9A87A /* Cocoa.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C8E0BFAA0F0E6B0E00677729;
-			remoteInfo = "Cocoa-Darwin-i386";
-		};
-		FE1FC00D11E7806100A9A87A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE1FBFFC11E7806100A9A87A /* Cocoa.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FECC1DD6108D025D00BD4A91;
-			remoteInfo = "Cocoa-Linux-i386";
-		};
-		FE1FC00F11E7806100A9A87A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE1FBFFC11E7806100A9A87A /* Cocoa.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FE5A873F10C6F1E8005E348A;
-			remoteInfo = "Cocoa-FreeBSD-i386";
-		};
-		FE1FC01511E7807A00A9A87A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE1FBFFC11E7806100A9A87A /* Cocoa.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = FE01AB110C5D9C3400AEA51A;
-			remoteInfo = "Cocoa-Windows-i386";
 		};
 		FE5C839D121D89BF0063E96F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -168,10 +147,7 @@
 		FE1FBFFD11E7806100A9A87A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FE1FC00A11E7806100A9A87A /* Cocoa.framework */,
-				FE1FC00C11E7806100A9A87A /* Cocoa.framework */,
-				FE1FC00E11E7806100A9A87A /* Cocoa.framework */,
-				FE1FC01011E7806100A9A87A /* Cocoa.framework */,
+				BFB43C7E1DEF7A72000DBE51 /* Cocoa.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -234,6 +210,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		BFB43C7E1DEF7A72000DBE51 /* Cocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Cocoa.framework;
+			remoteRef = BFB43C7D1DEF7A72000DBE51 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		FE0513ED121E06DA0097BA92 /* Security.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -255,34 +238,6 @@
 			remoteRef = FE081A9F14107EF000A3DE85 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FE1FC00A11E7806100A9A87A /* Cocoa.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Cocoa.framework;
-			remoteRef = FE1FC00911E7806100A9A87A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FE1FC00C11E7806100A9A87A /* Cocoa.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Cocoa.framework;
-			remoteRef = FE1FC00B11E7806100A9A87A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FE1FC00E11E7806100A9A87A /* Cocoa.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Cocoa.framework;
-			remoteRef = FE1FC00D11E7806100A9A87A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FE1FC01011E7806100A9A87A /* Cocoa.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Cocoa.framework;
-			remoteRef = FE1FC00F11E7806100A9A87A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		FE5C839E121D89BF0063E96F /* CFSSLHandler_openssl.bundle */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
@@ -293,25 +248,25 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXTargetDependency section */
+		BFB43C801DEF7A83000DBE51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "O2Context_AntiGrain-Windows-i386";
+			targetProxy = BFB43C7F1DEF7A83000DBE51 /* PBXContainerItemProxy */;
+		};
+		BFB43C821DF33C53000DBE51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cocoa;
+			targetProxy = BFB43C811DF33C53000DBE51 /* PBXContainerItemProxy */;
+		};
 		FE0513EF121E06DF0097BA92 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Security-Windows-i386";
 			targetProxy = FE0513EE121E06DF0097BA92 /* PBXContainerItemProxy */;
 		};
-		FE0819131386F95800C06956 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "O2Context_AntiGrain-Windows-i386";
-			targetProxy = FE0819121386F95800C06956 /* PBXContainerItemProxy */;
-		};
 		FE081AA214107EF900A3DE85 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NSSpellEngine_hunspell;
 			targetProxy = FE081AA114107EF900A3DE85 /* PBXContainerItemProxy */;
-		};
-		FE1FC01611E7807A00A9A87A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Cocoa-Windows-i386";
-			targetProxy = FE1FC01511E7807A00A9A87A /* PBXContainerItemProxy */;
 		};
 		FE5C83A0121D89CD0063E96F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

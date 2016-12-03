@@ -115,7 +115,7 @@ installFolder=/Developer
 productName=Cocotron
 productVersion=1.0
 
-binutilsVersion=2.21-20111025
+binutilsVersion=2.27
 mingwRuntimeVersion=3.20
 mingwAPIVersion=3.17-2
 gmpVersion=6.1.1
@@ -186,7 +186,7 @@ fi
 
 scriptResources="$installResources/scripts"
 toolResources="$installResources/tools"
-
+patchResources="$installResources/patches"
 
 
 productFolder=$installFolder/$productName/$productVersion
@@ -201,15 +201,14 @@ toolFolder=$productFolder/bin
 PATH="$resultFolder/bin:$PATH"
 
 downloadCompilerIfNeeded(){
-	$scriptResources/downloadFilesIfNeeded.sh $downloadFolder "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/cocotron-tools-gpl3/$compiler-$compilerVersion$compilerVersionDate.tar.bz2 https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/cocotron-binutils-2-21/binutils-$binutilsVersion.tar.gz"
-	$scriptResources/downloadFilesIfNeeded.sh $downloadFolder "https://ftp.gnu.org/gnu/gmp/gmp-$gmpVersion.tar.bz2 https://ftp.gnu.org/gnu/mpfr/mpfr-$mpfrVersion.tar.bz2"
+	$scriptResources/downloadFilesIfNeeded.sh $downloadFolder "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/cocotron-tools-gpl3/$compiler-$compilerVersion$compilerVersionDate.tar.bz2"
+	$scriptResources/downloadFilesIfNeeded.sh $downloadFolder "https://ftp.gnu.org/gnu/binutils/binutils-$binutilsVersion.tar.gz https://ftp.gnu.org/gnu/gmp/gmp-$gmpVersion.tar.bz2 https://ftp.gnu.org/gnu/mpfr/mpfr-$mpfrVersion.tar.bz2"
 	$scriptResources/unarchiveFiles.sh $downloadFolder $sourceFolder "$compiler-$compilerVersion$compilerVersionDate binutils-$binutilsVersion gmp-$gmpVersion mpfr-$mpfrVersion"
 }
 
 createWindowsInterfaceIfNeeded(){
-	"$scriptResources/downloadFilesIfNeeded.sh" $downloadFolder "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/cocotron-tools-gpl3/mingwrt-$mingwRuntimeVersion-mingw32-dev.tar.gz https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/cocotron-tools-gpl3/w32api-$mingwAPIVersion-mingw32-dev.tar.gz"
-
-	"$scriptResources/unarchiveFiles.sh" $downloadFolder $interfaceFolder "mingwrt-$mingwRuntimeVersion-mingw32-dev w32api-$mingwAPIVersion-mingw32-dev"
+	$scriptResources/downloadFilesIfNeeded.sh $downloadFolder "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/cocotron-tools-gpl3/mingwrt-$mingwRuntimeVersion-mingw32-dev.tar.gz https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/cocotron-tools-gpl3/w32api-$mingwAPIVersion-mingw32-dev.tar.gz"
+	$scriptResources/unarchiveFiles.sh $downloadFolder $interfaceFolder "mingwrt-$mingwRuntimeVersion-mingw32-dev w32api-$mingwAPIVersion-mingw32-dev"
 }
 
 createLinuxInterfaceIfNeeded(){
@@ -251,10 +250,17 @@ copyPlatformInterface(){
 
 configureAndInstall_binutils() {
 	/bin/echo "Configuring, building and installing binutils "$binutilsVersion
-	rm -rf $buildFolder/binutils-$binutilsVersion
-	mkdir -p $buildFolder/binutils-$binutilsVersion
-	pushd $buildFolder/binutils-$binutilsVersion
-	CFLAGS="-m${wordSize} -Wformat=0 -Wno-error=deprecated-declarations -Wno-error=unused-value -Wno-error" $sourceFolder/binutils-$binutilsVersion/configure --prefix="$resultFolder" --target=$compilerTarget $binutilsConfigureFlags
+	binutilsSource=$sourceFolder/binutils-$binutilsVersion
+	binutilsBuild=$buildFolder/binutils-$binutilsVersion
+
+	pushd $binutilsSource
+	patch -p1 < $patchResources/binutils-$binutilsVersion.patch
+	popd
+
+	rm -rf $binutilsBuild
+	mkdir -p $binutilsBuild
+	pushd $binutilsBuild
+	CFLAGS="-m${wordSize} -Wformat=0 -Wno-error=deprecated-declarations -Wno-error=unused-value" $binutilsSource/configure --prefix="$resultFolder" --target=$compilerTarget $binutilsConfigureFlags
 	make
 	make install
 	popd
