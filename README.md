@@ -64,3 +64,13 @@ Everything present in reference implemetations (i.e. macOS, iOS, watchOS, tvOS) 
 	* Interface builder, view debugging etc.
 * Native UI (without dependency on Qt/GTK)
 	* Will enable development of desktop environment(s) based on this stack.
+
+## Contributing
+
+We encourage you to contribute to the project! Please check out the [contribution guide](/CONTRIBUTING.md) for guidelines about how to proceed.
+
+Everyone interacting in the project and its sub-projects' codebases, issue trackers, chat rooms, and mailing lists is expected to follow project's [code of conduct](/CODE_OF_CONDUCT.md).
+
+## License
+
+The code is licensed under [MPL 2.0](http://mozilla.org/MPL/2.0/). Contributors are listed in [AUTHORS](/AUTHORS) file.
