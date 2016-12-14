@@ -1,9 +1,9 @@
 ### -
-This is the fork of the [Cocotron](https://github.com/cjwl/cocotron) project by Christopher Lloyd, specifically targeted for Linux, FreeBSD etc. Aimed at providing an alternative to Qt and Gtk for free desktop environment.
+This is the fork of the [Cocotron](https://github.com/cjwl/cocotron) project by Christopher Lloyd, primarily targeted at open-source platforms (Linux, FreeBSD etc). Aimed at becoming an alternative to Qt and Gtk for these plaforms. And built with [Ethical Design](https://ind.ie/ethical-design/) principles in mind.
 
 ## Scope
 
-Project's scope is limeted to Darwin's stack implemetation, no additions, no custom solutions. For exaple while [CoreObject](http://coreobject.org) seems really nice, we will still stick with CoreData. 
+Project's scope is limited to Darwin stack implemetation, without any unnecessary additions. For exaple while [CoreObject](http://coreobject.org) seems really nice, we are still going to stick with CoreData. 
 
 Everything present in reference implemetations (i.e. macOS, iOS, watchOS, tvOS) is welcome…
 
