@@ -19,7 +19,8 @@ Everything present in reference implemetations (i.e. macOS, iOS, watchOS, tvOS) 
 * Support of the latest Xcode and preferrably ver-1
 	* All Apple developers are (almost) always using the latest tools (virtually nobody uses Xcode 4 these days) and they are the most likely early adopters
 * Downloadable and runnable build products
-	* No additional setup on the host system (except maybe MinGW on Windows) should be required to test ported application's artifacts
+	* No additional setup on the host system should be required to test ported application's artifacts
+	* Use bundling strategies native to platform, e.g. AppImage on Linux 
 * Ensure clear separations between layers of abstraction
 	* Interfacing with display/window managers should be incapsulated in lower layers (CoreGrapics etc) and not be a part of AppKit
 	* Will simplify the interaction with the project
