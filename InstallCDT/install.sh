@@ -115,7 +115,7 @@ installFolder=/Developer
 productName=Cocotron
 productVersion=1.0
 
-binutilsVersion=2.27
+binutilsVersion=2.26  # LLVM bundled with Xcode 7.3 doesn't play nice with binutils 2.27. See: http://lists.llvm.org/pipermail/llvm-dev/2016-August/103588.html
 mingwRuntimeVersion=3.20
 mingwAPIVersion=3.17-2
 gmpVersion=6.1.1
