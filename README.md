@@ -1,5 +1,7 @@
 This is the fork of the [Cocotron](https://github.com/cjwl/cocotron) project by Christopher Lloyd, primarily targeted at open-source platforms (Linux, FreeBSD etc). Aimed at becoming an alternative to Qt and Gtk for these plaforms. And built with [Ethical Design](https://ind.ie/ethical-design/) principles in mind.
 
+Also a notable difference from the original Cocotron project is that while Cocotron tried get away with minimal dependencies, we will try to reuse as much code as possible, adding as many dependencies as necessary. 
+
 ## Scope
 
 The scope of the project is limited to Darwin stack implemetation, without any unnecessary additions. For exaple while [CoreObject](http://coreobject.org) seems really nice, we are still going to stick with CoreData. 
@@ -26,7 +28,7 @@ Everything present in reference implemetations (i.e. macOS, iOS, watchOS, tvOS) 
 	* Will simplify the interaction with the project
 * Unit test coverage
 	* Integrate unit tests from existing projects: GNUstep, Swift Foundation etc
-	* Create basic infrastructure for project's own unit tests
+	* Set up basic infrastructure for project's own unit tests
 * Travis CI integration for all target platforms (Linux, FreeBSD, Windows), including pull request builds
 	* Will dramatically simplify the workflow
 * Downloadable and installable SDK
@@ -50,6 +52,8 @@ Everything present in reference implemetations (i.e. macOS, iOS, watchOS, tvOS) 
 * At least basic integration with Eclipse / Qt Creator
 * Wayland support
 * Full Qt and GTK support
+* CoreText implementation based on HarfBuzz
+* NSLayoutManager implementation based on CoreText
 * Ensure [is this already done?] fully accellerated rendering (via OpenGL using appropriate abstractions: CoreGraphics, CoreAnimation etc)
 
 ### Long-term goals
