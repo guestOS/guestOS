@@ -1,4 +1,6 @@
 #!/bin/sh
+cd "`dirname \"$0\"`"
+
 installResources=`pwd`/Resources
 scriptResources=$installResources/scripts
 

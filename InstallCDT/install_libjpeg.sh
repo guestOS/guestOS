@@ -1,4 +1,6 @@
 #!/bin/sh
+cd "`dirname \"$0\"`"
+
 installResources=`pwd`/Resources
 scriptResources=$installResources/scripts
 
@@ -37,7 +39,7 @@ cd $BUILD
 tar -xvzf $downloadFolder/jpegsrc.v8c.tar.gz
 cd jpeg-8c
 
-pwd 
+pwd
 
 GCC=$(echo $BASEDIR/gcc-$gccVersion/bin/*gcc)
 RANLIB=$(echo $BASEDIR/gcc-$gccVersion/bin/*ranlib)

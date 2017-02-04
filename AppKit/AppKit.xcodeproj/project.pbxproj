@@ -2927,8 +2927,6 @@
 		FE1E54DE1430303F000D60A1 /* xcconfig */ = {
 			isa = PBXGroup;
 			children = (
-				CFBAE5181AFC56A900F2BB97 /* windows-i386-AppKit.xcconfig */,
-				FE642EF0170E6C3D00DFF7FF /* platform-framework.xcconfig */,
 				FE1F65061508164F00C24624 /* darwin-i386-framework.xcconfig */,
 				FE1E54DF1430303F000D60A1 /* darwin-i386.xcconfig */,
 				FE1F65071508165000C24624 /* darwin-ppc-framework.xcconfig */,
@@ -2946,10 +2944,12 @@
 				FE1F650C1508165000C24624 /* linux-ppc-framework.xcconfig */,
 				FE1E54E71430303F000D60A1 /* linux-ppc.xcconfig */,
 				FE1E54E81430303F000D60A1 /* linux.xcconfig */,
+				FE642EF0170E6C3D00DFF7FF /* platform-framework.xcconfig */,
 				FE1E54E91430303F000D60A1 /* platform.xcconfig */,
 				FE1F650D1508165100C24624 /* solaris-sparc-framework.xcconfig */,
 				FE1E54EA1430303F000D60A1 /* solaris-sparc.xcconfig */,
 				FE1E54EB1430303F000D60A1 /* solaris.xcconfig */,
+				CFBAE5181AFC56A900F2BB97 /* windows-i386-AppKit.xcconfig */,
 				FE70846E1431168800B99A95 /* windows-i386-framework.xcconfig */,
 				FE1E54EC1430303F000D60A1 /* windows-i386.xcconfig */,
 				FE1E54ED1430303F000D60A1 /* windows.xcconfig */,

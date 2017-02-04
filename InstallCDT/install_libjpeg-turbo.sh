@@ -1,4 +1,6 @@
 #!/bin/sh
+cd "`dirname \"$0\"`"
+
 installResources=`pwd`/Resources
 scriptResources=$installResources/scripts
 
@@ -38,7 +40,7 @@ cd $BUILD
 tar -xvzf $downloadFolder/libjpeg-turbo-1.3.0.tar.gz
 cd libjpeg-turbo-1.3.0
 
-pwd 
+pwd
 
 GCC=$(echo $BASEDIR/gcc-$gccVersion/bin/*gcc)
 AS=$(echo $BASEDIR/gcc-$gccVersion/bin/*as)
@@ -48,6 +50,6 @@ TARGET=$($GCC -dumpmachine)
 export MAKE="$(which make)"
 
 
-./configure --prefix="$PREFIX" -host $TARGET AR=$AR AS=$AS CC=$GCC RANLIB=$RANLIB --with-jpeg8 
+./configure --prefix="$PREFIX" -host $TARGET AR=$AR AS=$AS CC=$GCC RANLIB=$RANLIB --with-jpeg8
 
 make && make install

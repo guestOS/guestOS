@@ -1,4 +1,6 @@
 #!/bin/sh
+cd "`dirname \"$0\"`"
+
 echo "Installing libxml2"
 ./install_zlib.sh
 

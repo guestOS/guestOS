@@ -23,40 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FEB4EF3A15267D2100EC3CA1 /* PBXContainerItemProxy */ = {
+		BFB43C8B1DF35A38000DBE51 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FEB4EF2D15267D2000EC3CA1 /* Cocoa.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = FE01AB210C5D9C3400AEA51A;
-			remoteInfo = "Cocoa-Windows-i386";
-		};
-		FEB4EF3C15267D2100EC3CA1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FEB4EF2D15267D2000EC3CA1 /* Cocoa.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C8E0BFAA0F0E6B0E00677729;
-			remoteInfo = "Cocoa-Darwin-i386";
-		};
-		FEB4EF3E15267D2100EC3CA1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FEB4EF2D15267D2000EC3CA1 /* Cocoa.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FECC1DD6108D025D00BD4A91;
-			remoteInfo = "Cocoa-Linux-i386";
-		};
-		FEB4EF4015267D2100EC3CA1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FEB4EF2D15267D2000EC3CA1 /* Cocoa.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FE5A873F10C6F1E8005E348A;
-			remoteInfo = "Cocoa-FreeBSD-i386";
-		};
-		FEB4EF4215267D3400EC3CA1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FEB4EF2D15267D2000EC3CA1 /* Cocoa.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = FE01AB110C5D9C3400AEA51A;
-			remoteInfo = "Cocoa-Windows-i386";
+			remoteGlobalIDString = BFFF97EC1DEF1E3900067F30;
+			remoteInfo = Cocoa;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -180,10 +152,7 @@
 		FEB4EF2E15267D2000EC3CA1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FEB4EF3B15267D2100EC3CA1 /* Cocoa.framework */,
-				FEB4EF3D15267D2100EC3CA1 /* Cocoa.framework */,
-				FEB4EF3F15267D2100EC3CA1 /* Cocoa.framework */,
-				FEB4EF4115267D2100EC3CA1 /* Cocoa.framework */,
+				BFB43C8C1DF35A38000DBE51 /* Cocoa.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -221,7 +190,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				FEB4EF4315267D3400EC3CA1 /* PBXTargetDependency */,
 			);
 			name = "TextEditor-Windows";
 			productInstallPath = "$(HOME)/Applications";
@@ -261,32 +229,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		FEB4EF3B15267D2100EC3CA1 /* Cocoa.framework */ = {
+		BFB43C8C1DF35A38000DBE51 /* Cocoa.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Cocoa.framework;
-			remoteRef = FEB4EF3A15267D2100EC3CA1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FEB4EF3D15267D2100EC3CA1 /* Cocoa.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Cocoa.framework;
-			remoteRef = FEB4EF3C15267D2100EC3CA1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FEB4EF3F15267D2100EC3CA1 /* Cocoa.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Cocoa.framework;
-			remoteRef = FEB4EF3E15267D2100EC3CA1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FEB4EF4115267D2100EC3CA1 /* Cocoa.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Cocoa.framework;
-			remoteRef = FEB4EF4015267D2100EC3CA1 /* PBXContainerItemProxy */;
+			remoteRef = BFB43C8B1DF35A38000DBE51 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -350,14 +297,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		FEB4EF4315267D3400EC3CA1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Cocoa-Windows-i386";
-			targetProxy = FEB4EF4215267D3400EC3CA1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2A37F4B4FDCFA73011CA2CEA /* MyDocument.nib */ = {
@@ -437,7 +376,7 @@
 				EFFECTIVE_PLATFORM_NAME = "-windows";
 				EXECUTABLE_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Windows";
 				EXECUTABLE_SUFFIX = .exe;
-				FRAMEWORK_SEARCH_PATHS = "../../system/i386-mingw32msvc/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../system/i386-mingw32msvc/Frameworks";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = "";
@@ -472,7 +411,7 @@
 				EFFECTIVE_PLATFORM_NAME = "-windows";
 				EXECUTABLE_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Windows";
 				EXECUTABLE_SUFFIX = .exe;
-				FRAMEWORK_SEARCH_PATHS = "../../system/i386-mingw32msvc/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../system/i386-mingw32msvc/Frameworks";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = "";

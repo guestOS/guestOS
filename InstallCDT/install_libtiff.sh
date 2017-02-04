@@ -33,7 +33,7 @@ PREFIX=`pwd`/../system/i386-mingw32msvc
 BUILD=/tmp/build_tiff
 
 TIFFVERSION=4.0.1
-$scriptResources/downloadFilesIfNeeded.sh $downloadFolder http://download.osgeo.org/libtiff/tiff-${TIFFVERSION}.tar.gz
+$scriptResources/downloadFilesIfNeeded.sh $downloadFolder http://pkgs.fedoraproject.org/repo/pkgs/libtiff/tiff-4.0.1.tar.gz/fae149cc9da35c598d8be897826dfc63/tiff-4.0.1.tar.gz # http://download.osgeo.org/libtiff/tiff-${TIFFVERSION}.tar.gz
 
 mkdir -p $BUILD
 cd $BUILD

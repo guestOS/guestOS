@@ -1,4 +1,6 @@
 #!/bin/sh
+cd "`dirname \"$0\"`"
+
 installResources=`pwd`/Resources
 scriptResources=$installResources/scripts
 
@@ -34,7 +36,7 @@ cd $BUILD
 tar -xvjf $downloadFolder/zlib-1.2.5.tar.bz2
 cd zlib-1.2.5
 
-pwd 
+pwd
 
 GCC=$(echo $BASEDIR/gcc-$gccVersion/bin/*gcc)
 RANLIB=$(echo $BASEDIR/gcc-$gccVersion/bin/*ranlib)

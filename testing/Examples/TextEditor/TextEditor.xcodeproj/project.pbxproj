@@ -212,6 +212,8 @@
 /* Begin PBXProject section */
 		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "TextEditor" */;
 			compatibilityVersion = "Xcode 2.4";
 			developmentRegion = English;
@@ -374,11 +376,15 @@
 				COPY_PHASE_STRIP = YES;
 				EXECUTABLE_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Windows";
 				EXECUTABLE_SUFFIX = .exe;
-				FRAMEWORK_SEARCH_PATHS = /Developer/Cocotron/1.0/Windows/i386/Frameworks;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Developer/Cocotron/1.0/Windows/i386/Frameworks,
+					"$(SRCROOT)/../../../system/i386-mingw32msvc/Frameworks",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_VERSION = org.cocotron.1.0.windows.i386.gcc.4.3.1;
 				INFOPLIST_FILE = Info.plist;
 				OTHER_LDFLAGS = (
 					"-Wl,--enable-auto-import",
