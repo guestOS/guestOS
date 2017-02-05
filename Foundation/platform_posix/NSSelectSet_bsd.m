@@ -53,7 +53,7 @@ void native_set_free(native_set *set){
 }
 
 void native_set_clear(native_set *set,int descriptor){
-#if defined(LINUX)
+#if defined(__linux__)
    __FDS_BITS(set->fdset)[descriptor/NFDBITS]&=~(1<<(descriptor%NFDBITS));
 #else
    set->fdset->fds_bits[descriptor/NFDBITS]&=~(1<<(descriptor%NFDBITS));
@@ -71,7 +71,7 @@ void native_set_set(native_set *set,int descriptor){
      native_set_clear(set,clear);
    }
 
-#ifdef LINUX
+#if defined(__linux__)
    __FDS_BITS(set->fdset)[descriptor/NFDBITS]|=(1<<(descriptor%NFDBITS));
 #else
    set->fdset->fds_bits[descriptor/NFDBITS]|=(1<<(descriptor%NFDBITS));
@@ -82,7 +82,7 @@ BOOL native_set_is_set(native_set *native,int descriptor) {
   if(descriptor>native->max)
    return NO;
 
-#ifdef LINUX
+#if defined(__linux__)
    return (__FDS_BITS(native->fdset)[descriptor/NFDBITS]&(1<<(descriptor%NFDBITS)))?YES:NO;
 #else
    return (native->fdset->fds_bits[descriptor/NFDBITS]&(1<<(descriptor%NFDBITS)))?YES:NO;

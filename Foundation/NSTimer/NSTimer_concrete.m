@@ -14,8 +14,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
    _timeInterval=interval;
    _fireDate=[date copy];
 
-   _isValid=YES;
-   _repeats=repeats;
+   _flags.isValid=YES;
+   _flags.repeats=repeats;
 
    return self;
 }
@@ -25,8 +25,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
    _timeInterval=interval;
    _fireDate=[[[NSDate date] addTimeInterval:_timeInterval] retain];
 
-   _isValid=YES;
-   _repeats=repeats;
+   _flags.isValid=YES;
+   _flags.repeats=repeats;
 
    return self;
 }
@@ -41,9 +41,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 
 -(void)fire {
-   if(!_repeats)
+   if(!_flags.repeats)
     [self invalidate];
-   else if(_isValid) {
+   else if(_flags.isValid) {
     NSDate *lastFire=_fireDate;
     // We add to the current time to get the next time, if we add to the fire date
     // and the timer is a long running task, the timer is always behind and always
@@ -74,7 +74,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 -(BOOL)isValid {
-   return _isValid;
+   return _flags.isValid;
 }
 
 @end

@@ -16,7 +16,7 @@
 
 #include <pthread.h>
 
-#if defined(WIN32) || defined(LINUX)
+#if defined(WIN32) || defined(__linux__)
 #define MAXHOSTNAMELEN 512
 #endif
 

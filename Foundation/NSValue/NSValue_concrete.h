@@ -9,7 +9,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #import <Foundation/NSValue.h>
 
 @interface NSValue_concrete : NSValue {
-    char _bytes[0]; // type \0 value
+    // type \0 value
+    char _bytes[1]; // Note: GNUstep runtime fails on zero size iVars
 }
 
 @end

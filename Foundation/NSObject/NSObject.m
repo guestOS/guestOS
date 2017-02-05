@@ -394,6 +394,10 @@ static IMP objc_msg_forward(id rcv, SEL message) {
    return self;
 }
 
+#ifdef FOUNDATION_ARC_COMPATIBLE_REF_COUNT
+- (void)_ARCCompliantRetainRelease {
+}
+#endif
 
 -(NSUInteger)retainCount {
    return NSExtraRefCount(self);

@@ -12,26 +12,45 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #import <Foundation/NSRaise.h>
 #import <Foundation/NSZombieObject.h>
 #import <Foundation/NSDebug.h>
-#import <objc/objc_arc.h>
+#import <objc/objc-arc.h>
+
 #include <string.h>
 #ifdef WIN32
-#include <windows.h>
+#   include <windows.h>
 #else
-#include <unistd.h>
+#   include <unistd.h>
 #endif
 
 // NSZone functions implemented in platform subproject
 
 void NSIncrementExtraRefCount(id object) {
+#ifdef FOUNDATION_ARC_COMPATIBLE_REF_COUNT
+    objc_retain(object);
+#else
     object_incrementExternalRefCount(object);
+#endif
 }
 
 BOOL NSDecrementExtraRefCountWasZero(id object) {
+#ifdef FOUNDATION_ARC_COMPATIBLE_REF_COUNT
+    objc_release(object);
+    return NO; // -dealloc we be called by objc_release()
+#else
     return object_decrementExternalRefCount(object);
+#endif
 }
 
 NSUInteger NSExtraRefCount(id object) {
+#ifdef FOUNDATION_ARC_COMPATIBLE_REF_COUNT
+#ifdef OBJC_SMALL_OBJECT_MASK
+    if (((uintptr_t)object & OBJC_SMALL_OBJECT_MASK) != 0) {
+        return NSUIntegerMax;
+    }
+#endif
+    return *((intptr_t *)object -1);
+#else // GNUSTEP_RUNTIME
     return object_externalRefCount(object);
+#endif
 }
 
 BOOL NSShouldRetainWithZone(id object,NSZone *zone) {
@@ -48,6 +67,12 @@ void NSSetAllocateObjectHook(void (*hook)(id object))
 
 id NSAllocateObject(Class class, NSUInteger extraBytes, NSZone *zone)
 {
+#if __has_include(<objc/capabilities.h>) // GNUstep runtime
+    if (zone == NULL || zone == NSDefaultMallocZone()) {
+        return class_createInstance(class, extraBytes);
+    }
+#endif
+
     id result;
 
     if (zone == NULL) {
@@ -82,6 +107,14 @@ id NSAllocateObject(Class class, NSUInteger extraBytes, NSZone *zone)
 
 void NSDeallocateObject(id object)
 {
+#if __has_include(<objc/capabilities.h>) // GNUstep runtime
+    NSZone *zone = [object zone];
+    if (zone == NULL || zone == NSDefaultMallocZone()) {
+        object_dispose(object);
+        return;
+    }
+#endif
+
 #if defined(GCC_RUNTIME_3)
     // TODO As of gcc 4.6.2 the GCC runtime does not have support for C++ destructor calling.
 #elif defined(APPLE_RUNTIME_4)

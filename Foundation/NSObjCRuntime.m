@@ -24,6 +24,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #include <assert.h>
 #include <string.h>
 
+#if GCC_RUNTIME_3
+#   import <objc/encoding.h>
+#endif
+
 typedef void (*NSLogCStringFunc)(const char *string, unsigned length, BOOL withSyslogBanner);
 
 // These are private-yet-sort-of-documented in Cocoa.
@@ -114,9 +118,16 @@ const char *NSGetSizeAndAlignment(const char *type, NSUInteger *size, NSUInteger
     *size = 0;
     *alignment = 0;
 
+#if GCC_RUNTIME_3
+    type = objc_skip_type_qualifiers(type);
+    *size = objc_sizeof_type(type);
+    *alignment = objc_alignof_type(type);
+    return objc_skip_typespec(type);
+#else
     *size = objc_ext_sizeof_type(type);
     *alignment = objc_ext_alignof_type(type);
     return objc_ext_skip_type_specifier(type, NO);
+#endif
 }
 
 

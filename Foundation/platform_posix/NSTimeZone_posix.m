@@ -201,7 +201,7 @@ NSInteger sortTransitions(id trans1, id trans2, void *context) {
 
         systemTimeZone = [self timeZoneWithAbbreviation:abbreviation];
 
-#ifdef LINUX
+#if defined(__linux__)
         if (systemTimeZone == nil) {
             //check if the error is because of a missing entry in NSTimeZoneAbbreviations.plist (only for logging)
             if ([[self abbreviationDictionary] objectForKey:abbreviation] == nil) {

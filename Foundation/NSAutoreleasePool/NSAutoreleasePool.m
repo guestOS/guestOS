@@ -12,13 +12,22 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #import <Foundation/NSString.h>
 #import <Foundation/NSThread-Private.h>
 #import <Foundation/NSRaiseException.h>
+#import <objc/objc-arc.h>
 
-#import <objc/objc_arc.h>
+#if __has_include(<objc/capabilities.h>)
+#   include <objc/capabilities.h>
+#   ifdef OBJC_ARC_AUTORELEASE_DEBUG
+#       define USE_AUTORELEASE
+#   endif
+#endif
 
 @implementation NSAutoreleasePool
 
 +(void)addObject:object {
     objc_autorelease(object);
+}
+
+- (void)_ARCCompatibleAutoreleasePool {
 }
 
 -init {
@@ -33,7 +42,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 -(void)addObject:object {
+#ifdef USE_AUTORELEASE
+    objc_autorelease(object);
+#else
     objc_autoreleasePoolAdd(_pool,object);
+#endif
 }
 
 id NSAutorelease(id object){
@@ -48,5 +61,10 @@ id NSAutorelease(id object){
    [NSException raise:NSInvalidArgumentException format:@"-[NSAutoreleasePool retain] not allowed"];
    return nil;
 }
+
+#ifdef FOUNDATION_ARC_COMPATIBLE_REF_COUNT
+- (void)_ARCCompliantRetainRelease {
+}
+#endif
 
 @end

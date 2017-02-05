@@ -1,4 +1,10 @@
+#if defined(__linux__) && defined(__LP64__)
+#   define COCOTRON_DISALLOW_FORWARDING 1  // Unimplemented on 64-bit Linux
+#endif
+
 #ifdef COCOTRON_DISALLOW_FORWARDING
+#warning Forwading is unavailable
+
 #import <Foundation/NSException.h>
 #import <Foundation/NSString.h>
 #import <objc/message.h>

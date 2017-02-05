@@ -12,7 +12,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #import "objc_malloc.h"
 #import "objc_protocol.h"
 #if defined(__APPLE__)
-#import "OBJCRegisterModule_Darwin.h"
+#   import "OBJCRegisterModule_Darwin.h"
 #endif
 
 #import <string.h>

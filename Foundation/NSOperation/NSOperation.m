@@ -79,12 +79,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 -(BOOL)isCancelled {
-	return cancelled;
+	return state.cancelled;
 }
 
 -(void)cancel {
 	[self willChangeValueForKey: @"isCancelled"];
-	cancelled = 1;
+	state.cancelled = 1;
 	[self didChangeValueForKey: @"isCancelled"];
 }
 
@@ -93,11 +93,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 -(BOOL)isExecuting {
-	return executing;
+	return state.executing;
 }
 
 -(BOOL)isFinished {
-	return finished;
+	return state.finished;
 }
 
 -(BOOL)isReady {
@@ -109,10 +109,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 -(void)start {
-	if (!executing && !finished) {
-		if (!cancelled) {
+	if (!state.executing && !state.finished) {
+		if (!state.cancelled) {
 			[self willChangeValueForKey: @"isExecuting"];
-			executing = 1;
+			state.executing = 1;
 			[self didChangeValueForKey: @"isExecuting"];
 			
 			[self main];
@@ -120,8 +120,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		
 		[self willChangeValueForKey: @"isExecuting"];
 		[self willChangeValueForKey: @"isFinished"];
-		executing = 0;
-		finished = 1;
+		state.executing = 0;
+		state.finished = 1;
 		[self didChangeValueForKey: @"isFinished"];
 		[self didChangeValueForKey: @"isExecuting"];
 	}

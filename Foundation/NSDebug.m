@@ -12,7 +12,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #include <windows.h>
 #endif
 
-#if defined(LINUX) ||  defined(__APPLE__)  ||  defined(FREEBSD)
+#if defined(__linux__) ||  defined(__APPLE__)  ||  defined(FREEBSD)
 #include <execinfo.h>
 #endif
 

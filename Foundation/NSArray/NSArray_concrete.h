@@ -10,7 +10,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 @interface NSArray_concrete : NSArray {
     NSUInteger _count;
-    id _objects[0];
+    id _objects[1]; // Note: GNUstep runtime fails on zero size iVars
 }
 @end
 

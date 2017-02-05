@@ -456,7 +456,7 @@ static void byteCopy(void *src,void *dst,NSUInteger length){
 			value.result = calloc(size, sizeof(char));
 
 // FIX internal compiler error on windows/linux/bsd
-#if !defined(WIN32) && !defined(BSD) && !defined(LINUX)
+#if !defined(WIN32) && !defined(BSD) && !defined(__linux__)
                     value = function([self target], [self selector], _argumentFrameSize, _argumentFrame);
 #else
                     if (function) {/*avoid compiler warning*/}

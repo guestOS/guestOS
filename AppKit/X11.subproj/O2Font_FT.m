@@ -83,7 +83,7 @@ FcConfig *O2FontSharedFontConfig() {
     filename=[isa filenameForPattern:@""];
     
     if(filename==nil) {
-#ifdef LINUX
+#if defined(__linux__)
       filename=@"/usr/share/fonts/truetype/freefont/FreeSans.ttf";
 #else
       filename=@"/System/Library/Fonts/HelveticaNeue.ttc";

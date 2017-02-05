@@ -1,4 +1,4 @@
-#import <objc/dyld.h>
+#import "dyld.h"
 
 #ifndef MAXPATHLEN
 #define MAXPATHLEN 8192
@@ -36,7 +36,7 @@ int _NSGetExecutablePath(char *path, uint32_t *capacity) {
 
 // FIXME: these implementations do not return the size needed
 
-#elif defined(LINUX)
+#elif defined(__linux__)
 
 int _NSGetExecutablePath(char *path, uint32_t *capacity) {
     if(*capacity < MAXPATHLEN)

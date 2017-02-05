@@ -64,10 +64,12 @@ const NSUInteger NSMaximumStringLength=INT_MAX-1;
 
 NSString * const NSCharacterConversionException = @"NSCharacterConversionException";
 
+#if defined(__APPLE__)
 // only needed for Darwin ppc
 struct objc_class _NSConstantStringClassReference;
 // only needed for Darwin i386
 int __CFConstantStringClassReference[1];
+#endif
 
 @implementation NSString
 

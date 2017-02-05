@@ -11,8 +11,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @interface NSTimer_concrete : NSTimer {
     NSTimeInterval _timeInterval;
     NSDate *_fireDate;
-    BOOL _isValid : 1;
-    BOOL _repeats : 1;
+    struct {
+        BOOL isValid : 1;
+        BOOL repeats : 1;
+    } _flags;
 }
 
 - initWithFireDate:(NSDate *)date interval:(NSTimeInterval)timeInterval repeats:(BOOL)repeats;

@@ -7,9 +7,16 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
 
 #import <Foundation/NSObject.h>
-#include <setjmp.h>
+#import <setjmp.h>
+
+#if defined(OBJC_ZEROCOST_EXCEPTIONS)
+#   define FOUNDATION_USE_NATIVE_EXCEPTIONS 1
+#else
+#   define FOUNDATION_USE_NATIVE_EXCEPTIONS 0
+#endif
 
 @class NSDictionary, NSArray;
+
 
 FOUNDATION_EXPORT NSString *const NSGenericException;
 FOUNDATION_EXPORT NSString *const NSInvalidArgumentException;
@@ -20,6 +27,7 @@ FOUNDATION_EXPORT NSString *const NSMallocException;
 
 FOUNDATION_EXPORT NSString *const NSParseErrorException;
 FOUNDATION_EXPORT NSString *const NSInconsistentArchiveException;
+
 
 @interface NSException : NSObject <NSCoding, NSCopying> {
     NSString *_name;
@@ -45,10 +53,26 @@ FOUNDATION_EXPORT NSString *const NSInconsistentArchiveException;
 
 @end
 
+
 typedef void NSUncaughtExceptionHandler(NSException *exception);
 
 FOUNDATION_EXPORT NSUncaughtExceptionHandler *NSGetUncaughtExceptionHandler(void);
 FOUNDATION_EXPORT void NSSetUncaughtExceptionHandler(NSUncaughtExceptionHandler *);
+
+
+#if FOUNDATION_USE_NATIVE_EXCEPTIONS
+
+#define NS_DURING       @try {
+#define NS_HANDLER      } @catch (NSException *localException) {
+#define NS_ENDHANDLER   }
+
+#define NS_VALRETURN(val)           return (val)
+#define NS_VALUERETURN(object, id)  return (object)
+#define NS_VOIDRETURN               return
+
+#define NSExceptionFrame void // FIXME!
+
+#else // FOUNDATION_USE_NATIVE_EXCEPTIONS
 
 typedef struct NSExceptionFrame {
     jmp_buf state;
@@ -88,5 +112,7 @@ FOUNDATION_EXPORT void __NSPopExceptionFrame(NSExceptionFrame *frame);
         __NSPopExceptionFrame(&__exceptionFrame); \
         return;                                   \
     }
+
+#endif // FOUNDATION_USE_NATIVE_EXCEPTIONS
 
 #import <Foundation/NSAssertionHandler.h>

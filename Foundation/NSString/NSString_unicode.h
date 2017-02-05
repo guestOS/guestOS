@@ -10,7 +10,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 @interface NSString_unicode : NSString {
     NSUInteger _length;
-    unichar _unicode[0];
+    unichar _unicode[1]; // Note: GNUstep runtime fails on zero size iVars
 }
 
 @end

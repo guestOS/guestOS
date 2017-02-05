@@ -11,7 +11,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 @interface NSSet_concrete : NSSet {
     NSSetTable _table;
-    NSSetBucket *_buckets[0];
+    NSSetBucket *_buckets[1]; // Note: GNUstep runtime fails on zero size iVars
 }
 @end
 

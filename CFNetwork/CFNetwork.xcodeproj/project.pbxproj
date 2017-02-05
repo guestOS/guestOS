@@ -19,6 +19,7 @@
 		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* CFNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CFNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFBE53E41E4681CC00ED77AD /* linux-x86_64-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-x86_64-framework.xcconfig"; sourceTree = "<group>"; };
 		FE7084D21431172900B99A95 /* windows-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "windows-i386-framework.xcconfig"; sourceTree = "<group>"; };
 		FE74338510A89A9D004CDF00 /* CFNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFNetwork.h; sourceTree = "<group>"; };
 		FEC0A3A117093576002A60B7 /* darwin-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-i386-framework.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +108,7 @@
 		FE1E55BD143030B7000D60A1 /* xcconfig */ = {
 			isa = PBXGroup;
 			children = (
+				BFBE53E41E4681CC00ED77AD /* linux-x86_64-framework.xcconfig */,
 				FEC0A3A117093576002A60B7 /* darwin-i386-framework.xcconfig */,
 				FEC0A3A217093576002A60B7 /* darwin-ppc-framework.xcconfig */,
 				FEC0A3A317093576002A60B7 /* darwin-x86_64-framework.xcconfig */,
@@ -225,6 +227,21 @@
 			};
 			name = "Linux-i386";
 		};
+		BFBE53E51E4681D600ED77AD /* Linux-x86_64 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = "Linux-x86_64";
+		};
+		BFBE53E61E4681D600ED77AD /* Linux-x86_64 */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBE53E41E4681CC00ED77AD /* linux-x86_64-framework.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = CFNetwork;
+			};
+			name = "Linux-x86_64";
+		};
 		CFC5B4651AF4687600FBB52A /* Darwin-i386 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -281,6 +298,7 @@
 				CFC5B4661AF4687600FBB52A /* Darwin-i386 */,
 				CFC5B4721AF468AB00FBB52A /* Darwin-x86_64 */,
 				1DEB91AF08733DA50010E9CD /* Linux-i386 */,
+				BFBE53E61E4681D600ED77AD /* Linux-x86_64 */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Linux-i386";
@@ -293,6 +311,7 @@
 				CFC5B4651AF4687600FBB52A /* Darwin-i386 */,
 				CFC5B4711AF468AB00FBB52A /* Darwin-x86_64 */,
 				1DEB91B308733DA50010E9CD /* Linux-i386 */,
+				BFBE53E51E4681D600ED77AD /* Linux-x86_64 */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Linux-i386";

@@ -25,10 +25,11 @@ typedef NSInteger NSOperationQueuePriority;
 @interface NSOperation : NSObject {
     NSOperationQueuePriority priority;
     NSMutableArray *dependencies;
-
-    int executing : 1;
-    int cancelled : 1;
-    int finished : 1;
+    struct {
+        int executing : 1;
+        int cancelled : 1;
+        int finished : 1;
+    } state;
 }
 
 - (void)start;

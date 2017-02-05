@@ -24,7 +24,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #import <Foundation/NSSelectSet.h>
 #include <pthread.h>
 
-#if defined(LINUX) ||  defined(__APPLE__) ||  defined(FREEBSD)
+#if defined(__linux__) ||  defined(__APPLE__) ||  defined(FREEBSD)
 #include <execinfo.h>
 #include <sys/resource.h>
 #endif

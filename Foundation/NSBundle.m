@@ -24,8 +24,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #import <Foundation/NSUserDefaults.h>
 #import <objc/runtime.h>
 #import <Foundation/NSRaiseException.h>
+
 #if defined(__APPLE__)
-#import"OBJCRegisterModule_Darwin.h"
+#   import"OBJCRegisterModule_Darwin.h"
 #endif
 
 #import <objc/objc.h>
@@ -33,26 +34,26 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 typedef void *NSModuleHandle;
 
-OBJC_EXPORT NSModuleHandle NSLoadModule(const char *path, NSError **error);
-OBJC_EXPORT BOOL NSUnloadModule(NSModuleHandle handle);
-OBJC_EXPORT const char *NSLastModuleError(void);
-OBJC_EXPORT void *NSSymbolInModule(NSModuleHandle handle, const char *symbol);
+FOUNDATION_EXPORT NSModuleHandle NSLoadModule(const char *path, NSError **error);
+FOUNDATION_EXPORT BOOL NSUnloadModule(NSModuleHandle handle);
+FOUNDATION_EXPORT const char *NSLastModuleError(void);
+FOUNDATION_EXPORT void *NSSymbolInModule(NSModuleHandle handle, const char *symbol);
 
 #ifdef WIN32
-#include <windows.h>
+#   include <windows.h>
 #else
-#include <dlfcn.h>
-#include <sys/param.h>
-#include <string.h>
-#include <stdlib.h>
-#include <unistd.h>
+#   include <dlfcn.h>
+#   include <sys/param.h>
+#   include <string.h>
+#   include <stdlib.h>
+#   include <unistd.h>
 #endif
 
-#import <objc/dyld.h>
+#import "dyld.h"
 
 #if defined(GCC_RUNTIME_3) || defined(APPLE_RUNTIME_4)
 
-#if defined(LINUX)
+#if defined(__linux__)
 
 #include <sys/stat.h>
 
@@ -133,7 +134,7 @@ static const char **objc_copyImageNames(unsigned int *count)
     return NULL;
 }
 
-#endif //LINUX
+#endif //__linux__
 #endif //GCC_RUNTIME_3 || APPLE_RUNTIME_4
 
 #ifdef WIN32

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		498E49E21828005C00716340 /* CFStringEncodingExt.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E49E11828005C00716340 /* CFStringEncodingExt.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		BFBE53DF1E46810700ED77AD /* linux-x86_64-framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BFBE53DE1E46810700ED77AD /* linux-x86_64-framework.xcconfig */; };
 		FEE0F9CD0DC962D600598037 /* CFBase.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE0F9C60DC962D600598037 /* CFBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FEE0F9CE0DC962D600598037 /* CFLocale.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE0F9C70DC962D600598037 /* CFLocale.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FEE0F9D00DC962D600598037 /* CFNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE0F9C90DC962D600598037 /* CFNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -72,6 +73,7 @@
 		498E49E11828005C00716340 /* CFStringEncodingExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFStringEncodingExt.h; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* CoreFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFBE53DE1E46810700ED77AD /* linux-x86_64-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-x86_64-framework.xcconfig"; sourceTree = "<group>"; };
 		FE6784DB143389C80009A0A0 /* pthread.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = pthread.xcodeproj; path = ../pthread/pthread.xcodeproj; sourceTree = SOURCE_ROOT; };
 		FE7085E51431179200B99A95 /* windows-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "windows-i386-framework.xcconfig"; sourceTree = "<group>"; };
 		FEC0A3B11709358C002A60B7 /* darwin-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-i386-framework.xcconfig"; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 		FE1E540D14302FBD000D60A1 /* xcconfig */ = {
 			isa = PBXGroup;
 			children = (
+				BFBE53DE1E46810700ED77AD /* linux-x86_64-framework.xcconfig */,
 				FEC0A3B11709358C002A60B7 /* darwin-i386-framework.xcconfig */,
 				FEC0A3B21709358C002A60B7 /* darwin-ppc-framework.xcconfig */,
 				FEC0A3B31709358C002A60B7 /* darwin-x86_64-framework.xcconfig */,
@@ -373,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+				BFBE53DF1E46810700ED77AD /* linux-x86_64-framework.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +431,21 @@
 			buildSettings = {
 			};
 			name = "Linux-i386";
+		};
+		BFBE53DC1E4680DB00ED77AD /* Linux-x86_64 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = "Linux-x86_64";
+		};
+		BFBE53DD1E4680DB00ED77AD /* Linux-x86_64 */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBE53DE1E46810700ED77AD /* linux-x86_64-framework.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = CoreFoundation;
+			};
+			name = "Linux-x86_64";
 		};
 		CFC5B40C1AF4669700FBB52A /* Darwin-i386 */ = {
 			isa = XCBuildConfiguration;
@@ -496,6 +515,7 @@
 			buildConfigurations = (
 				1DEB91AE08733DA50010E9CD /* Windows-i386 */,
 				1DEB91AF08733DA50010E9CD /* Linux-i386 */,
+				BFBE53DD1E4680DB00ED77AD /* Linux-x86_64 */,
 				CFC5B41D1AF466AA00FBB52A /* FreeBSD-i386 */,
 				CFC5B40D1AF4669700FBB52A /* Darwin-i386 */,
 				CFC5B4251AF466C000FBB52A /* Darwin-x86_64 */,
@@ -509,6 +529,7 @@
 			buildConfigurations = (
 				1DEB91B208733DA50010E9CD /* Windows-i386 */,
 				1DEB91B308733DA50010E9CD /* Linux-i386 */,
+				BFBE53DC1E4680DB00ED77AD /* Linux-x86_64 */,
 				CFC5B41C1AF466AA00FBB52A /* FreeBSD-i386 */,
 				CFC5B40C1AF4669700FBB52A /* Darwin-i386 */,
 				CFC5B4241AF466C000FBB52A /* Darwin-x86_64 */,

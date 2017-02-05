@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFBE53E81E4683B300ED77AD /* objc_association.m in Sources */ = {isa = PBXBuildFile; fileRef = C6065BB0163575CC0007217E /* objc_association.m */; };
+		BFBE53E91E4683B300ED77AD /* objc_malloc.c in Sources */ = {isa = PBXBuildFile; fileRef = FE6CF82B11526D3000B6D893 /* objc_malloc.c */; };
+		BFBE53EA1E4683B300ED77AD /* objc.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1344581151B89600404745 /* objc.m */; };
+		BFBE53EB1E4683B300ED77AD /* objc_class.c in Sources */ = {isa = PBXBuildFile; fileRef = FE13444A1151B89600404745 /* objc_class.c */; };
+		BFBE53EC1E4683B300ED77AD /* objc_debugHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = FE13444C1151B89600404745 /* objc_debugHelpers.m */; };
+		BFBE53ED1E4683B300ED77AD /* objc_exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5E81C21B78382100E03F1E /* objc_exception.m */; };
+		BFBE53EE1E4683B300ED77AD /* objc_functions.c in Sources */ = {isa = PBXBuildFile; fileRef = FE13444D1151B89600404745 /* objc_functions.c */; };
+		BFBE53EF1E4683B300ED77AD /* objc_ivar.c in Sources */ = {isa = PBXBuildFile; fileRef = FE13444E1151B89600404745 /* objc_ivar.c */; };
+		BFBE53F01E4683B300ED77AD /* objc_method.c in Sources */ = {isa = PBXBuildFile; fileRef = FE13444F1151B89600404745 /* objc_method.c */; };
+		BFBE53F11E4683B300ED77AD /* objc_msg_lookup.c in Sources */ = {isa = PBXBuildFile; fileRef = FE1344501151B89600404745 /* objc_msg_lookup.c */; };
+		BFBE53F21E4683B300ED77AD /* objc_object.c in Sources */ = {isa = PBXBuildFile; fileRef = FE1344521151B89600404745 /* objc_object.c */; };
+		BFBE53F31E4683B300ED77AD /* objc_property.c in Sources */ = {isa = PBXBuildFile; fileRef = FE1344531151B89600404745 /* objc_property.c */; };
+		BFBE53F41E4683B300ED77AD /* objc_protocol.c in Sources */ = {isa = PBXBuildFile; fileRef = FE1344551151B89600404745 /* objc_protocol.c */; };
+		BFBE53F51E4683B300ED77AD /* objc_sel.c in Sources */ = {isa = PBXBuildFile; fileRef = FE1344571151B89600404745 /* objc_sel.c */; };
+		BFBE53F61E4683B300ED77AD /* ObjCArray.c in Sources */ = {isa = PBXBuildFile; fileRef = FE13445A1151B89600404745 /* ObjCArray.c */; };
+		BFBE53F71E4683B300ED77AD /* ObjCDynamicModule.c in Sources */ = {isa = PBXBuildFile; fileRef = FE13445C1151B89600404745 /* ObjCDynamicModule.c */; };
+		BFBE53F81E4683B300ED77AD /* ObjCHashTable.c in Sources */ = {isa = PBXBuildFile; fileRef = FE1344601151B89600404745 /* ObjCHashTable.c */; };
+		BFBE53F91E4683B300ED77AD /* ObjCModule.c in Sources */ = {isa = PBXBuildFile; fileRef = FE1344621151B89600404745 /* ObjCModule.c */; };
+		BFBE53FA1E46865800ED77AD /* objc-msgsend.s in Sources */ = {isa = PBXBuildFile; fileRef = FE13446C1151B89600404745 /* objc-msgsend.s */; };
+		BFBE53FB1E46865800ED77AD /* Protocol.m in Sources */ = {isa = PBXBuildFile; fileRef = FE13446D1151B89600404745 /* Protocol.m */; };
 		CF652CFB1B116D6A0090D2FE /* objc_arc.h in Headers */ = {isa = PBXBuildFile; fileRef = CF652CFA1B116D6A0090D2FE /* objc_arc.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		CF7FA2021B1800C600840DB1 /* dyld.h in Headers */ = {isa = PBXBuildFile; fileRef = CF7FA2011B1800C600840DB1 /* dyld.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		FE01A5810C5D9B3100AEA51A /* objc-class.h in Headers */ = {isa = PBXBuildFile; fileRef = FE4034B90B42F24C00CEC41A /* objc-class.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -285,6 +305,7 @@
 			buildPhases = (
 				FE01A5800C5D9B3100AEA51A /* Headers */,
 				FE01A5850C5D9B3100AEA51A /* Resources */,
+				BFBE53E71E46838D00ED77AD /* Sources */,
 			);
 			buildRules = (
 			);
@@ -333,6 +354,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFBE53E71E46838D00ED77AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFBE53FA1E46865800ED77AD /* objc-msgsend.s in Sources */,
+				BFBE53FB1E46865800ED77AD /* Protocol.m in Sources */,
+				BFBE53E81E4683B300ED77AD /* objc_association.m in Sources */,
+				BFBE53E91E4683B300ED77AD /* objc_malloc.c in Sources */,
+				BFBE53EA1E4683B300ED77AD /* objc.m in Sources */,
+				BFBE53EB1E4683B300ED77AD /* objc_class.c in Sources */,
+				BFBE53EC1E4683B300ED77AD /* objc_debugHelpers.m in Sources */,
+				BFBE53ED1E4683B300ED77AD /* objc_exception.m in Sources */,
+				BFBE53EE1E4683B300ED77AD /* objc_functions.c in Sources */,
+				BFBE53EF1E4683B300ED77AD /* objc_ivar.c in Sources */,
+				BFBE53F01E4683B300ED77AD /* objc_method.c in Sources */,
+				BFBE53F11E4683B300ED77AD /* objc_msg_lookup.c in Sources */,
+				BFBE53F21E4683B300ED77AD /* objc_object.c in Sources */,
+				BFBE53F31E4683B300ED77AD /* objc_property.c in Sources */,
+				BFBE53F41E4683B300ED77AD /* objc_protocol.c in Sources */,
+				BFBE53F51E4683B300ED77AD /* objc_sel.c in Sources */,
+				BFBE53F61E4683B300ED77AD /* ObjCArray.c in Sources */,
+				BFBE53F71E4683B300ED77AD /* ObjCDynamicModule.c in Sources */,
+				BFBE53F81E4683B300ED77AD /* ObjCHashTable.c in Sources */,
+				BFBE53F91E4683B300ED77AD /* ObjCModule.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		1DEB91B308733DA50010E9CD /* Windows-i386 */ = {

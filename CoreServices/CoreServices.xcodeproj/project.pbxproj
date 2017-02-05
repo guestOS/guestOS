@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		BFBE53E31E46819100ED77AD /* linux-x86_64-framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BFBE53E21E46819100ED77AD /* linux-x86_64-framework.xcconfig */; };
 		FE7433A910A89ED7004CDF00 /* CoreServices.h in Headers */ = {isa = PBXBuildFile; fileRef = FE7433A810A89ED7004CDF00 /* CoreServices.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* CoreServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFBE53E21E46819100ED77AD /* linux-x86_64-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-x86_64-framework.xcconfig"; sourceTree = "<group>"; };
 		FE708626143117B300B99A95 /* windows-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "windows-i386-framework.xcconfig"; sourceTree = "<group>"; };
 		FE7433A810A89ED7004CDF00 /* CoreServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreServices.h; sourceTree = "<group>"; };
 		FE7433AE10A89F5D004CDF00 /* CFNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CFNetwork.xcodeproj; path = ../CFNetwork/CFNetwork.xcodeproj; sourceTree = SOURCE_ROOT; };
@@ -115,6 +117,7 @@
 		FE06B1BD1430E7AF0071169B /* xcconfig */ = {
 			isa = PBXGroup;
 			children = (
+				BFBE53E21E46819100ED77AD /* linux-x86_64-framework.xcconfig */,
 				FEC0A3911709356B002A60B7 /* darwin-i386-framework.xcconfig */,
 				FEC0A3921709356B002A60B7 /* darwin-ppc-framework.xcconfig */,
 				FEC0A3931709356B002A60B7 /* darwin-x86_64-framework.xcconfig */,
@@ -219,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+				BFBE53E31E46819100ED77AD /* linux-x86_64-framework.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +277,21 @@
 			buildSettings = {
 			};
 			name = "Darwin-i386";
+		};
+		BFBE53E01E46817100ED77AD /* Linux-x86_64 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = "Linux-x86_64";
+		};
+		BFBE53E11E46817100ED77AD /* Linux-x86_64 */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBE53E21E46819100ED77AD /* linux-x86_64-framework.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = CoreServices;
+			};
+			name = "Linux-x86_64";
 		};
 		CFC5B4771AF468F100FBB52A /* Linux-i386 */ = {
 			isa = XCBuildConfiguration;
@@ -330,6 +349,7 @@
 				CFC5B47E1AF468F800FBB52A /* FreeBSD-i386 */,
 				1DEB91AF08733DA50010E9CD /* Darwin-i386 */,
 				CFC5B4781AF468F100FBB52A /* Linux-i386 */,
+				BFBE53E11E46817100ED77AD /* Linux-x86_64 */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Darwin-i386";
@@ -342,6 +362,7 @@
 				CFC5B47D1AF468F800FBB52A /* FreeBSD-i386 */,
 				1DEB91B308733DA50010E9CD /* Darwin-i386 */,
 				CFC5B4771AF468F100FBB52A /* Linux-i386 */,
+				BFBE53E01E46817100ED77AD /* Linux-x86_64 */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Darwin-i386";
