@@ -43,7 +43,3 @@ FOUNDATION_EXPORT BOOL NSShouldRetainWithZone(id object, NSZone *zone);
 FOUNDATION_EXPORT void NSIncrementExtraRefCount(id object);
 FOUNDATION_EXPORT BOOL NSDecrementExtraRefCountWasZero(id object);
 FOUNDATION_EXPORT NSUInteger NSExtraRefCount(id object);
-
-#if __has_include(<objc/capabilities.h>) // GNUstep runtime
-#   define FOUNDATION_ARC_COMPATIBLE_REF_COUNT
-#endif

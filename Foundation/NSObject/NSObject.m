@@ -394,10 +394,8 @@ static IMP objc_msg_forward(id rcv, SEL message) {
    return self;
 }
 
-#ifdef FOUNDATION_ARC_COMPATIBLE_REF_COUNT
-- (void)_ARCCompliantRetainRelease {
+- (void)_ARCCompliantRetainRelease { // GNUstep runtime support
 }
-#endif
 
 -(NSUInteger)retainCount {
    return NSExtraRefCount(self);

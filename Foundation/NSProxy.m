@@ -223,10 +223,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
    return self;
 }
 
-#ifdef FOUNDATION_ARC_COMPATIBLE_REF_COUNT
-- (void)_ARCCompliantRetainRelease {
+- (void)_ARCCompliantRetainRelease { // GNUstep runtime support
 }
-#endif
 
 -(NSUInteger)retainCount {
    return NSExtraRefCount(self);

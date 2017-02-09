@@ -21,37 +21,55 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #   include <unistd.h>
 #endif
 
+#if __has_include(<objc/capabilities.h>) // GNUstep runtime
+#   define FOUNDATION_BUILD_WITH_GNUSTEP_RUNTIME
+#endif
+
 // NSZone functions implemented in platform subproject
 
+
+#ifdef FOUNDATION_BUILD_WITH_GNUSTEP_RUNTIME
+
+// Indirection to prevent clang from complaining about object pointer bitmasking for introspection
+NS_INLINE uintptr_t NSObjectPointerValue(id object) {
+    return (uintptr_t)object;
+}
+
 void NSIncrementExtraRefCount(id object) {
-#ifdef FOUNDATION_ARC_COMPATIBLE_REF_COUNT
     objc_retain(object);
-#else
-    object_incrementExternalRefCount(object);
-#endif
 }
 
 BOOL NSDecrementExtraRefCountWasZero(id object) {
-#ifdef FOUNDATION_ARC_COMPATIBLE_REF_COUNT
     objc_release(object);
     return NO; // -dealloc we be called by objc_release()
-#else
-    return object_decrementExternalRefCount(object);
-#endif
 }
 
 NSUInteger NSExtraRefCount(id object) {
-#ifdef FOUNDATION_ARC_COMPATIBLE_REF_COUNT
 #ifdef OBJC_SMALL_OBJECT_MASK
-    if (((uintptr_t)object & OBJC_SMALL_OBJECT_MASK) != 0) {
+    if ((NSObjectPointerValue(object) & OBJC_SMALL_OBJECT_MASK) != 0) {
         return NSUIntegerMax;
     }
 #endif
     return *((intptr_t *)object -1);
-#else // GNUSTEP_RUNTIME
-    return object_externalRefCount(object);
-#endif
 }
+
+
+#else // FOUNDATION_BUILD_WITH_GNUSTEP_RUNTIME
+
+void NSIncrementExtraRefCount(id object) {
+    object_incrementExternalRefCount(object);
+}
+
+BOOL NSDecrementExtraRefCountWasZero(id object) {
+    return object_decrementExternalRefCount(object);
+}
+
+NSUInteger NSExtraRefCount(id object) {
+    return object_externalRefCount(object);
+}
+
+#endif // FOUNDATION_BUILD_WITH_GNUSTEP_RUNTIME
+
 
 BOOL NSShouldRetainWithZone(id object,NSZone *zone) {
    return (zone==NULL || zone==NSDefaultMallocZone() || zone==[object zone])?YES:NO;
@@ -67,7 +85,7 @@ void NSSetAllocateObjectHook(void (*hook)(id object))
 
 id NSAllocateObject(Class class, NSUInteger extraBytes, NSZone *zone)
 {
-#if __has_include(<objc/capabilities.h>) // GNUstep runtime
+#ifdef FOUNDATION_BUILD_WITH_GNUSTEP_RUNTIME
     if (zone == NULL || zone == NSDefaultMallocZone()) {
         return class_createInstance(class, extraBytes);
     }
@@ -100,14 +118,14 @@ id NSAllocateObject(Class class, NSUInteger extraBytes, NSZone *zone)
             __NSAllocateObjectHook(result);
         }
     }
-    
+
     return result;
 }
 
 
 void NSDeallocateObject(id object)
 {
-#if __has_include(<objc/capabilities.h>) // GNUstep runtime
+#ifdef FOUNDATION_BUILD_WITH_GNUSTEP_RUNTIME
     NSZone *zone = [object zone];
     if (zone == NULL || zone == NSDefaultMallocZone()) {
         object_dispose(object);
@@ -127,7 +145,7 @@ void NSDeallocateObject(id object)
     //delete associations
     objc_removeAssociatedObjects(object);
 #endif
-    
+
     if (NSZombieEnabled) {
         NSRegisterZombie(object);
     } else {
@@ -157,6 +175,6 @@ id NSCopyObject(id object, NSUInteger extraBytes, NSZone *zone)
     if (result) {
         memcpy(result, object, class_getInstanceSize(object_getClass(object)) + extraBytes);
     }
-    
+
     return result;
 }

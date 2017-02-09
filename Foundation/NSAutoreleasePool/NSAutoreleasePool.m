@@ -14,11 +14,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #import <Foundation/NSRaiseException.h>
 #import <objc/objc-arc.h>
 
-#if __has_include(<objc/capabilities.h>)
-#   include <objc/capabilities.h>
-#   ifdef OBJC_ARC_AUTORELEASE_DEBUG
-#       define USE_AUTORELEASE
-#   endif
+#if __has_include(<objc/capabilities.h>) // GNUstep runtime
+#   define FOUNDATION_BUILD_WITH_GNUSTEP_RUNTIME
 #endif
 
 @implementation NSAutoreleasePool
@@ -42,7 +39,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 -(void)addObject:object {
-#ifdef USE_AUTORELEASE
+#ifdef FOUNDATION_BUILD_WITH_GNUSTEP_RUNTIME
     objc_autorelease(object);
 #else
     objc_autoreleasePoolAdd(_pool,object);
@@ -62,9 +59,7 @@ id NSAutorelease(id object){
    return nil;
 }
 
-#ifdef FOUNDATION_ARC_COMPATIBLE_REF_COUNT
-- (void)_ARCCompliantRetainRelease {
+- (void)_ARCCompliantRetainRelease { // GNUstep runtime support
 }
-#endif
 
 @end
