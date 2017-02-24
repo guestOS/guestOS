@@ -10,11 +10,14 @@
 
 GCC_VERSION = com.apple.compilers.llvm.clang.1_0
 
+WINDOWS_i386_SYSROOT = /Developer/Cocotron/1.0/Windows/i386/gcc-4.3.1/i386-pc-mingw32msvc
+WINDOWS_i386_TARGET_FLAGS = -target i386-pc-mingw32msvc -ccc-gcc-name i386-pc-mingw32msvc-gcc -B$(WINDOWS_i386_SYSROOT)/bin -Xclang -fdata-sections //-no-integrated-as
+
 // -fno-builtin is required to disable internal ObjC runtime prototypes which may not match ours.
 // It also has other side effects like not actually using builtins like memset/memcpy for optimization
 // So, we really don't want to -fno-builtin eventually.
-WINDOWS_i386_COMPILER_CFLAGS = -ccc-host-triple i386-pc-mingw32msvc -ccc-gcc-name i386-mingw32msvc-gcc -DWINDOWS=1 -D__WIN32__=1 -fno-builtin
-WINDOWS_i386_COMPILER_LDFLAGS = -ccc-host-triple i386-pc-mingw32msvc -ccc-gcc-name i386-mingw32msvc-gcc
+WINDOWS_i386_COMPILER_CFLAGS = $(WINDOWS_i386_TARGET_FLAGS) -DWINDOWS=1 -D__WIN32__=1 -fno-builtin -fobjc-nonfragile-abi -fobjc-runtime=gnustep-1.8
+WINDOWS_i386_COMPILER_LDFLAGS = $(WINDOWS_i386_TARGET_FLAGS) --sysroot $(WINDOWS_i386_SYSROOT)
 
-WINDOWS_i386_COMPILER_ISYSTEM = -isystem /Developer/Cocotron/1.0/Windows/i386/gcc-4.3.1/i386-mingw32msvc/include/
-WINDOWS_i386_COMPILER_SYSLIB = /Developer/Cocotron/1.0/Windows/i386/gcc-4.3.1/i386-mingw32msvc/lib
+WINDOWS_i386_COMPILER_ISYSTEM = -isystem $(WINDOWS_i386_SYSROOT)/include/ -isystem $(SRCROOT)/../
+WINDOWS_i386_COMPILER_SYSLIB = $(WINDOWS_i386_SYSROOT)/lib

@@ -27,7 +27,7 @@
 		BFBE53F91E4683B300ED77AD /* ObjCModule.c in Sources */ = {isa = PBXBuildFile; fileRef = FE1344621151B89600404745 /* ObjCModule.c */; };
 		BFBE53FA1E46865800ED77AD /* objc-msgsend.s in Sources */ = {isa = PBXBuildFile; fileRef = FE13446C1151B89600404745 /* objc-msgsend.s */; };
 		BFBE53FB1E46865800ED77AD /* Protocol.m in Sources */ = {isa = PBXBuildFile; fileRef = FE13446D1151B89600404745 /* Protocol.m */; };
-		CF652CFB1B116D6A0090D2FE /* objc_arc.h in Headers */ = {isa = PBXBuildFile; fileRef = CF652CFA1B116D6A0090D2FE /* objc_arc.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		CF652CFB1B116D6A0090D2FE /* objc-arc.h in Headers */ = {isa = PBXBuildFile; fileRef = CF652CFA1B116D6A0090D2FE /* objc-arc.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		CF7FA2021B1800C600840DB1 /* dyld.h in Headers */ = {isa = PBXBuildFile; fileRef = CF7FA2011B1800C600840DB1 /* dyld.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		FE01A5810C5D9B3100AEA51A /* objc-class.h in Headers */ = {isa = PBXBuildFile; fileRef = FE4034B90B42F24C00CEC41A /* objc-class.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE01A5820C5D9B3100AEA51A /* objc.h in Headers */ = {isa = PBXBuildFile; fileRef = FE4034CE0B42F2C400CEC41A /* objc.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -56,7 +56,7 @@
 		7E5E81C21B78382100E03F1E /* objc_exception.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = objc_exception.m; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C6065BB0163575CC0007217E /* objc_association.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = objc_association.m; sourceTree = "<group>"; };
-		CF652CFA1B116D6A0090D2FE /* objc_arc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objc_arc.h; sourceTree = "<group>"; };
+		CF652CFA1B116D6A0090D2FE /* objc-arc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "objc-arc.h"; sourceTree = "<group>"; };
 		CF7FA2011B1800C600840DB1 /* dyld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dyld.h; sourceTree = "<group>"; };
 		FE01A5890C5D9B3100AEA51A /* objc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = objc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE1344481151B89600404745 /* objc_cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objc_cache.h; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 				FE88A1EB0F891B440081CFC1 /* message.h */,
 				FE74345E10A8A61B004CDF00 /* objc-auto.h */,
 				FE4034B90B42F24C00CEC41A /* objc-class.h */,
-				CF652CFA1B116D6A0090D2FE /* objc_arc.h */,
+				CF652CFA1B116D6A0090D2FE /* objc-arc.h */,
 				FEB6CBF90B4A1584004FADF2 /* objc-export.h */,
 				FE85F6AA0BBF51D400E9C25C /* objc-runtime.h */,
 				FE4034CE0B42F2C400CEC41A /* objc.h */,
@@ -281,7 +281,7 @@
 				FEDB75C70F8A9EFE00AC545D /* Object.h in Headers */,
 				FEDB75C80F8A9EFE00AC545D /* Protocol.h in Headers */,
 				FE74346310A8A61B004CDF00 /* objc-auto.h in Headers */,
-				CF652CFB1B116D6A0090D2FE /* objc_arc.h in Headers */,
+				CF652CFB1B116D6A0090D2FE /* objc-arc.h in Headers */,
 				FE13449A1151B89600404745 /* objc_cache.h in Headers */,
 				FE13449B1151B89600404745 /* objc_class.h in Headers */,
 				FE13449C1151B89600404745 /* objc_debugHelpers.h in Headers */,

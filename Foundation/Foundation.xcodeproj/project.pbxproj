@@ -1253,7 +1253,7 @@
 		CF652CF01B116C5D0090D2FE /* objc_tls.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = objc_tls.c; sourceTree = "<group>"; };
 		CF652CF11B116C5D0090D2FE /* objc_tls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objc_tls.h; sourceTree = "<group>"; };
 		CF652CF61B116D180090D2FE /* objc_exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = objc_exception.m; sourceTree = "<group>"; };
-		CF652CF81B116D4E0090D2FE /* objc_arc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = objc_arc.c; sourceTree = "<group>"; };
+		CF652CF81B116D4E0090D2FE /* objc-arc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "objc-arc.c"; sourceTree = "<group>"; };
 		CF7FA1FF1B18006E00840DB1 /* dyld.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dyld.c; sourceTree = "<group>"; };
 		CFB9BAFF1B058BF1001EE95E /* freebsd-i386-Foundation.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "freebsd-i386-Foundation.xcconfig"; sourceTree = "<group>"; };
 		CFB9BB011B058F52001EE95E /* darwin-x86_64-Foundation.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-x86_64-Foundation.xcconfig"; sourceTree = "<group>"; };
@@ -2351,7 +2351,7 @@
 				BFBE53FC1E46877E00ED77AD /* dyld.h */,
 				CF595A8B1B1ABFB600F7BE40 /* objc_lock.h */,
 				CF7FA1FF1B18006E00840DB1 /* dyld.c */,
-				CF652CF81B116D4E0090D2FE /* objc_arc.c */,
+				CF652CF81B116D4E0090D2FE /* objc-arc.c */,
 				CF652CF61B116D180090D2FE /* objc_exception.m */,
 				CF652CEE1B116C5D0090D2FE /* objc_log.c */,
 				CF652CEF1B116C5D0090D2FE /* objc_log.h */,
