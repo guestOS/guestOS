@@ -17,3 +17,6 @@
     unsigned _length;
 }
 @end
+
+
+void NSDarwinString_initialize(void);

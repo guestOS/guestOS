@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF5C912E1E6306240039F83F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5C912D1E6306240039F83F /* CoreFoundation.framework */; };
+		BF5C91871E630A760039F83F /* CFNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5C91861E630A760039F83F /* CFNetwork.m */; };
 		FE74338610A89A9D004CDF00 /* CFNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = FE74338510A89A9D004CDF00 /* CFNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FEC121A910EFC6C000FD1B47 /* CFSocketStream.h in Headers */ = {isa = PBXBuildFile; fileRef = FEC121A810EFC6C000FD1B47 /* CFSocketStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FEC121CD10EFC89500FD1B47 /* CFNetServices.h in Headers */ = {isa = PBXBuildFile; fileRef = FEC121CC10EFC89500FD1B47 /* CFNetServices.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -19,6 +21,11 @@
 		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* CFNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CFNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF5C91241E6304F60039F83F /* CFHost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFHost.m; sourceTree = "<group>"; };
+		BF5C91251E6304F60039F83F /* CFNetServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFNetServices.m; sourceTree = "<group>"; };
+		BF5C91261E6304F60039F83F /* CFSocketStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFSocketStream.m; sourceTree = "<group>"; };
+		BF5C912D1E6306240039F83F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = ../CoreFoundation/build/Debug/CoreFoundation.framework; sourceTree = "<group>"; };
+		BF5C91861E630A760039F83F /* CFNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFNetwork.m; sourceTree = "<group>"; };
 		BFBE53E41E4681CC00ED77AD /* linux-x86_64-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-x86_64-framework.xcconfig"; sourceTree = "<group>"; };
 		FE7084D21431172900B99A95 /* windows-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "windows-i386-framework.xcconfig"; sourceTree = "<group>"; };
 		FE74338510A89A9D004CDF00 /* CFNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFNetwork.h; sourceTree = "<group>"; };
@@ -36,6 +43,17 @@
 		FEC1221810EFCB9A00FD1B47 /* CFNetworkExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFNetworkExport.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFrameworksBuildPhase section */
+		BF5C912B1E6305EE0039F83F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF5C912E1E6306240039F83F /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
 		034768DFFF38A50411DB9C8B /* Products */ = {
 			isa = PBXGroup;
@@ -48,16 +66,14 @@
 		0867D691FE84028FC02AAC07 /* CFNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				FE1E55BD143030B7000D60A1 /* xcconfig */,
-				FEC1221810EFCB9A00FD1B47 /* CFNetworkExport.h */,
-				FEC121D610EFC92800FD1B47 /* CFHost.h */,
-				FEC121A810EFC6C000FD1B47 /* CFSocketStream.h */,
-				FE74338510A89A9D004CDF00 /* CFNetwork.h */,
-				FEC121CC10EFC89500FD1B47 /* CFNetServices.h */,
-				32C88DFF0371C24200C91783 /* Other Sources */,
-				089C1665FE841158C02AAC07 /* Resources */,
+				BF5C91851E630A520039F83F /* Headers */,
+				BF5C91841E630A480039F83F /* Sources */,
 				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
 				034768DFFF38A50411DB9C8B /* Products */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				FE1E55BD143030B7000D60A1 /* xcconfig */,
+				BF5C912C1E6306240039F83F /* Frameworks */,
 			);
 			indentWidth = 4;
 			name = CFNetwork;
@@ -105,6 +121,37 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
+		BF5C912C1E6306240039F83F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF5C912D1E6306240039F83F /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF5C91841E630A480039F83F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BF5C91241E6304F60039F83F /* CFHost.m */,
+				BF5C91251E6304F60039F83F /* CFNetServices.m */,
+				BF5C91261E6304F60039F83F /* CFSocketStream.m */,
+				BF5C91861E630A760039F83F /* CFNetwork.m */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		BF5C91851E630A520039F83F /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				FEC121D610EFC92800FD1B47 /* CFHost.h */,
+				FEC121CC10EFC89500FD1B47 /* CFNetServices.h */,
+				FE74338510A89A9D004CDF00 /* CFNetwork.h */,
+				FEC1221810EFCB9A00FD1B47 /* CFNetworkExport.h */,
+				FEC121A810EFC6C000FD1B47 /* CFSocketStream.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
 		FE1E55BD143030B7000D60A1 /* xcconfig */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +193,8 @@
 			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "CFNetwork" */;
 			buildPhases = (
 				8DC2EF500486A6940098B216 /* Headers */,
+				BF5C91271E6305140039F83F /* Sources */,
+				BF5C912B1E6305EE0039F83F /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,6 +234,17 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXSourcesBuildPhase section */
+		BF5C91271E6305140039F83F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF5C91871E630A760039F83F /* CFNetwork.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
 /* Begin PBXVariantGroup section */
 		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -197,95 +257,35 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1DEB91AE08733DA50010E9CD /* Windows-i386 */ = {
+		BF5C91181E61961E0039F83F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE7084D21431172900B99A95 /* windows-i386-framework.xcconfig */;
+			buildSettings = {
+				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
+			};
+			name = Debug;
+		};
+		BF5C91191E61961E0039F83F /* Debug */ = {
+			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = CFNetwork;
 			};
-			name = "Windows-i386";
+			name = Debug;
 		};
-		1DEB91AF08733DA50010E9CD /* Linux-i386 */ = {
+		BF5C911A1E6196270039F83F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEC0A3A617093576002A60B7 /* linux-i386-framework.xcconfig */;
+			buildSettings = {
+				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
+			};
+			name = Release;
+		};
+		BF5C911B1E6196270039F83F /* Release */ = {
+			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = CFNetwork;
 			};
-			name = "Linux-i386";
-		};
-		1DEB91B208733DA50010E9CD /* Windows-i386 */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = "Windows-i386";
-		};
-		1DEB91B308733DA50010E9CD /* Linux-i386 */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = "Linux-i386";
-		};
-		BFBE53E51E4681D600ED77AD /* Linux-x86_64 */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = "Linux-x86_64";
-		};
-		BFBE53E61E4681D600ED77AD /* Linux-x86_64 */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFBE53E41E4681CC00ED77AD /* linux-x86_64-framework.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = Info.plist;
-				PRODUCT_NAME = CFNetwork;
-			};
-			name = "Linux-x86_64";
-		};
-		CFC5B4651AF4687600FBB52A /* Darwin-i386 */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = "Darwin-i386";
-		};
-		CFC5B4661AF4687600FBB52A /* Darwin-i386 */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEC0A3A117093576002A60B7 /* darwin-i386-framework.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = Info.plist;
-				PRODUCT_NAME = CFNetwork;
-			};
-			name = "Darwin-i386";
-		};
-		CFC5B46B1AF4687C00FBB52A /* FreeBSD-i386 */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = "FreeBSD-i386";
-		};
-		CFC5B46C1AF4687C00FBB52A /* FreeBSD-i386 */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEC0A3A417093576002A60B7 /* freebsd-i386-framework.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = Info.plist;
-				PRODUCT_NAME = CFNetwork;
-			};
-			name = "FreeBSD-i386";
-		};
-		CFC5B4711AF468AB00FBB52A /* Darwin-x86_64 */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = "Darwin-x86_64";
-		};
-		CFC5B4721AF468AB00FBB52A /* Darwin-x86_64 */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEC0A3A317093576002A60B7 /* darwin-x86_64-framework.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = Info.plist;
-				PRODUCT_NAME = CFNetwork;
-			};
-			name = "Darwin-x86_64";
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -293,28 +293,20 @@
 		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "CFNetwork" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DEB91AE08733DA50010E9CD /* Windows-i386 */,
-				CFC5B46C1AF4687C00FBB52A /* FreeBSD-i386 */,
-				CFC5B4661AF4687600FBB52A /* Darwin-i386 */,
-				CFC5B4721AF468AB00FBB52A /* Darwin-x86_64 */,
-				1DEB91AF08733DA50010E9CD /* Linux-i386 */,
-				BFBE53E61E4681D600ED77AD /* Linux-x86_64 */,
+				BF5C91191E61961E0039F83F /* Debug */,
+				BF5C911B1E6196270039F83F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Linux-i386";
+			defaultConfigurationName = Release;
 		};
 		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "CFNetwork" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DEB91B208733DA50010E9CD /* Windows-i386 */,
-				CFC5B46B1AF4687C00FBB52A /* FreeBSD-i386 */,
-				CFC5B4651AF4687600FBB52A /* Darwin-i386 */,
-				CFC5B4711AF468AB00FBB52A /* Darwin-x86_64 */,
-				1DEB91B308733DA50010E9CD /* Linux-i386 */,
-				BFBE53E51E4681D600ED77AD /* Linux-x86_64 */,
+				BF5C91181E61961E0039F83F /* Debug */,
+				BF5C911A1E6196270039F83F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Linux-i386";
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
