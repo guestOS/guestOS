@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF45ECCF1E6347C00026C66C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF45ECCD1E6347C00026C66C /* CoreFoundation.framework */; };
+		BF45ECD01E6347C00026C66C /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF45ECCE1E6347C00026C66C /* CoreServices.framework */; };
+		BF45ECD31E6347F10026C66C /* CoreGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = BF45ECD21E6347F10026C66C /* CoreGraphics.m */; };
+		BFBF53211E635E20003967E2 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBF53201E635E20003967E2 /* OpenGL.framework */; };
+		BFFA8C2F1E634F1B006BD3AA /* Onyx2D.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFA8C2E1E634F1B006BD3AA /* Onyx2D.framework */; };
 		FE2752DC12301F4500BD6643 /* CGLPixelSurface.h in Headers */ = {isa = PBXBuildFile; fileRef = FE2752DA12301F4500BD6643 /* CGLPixelSurface.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE39C40E120357EA00A80A71 /* O2ClipState.h in Headers */ = {isa = PBXBuildFile; fileRef = FE39C40C120357EA00A80A71 /* O2ClipState.h */; };
 		FE3C853D108779410018252A /* O2AffineTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = FE3C8539108779410018252A /* O2AffineTransform.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -121,91 +126,15 @@
 		FEF5A70811E4E782009B0041 /* CGError.h in Headers */ = {isa = PBXBuildFile; fileRef = FEF5A70611E4E782009B0041 /* CGError.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		FE5C0BEB11629FD900065D1C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE5C0BE711629FD900065D1C /* Onyx2D.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
-			remoteInfo = "Onyx2D-Windows-i386";
-		};
-		FE5C0BED11629FE700065D1C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE5C0BE711629FD900065D1C /* Onyx2D.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
-			remoteInfo = "Onyx2D-Windows-i386";
-		};
-		FE5C0D4B1162A9B800065D1C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE5C0BE711629FD900065D1C /* Onyx2D.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FE5C0CA61162A99A00065D1C;
-			remoteInfo = "Onyx2D-Linux-i386";
-		};
-		FE5C0D4D1162A9B800065D1C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE5C0BE711629FD900065D1C /* Onyx2D.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FE5C0D461162A9AB00065D1C;
-			remoteInfo = "Onyx2D-FreeBSD-i386";
-		};
-		FE5C0D5E1162A9E400065D1C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE5C0BE711629FD900065D1C /* Onyx2D.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FE5C0D571162A9D600065D1C;
-			remoteInfo = "Onyx2D-MacOS";
-		};
-		FE6F7BCA0FD5572F00C3244F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE6F7BC00FD5572F00C3244F /* Foundation.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FE01A7EC0C5D9B6900AEA51A;
-			remoteInfo = "Foundation-Windows-i386";
-		};
-		FE6F7BD60FD5573B00C3244F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE6F7BC00FD5572F00C3244F /* Foundation.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = FE01A5970C5D9B6900AEA51A;
-			remoteInfo = "Foundation-Windows-i386";
-		};
-		FE74350310A8BE84004CDF00 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE7434FB10A8BE84004CDF00 /* CoreFoundation.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
-			remoteInfo = "CoreFoundation-Windows-i386";
-		};
-		FE74350D10A8BE94004CDF00 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE7434FB10A8BE84004CDF00 /* CoreFoundation.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
-			remoteInfo = "CoreFoundation-Windows-i386";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* CoreGraphics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreGraphics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE06B18D1430E7790071169B /* darwin-i386.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-i386.xcconfig"; sourceTree = "<group>"; };
-		FE06B18E1430E7790071169B /* darwin-ppc.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-ppc.xcconfig"; sourceTree = "<group>"; };
-		FE06B18F1430E7790071169B /* darwin-x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-x86_64.xcconfig"; sourceTree = "<group>"; };
-		FE06B1901430E7790071169B /* darwin.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = darwin.xcconfig; sourceTree = "<group>"; };
-		FE06B1911430E7790071169B /* freebsd-i386.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "freebsd-i386.xcconfig"; sourceTree = "<group>"; };
-		FE06B1921430E7790071169B /* freebsd.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = freebsd.xcconfig; sourceTree = "<group>"; };
-		FE06B1931430E7790071169B /* linux-arm.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-arm.xcconfig"; sourceTree = "<group>"; };
-		FE06B1941430E7790071169B /* linux-i386.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-i386.xcconfig"; sourceTree = "<group>"; };
-		FE06B1951430E7790071169B /* linux-ppc.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-ppc.xcconfig"; sourceTree = "<group>"; };
-		FE06B1961430E7790071169B /* linux.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = linux.xcconfig; sourceTree = "<group>"; };
-		FE06B1971430E7790071169B /* platform.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = platform.xcconfig; sourceTree = "<group>"; };
-		FE06B1981430E7790071169B /* solaris-sparc.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "solaris-sparc.xcconfig"; sourceTree = "<group>"; };
-		FE06B1991430E7790071169B /* solaris.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = solaris.xcconfig; sourceTree = "<group>"; };
-		FE06B19A1430E7790071169B /* windows-i386.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "windows-i386.xcconfig"; sourceTree = "<group>"; };
-		FE06B19B1430E7790071169B /* windows.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = windows.xcconfig; sourceTree = "<group>"; };
+		BF45ECCD1E6347C00026C66C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = "../DerivedData/guestOS/Build/Products/Debug-linux.x86_64/CoreFoundation.framework"; sourceTree = "<group>"; };
+		BF45ECCE1E6347C00026C66C /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = "../DerivedData/guestOS/Build/Products/Debug-linux.x86_64/CoreServices.framework"; sourceTree = "<group>"; };
+		BF45ECD21E6347F10026C66C /* CoreGraphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreGraphics.m; sourceTree = "<group>"; };
+		BFBF53201E635E20003967E2 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		BFFA8C2E1E634F1B006BD3AA /* Onyx2D.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Onyx2D.framework; path = "../Onyx2D/build/sym/Linux-i386-i386-mingw32msvc/undefined_arch/Onyx2D.framework"; sourceTree = "<group>"; };
 		FE2752DA12301F4500BD6643 /* CGLPixelSurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGLPixelSurface.h; sourceTree = "<group>"; };
 		FE2752DB12301F4500BD6643 /* CGLPixelSurface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGLPixelSurface.m; sourceTree = "<group>"; };
 		FE39C40C120357EA00A80A71 /* O2ClipState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2ClipState.h; sourceTree = "<group>"; };
@@ -220,9 +149,6 @@
 		FE44BDE311EBA0D400762BF1 /* O2ImageSource_ICNS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2ImageSource_ICNS.h; sourceTree = "<group>"; };
 		FE44BDE411EBA0D400762BF1 /* O2ImageSource_ICNS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2ImageSource_ICNS.m; sourceTree = "<group>"; };
 		FE5ADA6B12BBFF8500A922A2 /* CGWindowLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGWindowLevel.h; sourceTree = "<group>"; };
-		FE5C0BE711629FD900065D1C /* Onyx2D.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Onyx2D.xcodeproj; path = ../Onyx2D/Onyx2D.xcodeproj; sourceTree = SOURCE_ROOT; };
-		FE6F7BC00FD5572F00C3244F /* Foundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Foundation.xcodeproj; path = ../Foundation/Foundation.xcodeproj; sourceTree = SOURCE_ROOT; };
-		FE70860C143117A500B99A95 /* windows-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "windows-i386-framework.xcconfig"; sourceTree = "<group>"; };
 		FE71ED8711FA88E700E6F801 /* O2PDFFunction_Type4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2PDFFunction_Type4.h; sourceTree = "<group>"; };
 		FE71ED8811FA88E700E6F801 /* O2PDFFunction_Type4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2PDFFunction_Type4.m; sourceTree = "<group>"; };
 		FE71EF3811FBCAA000E6F801 /* O2Encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2Encoding.h; sourceTree = "<group>"; };
@@ -235,7 +161,6 @@
 		FE71F26C11FD220400E6F801 /* O2PDFFunction_Type0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2PDFFunction_Type0.m; sourceTree = "<group>"; };
 		FE71F41111FDD43700E6F801 /* O2TTFDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2TTFDecoder.h; sourceTree = "<group>"; };
 		FE71F41211FDD43700E6F801 /* O2TTFDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2TTFDecoder.m; sourceTree = "<group>"; };
-		FE7434FB10A8BE84004CDF00 /* CoreFoundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CoreFoundation.xcodeproj; path = ../CoreFoundation/CoreFoundation.xcodeproj; sourceTree = SOURCE_ROOT; };
 		FE8C020A10C59BB300FE4072 /* CGImageDestination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGImageDestination.h; sourceTree = "<group>"; };
 		FE8C020B10C59BB300FE4072 /* CGImageDestination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGImageDestination.m; sourceTree = "<group>"; };
 		FE8C020C10C59BB300FE4072 /* O2Encoder_TIFF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = O2Encoder_TIFF.h; path = ../Onyx2D/O2Encoder_TIFF.h; sourceTree = "<group>"; };
@@ -256,14 +181,6 @@
 		FEAED71B0FD6C4460043F915 /* CGPDFContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPDFContext.m; sourceTree = "<group>"; };
 		FEBF5BCD100D8B2C00F64C71 /* O2LZW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = O2LZW.h; path = ../Onyx2D/O2LZW.h; sourceTree = "<group>"; };
 		FEBF5BCE100D8B2C00F64C71 /* O2LZW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = O2LZW.m; path = ../Onyx2D/O2LZW.m; sourceTree = "<group>"; };
-		FEC0A40E170935D3002A60B7 /* darwin-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-i386-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A40F170935D3002A60B7 /* darwin-ppc-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-ppc-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A410170935D3002A60B7 /* darwin-x86_64-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-x86_64-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A411170935D3002A60B7 /* freebsd-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "freebsd-i386-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A412170935D3002A60B7 /* linux-arm-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-arm-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A413170935D3002A60B7 /* linux-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-i386-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A414170935D3002A60B7 /* linux-ppc-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-ppc-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A415170935D3002A60B7 /* solaris-sparc-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "solaris-sparc-framework.xcconfig"; sourceTree = "<group>"; };
 		FEC11A380FD4B4D600082282 /* CGAffineTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGAffineTransform.h; sourceTree = "<group>"; };
 		FEC11A390FD4B4D600082282 /* CGAffineTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGAffineTransform.m; sourceTree = "<group>"; };
 		FEC11A3A0FD4B4D600082282 /* CGBitmapContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGBitmapContext.h; sourceTree = "<group>"; };
@@ -440,6 +357,20 @@
 		FEF5A70611E4E782009B0041 /* CGError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGError.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFrameworksBuildPhase section */
+		BF45ECBC1E6346A20026C66C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFBF53211E635E20003967E2 /* OpenGL.framework in Frameworks */,
+				BFFA8C2F1E634F1B006BD3AA /* Onyx2D.framework in Frameworks */,
+				BF45ECCF1E6347C00026C66C /* CoreFoundation.framework in Frameworks */,
+				BF45ECD01E6347C00026C66C /* CoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
 		034768DFFF38A50411DB9C8B /* Products */ = {
 			isa = PBXGroup;
@@ -453,71 +384,13 @@
 		0867D691FE84028FC02AAC07 /* CoreGraphics */ = {
 			isa = PBXGroup;
 			children = (
-				FE06B18C1430E7790071169B /* xcconfig */,
-				FE5ADA6B12BBFF8500A922A2 /* CGWindowLevel.h */,
-				FE2752DA12301F4500BD6643 /* CGLPixelSurface.h */,
-				FE2752DB12301F4500BD6643 /* CGLPixelSurface.m */,
-				FEF5A70611E4E782009B0041 /* CGError.h */,
-				FEAE004211E4E6AD00CA0912 /* CGDirectDisplay.h */,
-				FEAE004311E4E6AD00CA0912 /* CGDirectDisplay.m */,
-				FE5C0BE711629FD900065D1C /* Onyx2D.xcodeproj */,
-				FE5C0A1D1162953300065D1C /* Onyx2D */,
-				FE8C020A10C59BB300FE4072 /* CGImageDestination.h */,
-				FE8C020B10C59BB300FE4072 /* CGImageDestination.m */,
-				FEC11A380FD4B4D600082282 /* CGAffineTransform.h */,
-				FED56E8211A2D8E200D6D09B /* CGGradient.h */,
-				FED56E8311A2D8E200D6D09B /* CGGradient.m */,
-				FEC11A390FD4B4D600082282 /* CGAffineTransform.m */,
-				FEC11A3A0FD4B4D600082282 /* CGBitmapContext.h */,
-				FEC11A3B0FD4B4D600082282 /* CGBitmapContext.m */,
-				FEC11A3C0FD4B4D600082282 /* CGColor.h */,
-				FEC11A3D0FD4B4D600082282 /* CGColor.m */,
-				FEC11A3E0FD4B4D600082282 /* CGColorSpace.h */,
-				FEC11A3F0FD4B4D600082282 /* CGColorSpace.m */,
-				FEC11A400FD4B4D600082282 /* CGContext.h */,
-				FEC11A410FD4B4D600082282 /* CGContext.m */,
-				FE3C85951087928D0018252A /* CGConversions.h */,
-				FE9DB45F0FD6C38300A1CE17 /* CGDataConsumer.h */,
-				FE9DB4600FD6C38300A1CE17 /* CGDataConsumer.m */,
-				FEC11A420FD4B4D600082282 /* CGDataProvider.h */,
-				FEC11A430FD4B4D600082282 /* CGDataProvider.m */,
-				FEC11A440FD4B4D600082282 /* CGEvent.h */,
-				FEC11A450FD4B4D600082282 /* CGEvent.m */,
-				FEC11A460FD4B4D600082282 /* CGFont.h */,
-				FEC11A470FD4B4D600082282 /* CGFont.m */,
-				FEC11A480FD4B4D600082282 /* CGFunction.h */,
-				FEC11A490FD4B4D600082282 /* CGFunction.m */,
-				FEC11A4A0FD4B4D600082282 /* CGGeometry.h */,
-				FEC11A4B0FD4B4D600082282 /* CGGeometry.m */,
-				FEC11A4C0FD4B4D600082282 /* CGImage.h */,
-				FEC11A4D0FD4B4D600082282 /* CGImage.m */,
-				FEC11A4E0FD4B4D600082282 /* CGImageProperties.h */,
-				FEC11A4F0FD4B4D600082282 /* CGImageProperties.m */,
-				FEC11A500FD4B4D600082282 /* CGImageSource.h */,
-				FEC11A510FD4B4D600082282 /* CGImageSource.m */,
-				FEC11A520FD4B4D600082282 /* CGLayer.h */,
-				FEC11A530FD4B4D600082282 /* CGLayer.m */,
-				FEC11A540FD4B4D600082282 /* CGPath.h */,
-				FEC11A550FD4B4D600082282 /* CGPath.m */,
-				FEC11A560FD4B4D600082282 /* CGPattern.h */,
-				FEC11A570FD4B4D600082282 /* CGPattern.m */,
-				FEAED71A0FD6C4460043F915 /* CGPDFContext.h */,
-				FEAED71B0FD6C4460043F915 /* CGPDFContext.m */,
-				FEC11A580FD4B4D600082282 /* CGPDFDocument.h */,
-				FEC11A590FD4B4D600082282 /* CGPDFDocument.m */,
-				FEC11A5A0FD4B4D600082282 /* CGPDFPage.h */,
-				FEC11A5B0FD4B4D600082282 /* CGPDFPage.m */,
-				FEC11A5C0FD4B4D600082282 /* CGShading.h */,
-				FEC11A5D0FD4B4D600082282 /* CGShading.m */,
-				FEC11A5E0FD4B4D600082282 /* CGWindow.h */,
-				FEC11A5F0FD4B4D600082282 /* CGWindow.m */,
-				FE7434FB10A8BE84004CDF00 /* CoreFoundation.xcodeproj */,
-				FEC11A600FD4B4D600082282 /* CoreGraphics.h */,
-				FEC11A610FD4B4D600082282 /* CoreGraphicsExport.h */,
+				BF45ECCA1E6347530026C66C /* Headers */,
+				BF45ECCB1E63475D0026C66C /* Sources */,
 				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
-				FE6F7BC00FD5572F00C3244F /* Foundation.xcodeproj */,
+				FE5C0A1D1162953300065D1C /* Onyx2D */,
 				034768DFFF38A50411DB9C8B /* Products */,
 				089C1665FE841158C02AAC07 /* Resources */,
+				BF45ECCC1E6347C00026C66C /* Frameworks */,
 			);
 			indentWidth = 4;
 			name = CoreGraphics;
@@ -557,37 +430,88 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		FE06B18C1430E7790071169B /* xcconfig */ = {
+		BF45ECCA1E6347530026C66C /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				FEC0A40E170935D3002A60B7 /* darwin-i386-framework.xcconfig */,
-				FEC0A40F170935D3002A60B7 /* darwin-ppc-framework.xcconfig */,
-				FEC0A410170935D3002A60B7 /* darwin-x86_64-framework.xcconfig */,
-				FEC0A411170935D3002A60B7 /* freebsd-i386-framework.xcconfig */,
-				FEC0A412170935D3002A60B7 /* linux-arm-framework.xcconfig */,
-				FEC0A413170935D3002A60B7 /* linux-i386-framework.xcconfig */,
-				FEC0A414170935D3002A60B7 /* linux-ppc-framework.xcconfig */,
-				FEC0A415170935D3002A60B7 /* solaris-sparc-framework.xcconfig */,
-				FE06B18D1430E7790071169B /* darwin-i386.xcconfig */,
-				FE06B18E1430E7790071169B /* darwin-ppc.xcconfig */,
-				FE06B18F1430E7790071169B /* darwin-x86_64.xcconfig */,
-				FE06B1901430E7790071169B /* darwin.xcconfig */,
-				FE06B1911430E7790071169B /* freebsd-i386.xcconfig */,
-				FE06B1921430E7790071169B /* freebsd.xcconfig */,
-				FE06B1931430E7790071169B /* linux-arm.xcconfig */,
-				FE06B1941430E7790071169B /* linux-i386.xcconfig */,
-				FE06B1951430E7790071169B /* linux-ppc.xcconfig */,
-				FE06B1961430E7790071169B /* linux.xcconfig */,
-				FE06B1971430E7790071169B /* platform.xcconfig */,
-				FE06B1981430E7790071169B /* solaris-sparc.xcconfig */,
-				FE06B1991430E7790071169B /* solaris.xcconfig */,
-				FE06B19A1430E7790071169B /* windows-i386.xcconfig */,
-				FE06B19B1430E7790071169B /* windows.xcconfig */,
-				FE70860C143117A500B99A95 /* windows-i386-framework.xcconfig */,
+				FEC11A380FD4B4D600082282 /* CGAffineTransform.h */,
+				FEC11A3A0FD4B4D600082282 /* CGBitmapContext.h */,
+				FEC11A3C0FD4B4D600082282 /* CGColor.h */,
+				FEC11A3E0FD4B4D600082282 /* CGColorSpace.h */,
+				FEC11A400FD4B4D600082282 /* CGContext.h */,
+				FE3C85951087928D0018252A /* CGConversions.h */,
+				FE9DB45F0FD6C38300A1CE17 /* CGDataConsumer.h */,
+				FEC11A420FD4B4D600082282 /* CGDataProvider.h */,
+				FEAE004211E4E6AD00CA0912 /* CGDirectDisplay.h */,
+				FEF5A70611E4E782009B0041 /* CGError.h */,
+				FEC11A440FD4B4D600082282 /* CGEvent.h */,
+				FEC11A460FD4B4D600082282 /* CGFont.h */,
+				FEC11A480FD4B4D600082282 /* CGFunction.h */,
+				FEC11A4A0FD4B4D600082282 /* CGGeometry.h */,
+				FED56E8211A2D8E200D6D09B /* CGGradient.h */,
+				FEC11A4C0FD4B4D600082282 /* CGImage.h */,
+				FE8C020A10C59BB300FE4072 /* CGImageDestination.h */,
+				FEC11A4E0FD4B4D600082282 /* CGImageProperties.h */,
+				FEC11A500FD4B4D600082282 /* CGImageSource.h */,
+				FEC11A520FD4B4D600082282 /* CGLayer.h */,
+				FE2752DA12301F4500BD6643 /* CGLPixelSurface.h */,
+				FEC11A540FD4B4D600082282 /* CGPath.h */,
+				FEC11A560FD4B4D600082282 /* CGPattern.h */,
+				FEAED71A0FD6C4460043F915 /* CGPDFContext.h */,
+				FEC11A580FD4B4D600082282 /* CGPDFDocument.h */,
+				FEC11A5A0FD4B4D600082282 /* CGPDFPage.h */,
+				FEC11A5C0FD4B4D600082282 /* CGShading.h */,
+				FEC11A5E0FD4B4D600082282 /* CGWindow.h */,
+				FE5ADA6B12BBFF8500A922A2 /* CGWindowLevel.h */,
+				FEC11A600FD4B4D600082282 /* CoreGraphics.h */,
+				FEC11A610FD4B4D600082282 /* CoreGraphicsExport.h */,
 			);
-			name = xcconfig;
-			path = ../xcconfig;
-			sourceTree = SOURCE_ROOT;
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		BF45ECCB1E63475D0026C66C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FEC11A390FD4B4D600082282 /* CGAffineTransform.m */,
+				FEC11A3B0FD4B4D600082282 /* CGBitmapContext.m */,
+				FEC11A3D0FD4B4D600082282 /* CGColor.m */,
+				FEC11A3F0FD4B4D600082282 /* CGColorSpace.m */,
+				FEC11A410FD4B4D600082282 /* CGContext.m */,
+				FE9DB4600FD6C38300A1CE17 /* CGDataConsumer.m */,
+				FEC11A430FD4B4D600082282 /* CGDataProvider.m */,
+				FEAE004311E4E6AD00CA0912 /* CGDirectDisplay.m */,
+				FEC11A450FD4B4D600082282 /* CGEvent.m */,
+				FEC11A470FD4B4D600082282 /* CGFont.m */,
+				FEC11A490FD4B4D600082282 /* CGFunction.m */,
+				FEC11A4B0FD4B4D600082282 /* CGGeometry.m */,
+				FED56E8311A2D8E200D6D09B /* CGGradient.m */,
+				FEC11A4D0FD4B4D600082282 /* CGImage.m */,
+				FE8C020B10C59BB300FE4072 /* CGImageDestination.m */,
+				FEC11A4F0FD4B4D600082282 /* CGImageProperties.m */,
+				FEC11A510FD4B4D600082282 /* CGImageSource.m */,
+				FEC11A530FD4B4D600082282 /* CGLayer.m */,
+				FE2752DB12301F4500BD6643 /* CGLPixelSurface.m */,
+				FEC11A550FD4B4D600082282 /* CGPath.m */,
+				FEC11A570FD4B4D600082282 /* CGPattern.m */,
+				FEAED71B0FD6C4460043F915 /* CGPDFContext.m */,
+				FEC11A590FD4B4D600082282 /* CGPDFDocument.m */,
+				FEC11A5B0FD4B4D600082282 /* CGPDFPage.m */,
+				FEC11A5D0FD4B4D600082282 /* CGShading.m */,
+				FEC11A5F0FD4B4D600082282 /* CGWindow.m */,
+				BF45ECD21E6347F10026C66C /* CoreGraphics.m */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		BF45ECCC1E6347C00026C66C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFBF53201E635E20003967E2 /* OpenGL.framework */,
+				BFFA8C2E1E634F1B006BD3AA /* Onyx2D.framework */,
+				BF45ECCD1E6347C00026C66C /* CoreFoundation.framework */,
+				BF45ECCE1E6347C00026C66C /* CoreServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
 		};
 		FE5C0A1D1162953300065D1C /* Onyx2D */ = {
 			isa = PBXGroup;
@@ -759,33 +683,6 @@
 			path = ../Onyx2D;
 			sourceTree = "<group>";
 		};
-		FE5C0BE811629FD900065D1C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FE5C0BEC11629FD900065D1C /* Onyx2D.framework */,
-				FE5C0D4C1162A9B800065D1C /* Onyx2D.framework */,
-				FE5C0D4E1162A9B800065D1C /* Onyx2D.framework */,
-				FE5C0D5F1162A9E400065D1C /* Onyx2D.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		FE6F7BC10FD5572F00C3244F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FE6F7BCB0FD5572F00C3244F /* Foundation.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		FE7434FC10A8BE84004CDF00 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FE74350410A8BE84004CDF00 /* CoreFoundation.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -917,13 +814,12 @@
 			buildPhases = (
 				8DC2EF500486A6940098B216 /* Headers */,
 				8DC2EF520486A6940098B216 /* Resources */,
+				BF45ECD11E6347D60026C66C /* Sources */,
+				BF45ECBC1E6346A20026C66C /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FE6F7BD70FD5573B00C3244F /* PBXTargetDependency */,
-				FE74350E10A8BE94004CDF00 /* PBXTargetDependency */,
-				FE5C0BEE11629FE700065D1C /* PBXTargetDependency */,
 			);
 			name = CoreGraphics;
 			productInstallPath = "$(HOME)/Library/Frameworks";
@@ -952,71 +848,12 @@
 			mainGroup = 0867D691FE84028FC02AAC07 /* CoreGraphics */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = FE7434FC10A8BE84004CDF00 /* Products */;
-					ProjectRef = FE7434FB10A8BE84004CDF00 /* CoreFoundation.xcodeproj */;
-				},
-				{
-					ProductGroup = FE6F7BC10FD5572F00C3244F /* Products */;
-					ProjectRef = FE6F7BC00FD5572F00C3244F /* Foundation.xcodeproj */;
-				},
-				{
-					ProductGroup = FE5C0BE811629FD900065D1C /* Products */;
-					ProjectRef = FE5C0BE711629FD900065D1C /* Onyx2D.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				8DC2EF4F0486A6940098B216 /* CoreGraphics */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		FE5C0BEC11629FD900065D1C /* Onyx2D.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Onyx2D.framework;
-			remoteRef = FE5C0BEB11629FD900065D1C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FE5C0D4C1162A9B800065D1C /* Onyx2D.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Onyx2D.framework;
-			remoteRef = FE5C0D4B1162A9B800065D1C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FE5C0D4E1162A9B800065D1C /* Onyx2D.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Onyx2D.framework;
-			remoteRef = FE5C0D4D1162A9B800065D1C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FE5C0D5F1162A9E400065D1C /* Onyx2D.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Onyx2D.framework;
-			remoteRef = FE5C0D5E1162A9E400065D1C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FE6F7BCB0FD5572F00C3244F /* Foundation.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Foundation.framework;
-			remoteRef = FE6F7BCA0FD5572F00C3244F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FE74350410A8BE84004CDF00 /* CoreFoundation.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CoreFoundation.framework;
-			remoteRef = FE74350310A8BE84004CDF00 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8DC2EF520486A6940098B216 /* Resources */ = {
@@ -1028,84 +865,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		FE5C0BEE11629FE700065D1C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Onyx2D-Windows-i386";
-			targetProxy = FE5C0BED11629FE700065D1C /* PBXContainerItemProxy */;
+/* Begin PBXSourcesBuildPhase section */
+		BF45ECD11E6347D60026C66C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF45ECD31E6347F10026C66C /* CoreGraphics.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FE6F7BD70FD5573B00C3244F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Foundation-Windows-i386";
-			targetProxy = FE6F7BD60FD5573B00C3244F /* PBXContainerItemProxy */;
-		};
-		FE74350E10A8BE94004CDF00 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "CoreFoundation-Windows-i386";
-			targetProxy = FE74350D10A8BE94004CDF00 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
+/* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		1DEB91AF08733DA50010E9CD /* Windows-i386 */ = {
+		BF45ECC61E6346E30026C66C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE70860C143117A500B99A95 /* windows-i386-framework.xcconfig */;
+			buildSettings = {
+				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
+			};
+			name = Debug;
+		};
+		BF45ECC71E6346E30026C66C /* Debug */ = {
+			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = CoreGraphics;
 			};
-			name = "Windows-i386";
+			name = Debug;
 		};
-		1DEB91B308733DA50010E9CD /* Windows-i386 */ = {
+		BF45ECC81E6346F20026C66C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};
-			name = "Windows-i386";
+			name = Release;
 		};
-		CFF0A15D1AF473C600160EAA /* Darwin-i386 */ = {
+		BF45ECC91E6346F20026C66C /* Release */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = "Darwin-i386";
-		};
-		CFF0A15E1AF473C600160EAA /* Darwin-i386 */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEC0A40E170935D3002A60B7 /* darwin-i386-framework.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = CoreGraphics;
 			};
-			name = "Darwin-i386";
-		};
-		CFF0A1621AF473CC00160EAA /* FreeBSD-i386 */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = "FreeBSD-i386";
-		};
-		CFF0A1631AF473CC00160EAA /* FreeBSD-i386 */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEC0A411170935D3002A60B7 /* freebsd-i386-framework.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = Info.plist;
-				PRODUCT_NAME = CoreGraphics;
-			};
-			name = "FreeBSD-i386";
-		};
-		FECC1D61108CEC9900BD4A91 /* Linux-i386 */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = "Linux-i386";
-		};
-		FECC1D62108CEC9900BD4A91 /* Linux-i386 */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEC0A413170935D3002A60B7 /* linux-i386-framework.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = Info.plist;
-				PRODUCT_NAME = CoreGraphics;
-			};
-			name = "Linux-i386";
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -1113,24 +913,20 @@
 		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "CoreGraphics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DEB91AF08733DA50010E9CD /* Windows-i386 */,
-				CFF0A1631AF473CC00160EAA /* FreeBSD-i386 */,
-				CFF0A15E1AF473C600160EAA /* Darwin-i386 */,
-				FECC1D62108CEC9900BD4A91 /* Linux-i386 */,
+				BF45ECC71E6346E30026C66C /* Debug */,
+				BF45ECC91E6346F20026C66C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Windows-i386";
+			defaultConfigurationName = Release;
 		};
 		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "CoreGraphics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DEB91B308733DA50010E9CD /* Windows-i386 */,
-				CFF0A1621AF473CC00160EAA /* FreeBSD-i386 */,
-				CFF0A15D1AF473C600160EAA /* Darwin-i386 */,
-				FECC1D61108CEC9900BD4A91 /* Linux-i386 */,
+				BF45ECC61E6346E30026C66C /* Debug */,
+				BF45ECC81E6346F20026C66C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Windows-i386";
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

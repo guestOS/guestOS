@@ -1,3 +1,4 @@
+#ifdef WINDOWS
 #import <Onyx2D/O2Font_gdi.h>
 #import <windows.h>
 #import <Foundation/NSString_win32.h>
@@ -743,3 +744,5 @@ static HFONT Win32FontHandleWithName(NSString *name,int unitsPerEm){
 }
 
 @end
+
+#endif

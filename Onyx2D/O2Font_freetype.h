@@ -1,5 +1,5 @@
 #import <Onyx2D/O2Font.h>
-#import "O2Defines_FreeType.h"
+#import "O2Availability.h"
 
 #ifdef FREETYPE_PRESENT
 

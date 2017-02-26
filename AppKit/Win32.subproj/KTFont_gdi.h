@@ -1,3 +1,4 @@
+#ifdef WINDOWS
 #import <AppKit/KTFont.h>
 #import <windows.h>
 
@@ -60,3 +61,5 @@ typedef struct CGGlyphMetricsSet {
 - (CGSize)advancementForNominalGlyphs:(const CGGlyph *)glyphs count:(unsigned)count;
 
 @end
+
+#endif

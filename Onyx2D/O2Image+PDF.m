@@ -6,9 +6,8 @@
 #import <Onyx2D/O2PDFStream.h>
 #import <Onyx2D/O2PDFContext.h>
 
-#ifdef __APPLE__
-#else
-#import "O2Defines_zlib.h"
+#ifndef __APPLE__
+#import "O2Availability.h"
 #endif
 
 #if ZLIB_PRESENT

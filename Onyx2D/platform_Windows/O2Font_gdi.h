@@ -1,3 +1,4 @@
+#ifdef WINDOWS
 #import <Onyx2D/O2Font.h>
 #import <windows.h>
 
@@ -26,3 +27,5 @@
 - (Win32Font *)createGDIFontSelectedInDC:(HDC)dc pointSize:(CGFloat)pointSize angle:(CGFloat)angle;
 
 @end
+
+#endif

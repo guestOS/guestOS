@@ -1,3 +1,4 @@
+#ifdef WINDOWS
 #import "opengl_dll.h"
 #import <Foundation/NSString.h>
 #import <Foundation/NSDebug.h>
@@ -439,3 +440,4 @@ void opengl_glAddSwapHintRectWIN(GLint x,GLint y,GLsizei width,GLsizei height) {
     return function(x,y,width,height);
 }
 
+#endif

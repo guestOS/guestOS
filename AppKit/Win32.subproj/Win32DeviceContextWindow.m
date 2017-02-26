@@ -8,6 +8,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 // Original - Christopher Lloyd <cjwl@objc.net>
 
+#ifdef WINDOWS
 #import <AppKit/Win32DeviceContextWindow.h>
 @interface Win32DeviceContextWindow (ThemeChange)
 - (void)openTheme;
@@ -82,3 +83,5 @@ void closeThemeData(HANDLE theme);
 }
 
 @end
+
+#endif

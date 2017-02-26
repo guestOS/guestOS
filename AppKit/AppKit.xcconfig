@@ -1,0 +1,7 @@
+
+OTHER_CFLAGS = $(inherited) -DQUARTZCORE_INSIDE_BUILD -DAPPKIT_INSIDE_BUILD -DCORETEXT_INSIDE_BUILD -DCOREGRAPHICS_INSIDE_BUILD -DCGL_INSIDE_BUILD
+
+OTHER_LDFLAGS = $(inherited) -lobjc
+OTHER_LDFLAGS[sdk=guestos.linux.x86_64] = $(inherited) -lm -lfreetype -lglx
+
+HEADER_SEARCH_PATHS[sdk=guestos.linux.x86_64] = $(inherited) $(SDK_DIR_guestos_linux_x86_64)/usr/include/freetype2

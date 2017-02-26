@@ -1,3 +1,4 @@
+#ifdef WINDOWS
 #import "NSSound_DirectShow.h"
 #import <Foundation/NSPathUtilities.h>
 
@@ -81,6 +82,6 @@ static GUID IID_IGraphBuilder={ 0x56a868a9, 0x0ad4, 0x11ce,
 	[super dealloc];
 }
 
-
-
 @end
+
+#endif

@@ -522,6 +522,7 @@
 /* Begin XCBuildConfiguration section */
 		BF5C91101E6195720039F83F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF5C91801E63077A0039F83F /* CoreFoundation.xcconfig */;
 			buildSettings = {
 				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};
@@ -529,7 +530,6 @@
 		};
 		BF5C91111E6195720039F83F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF5C91801E63077A0039F83F /* CoreFoundation.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = CoreFoundation;
@@ -538,6 +538,7 @@
 		};
 		BF5C91121E6195810039F83F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF5C91801E63077A0039F83F /* CoreFoundation.xcconfig */;
 			buildSettings = {
 				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};
@@ -545,7 +546,6 @@
 		};
 		BF5C91131E6195810039F83F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF5C91801E63077A0039F83F /* CoreFoundation.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = CoreFoundation;

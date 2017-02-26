@@ -1,3 +1,4 @@
+#ifdef WINDOWS
 #import <Onyx2D/O2Context_gdi.h>
 
 @interface O2Context_gdi (AppKit)
@@ -7,3 +8,5 @@
 - (HWND)windowHandle;
 
 @end
+
+#endif

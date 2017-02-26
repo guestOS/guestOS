@@ -1,3 +1,4 @@
+#ifdef WINDOWS
 #import <Foundation/NSObject.h>
 #import <OpenGL/gl.h>
 #import <OpenGL/glext.h>
@@ -69,3 +70,5 @@ BOOL opengl_wglSetPbufferAttribARB(HPBUFFERARB hPbuffer, const int *piAttribList
 BOOL opengl_wglSwapIntervalEXT(int interval);
 
 void opengl_glAddSwapHintRectWIN(GLint x, GLint y, GLsizei width, GLsizei height);
+
+#endif

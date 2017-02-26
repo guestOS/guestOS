@@ -45,6 +45,13 @@
 		A1CC701A100534AB00DB9974 /* NSCachingBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CC7018100534AB00DB9974 /* NSCachingBinder.m */; };
 		A1CC70481005371100DB9974 /* NSTextFieldBinder.h in Headers */ = {isa = PBXBuildFile; fileRef = A1CC70401005371100DB9974 /* NSTextFieldBinder.h */; };
 		A1CC70491005371100DB9974 /* NSTextFieldBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CC70411005371100DB9974 /* NSTextFieldBinder.m */; };
+		BF45ECB91E63465E0026C66C /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF45ECB61E63465E0026C66C /* ApplicationServices.framework */; };
+		BF45ECBA1E63465E0026C66C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF45ECB71E63465E0026C66C /* CoreGraphics.framework */; };
+		BF45ECBB1E63465E0026C66C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF45ECB81E63465E0026C66C /* CoreText.framework */; };
+		BFBF53231E635E38003967E2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBF53221E635E38003967E2 /* QuartzCore.framework */; };
+		BFBF53251E635E41003967E2 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBF53241E635E41003967E2 /* OpenGL.framework */; };
+		BFBF53291E63602E003967E2 /* O2Availability.h in Headers */ = {isa = PBXBuildFile; fileRef = BFBF53281E63602E003967E2 /* O2Availability.h */; };
+		BFFA8C2D1E634EE9006BD3AA /* Onyx2D.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFA8C2C1E634EE9006BD3AA /* Onyx2D.framework */; };
 		C829A6A310FF911400A2306E /* NSGoLeftTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C829A6A210FF911400A2306E /* NSGoLeftTemplate.pdf */; };
 		C829A6B310FFA2D100A2306E /* NSGoRightTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C829A6B210FFA2D100A2306E /* NSGoRightTemplate.pdf */; };
 		C84909370E8D1FB900BA6D3A /* NSUserDefaultsControllerProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C84909350E8D1FB900BA6D3A /* NSUserDefaultsControllerProxy.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -56,7 +63,6 @@
 		C8C52C8F0E7ED1FF003F03B5 /* NSObservationProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C8C52C8D0E7ED1FF003F03B5 /* NSObservationProxy.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		C8C52C900E7ED1FF003F03B5 /* NSObservationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C52C8E0E7ED1FF003F03B5 /* NSObservationProxy.m */; };
 		CFA3CC3D1AD37BB300E8F830 /* NSRuleEditorButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4A25C61222C4E9009058C1 /* NSRuleEditorButtonCell.m */; };
-		CFBAE5191AFC56A900F2BB97 /* windows-i386-AppKit.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CFBAE5181AFC56A900F2BB97 /* windows-i386-AppKit.xcconfig */; };
 		FE01A80B0C5D9BCB00AEA51A /* AppKitExport.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E2B53FA0976075200DA0954 /* AppKitExport.h */; settings = {ATTRIBUTES = (Project, Public, ); }; };
 		FE01A80C0C5D9BCB00AEA51A /* AppKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E2B53FC0976075200DA0954 /* AppKit.h */; settings = {ATTRIBUTES = (Project, Public, ); }; };
 		FE01A80D0C5D9BCB00AEA51A /* NSActionCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E2B53FE0976075200DA0954 /* NSActionCell.h */; settings = {ATTRIBUTES = (Project, Public, ); }; };
@@ -923,72 +929,6 @@
 		FEFD32061434A4F400C14B08 /* O2Font_freetype.m in Sources */ = {isa = PBXBuildFile; fileRef = FE051BDA1221A2F40097BA92 /* O2Font_freetype.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		FE01AAC90C5D9BCC00AEA51A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E46FEBE0A2D2DCF004CD27E /* Foundation.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FE01A7EC0C5D9B6900AEA51A;
-			remoteInfo = "Foundation-Windows-i386";
-		};
-		FE01AACB0C5D9BE700AEA51A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E46FEBE0A2D2DCF004CD27E /* Foundation.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = FE01A5970C5D9B6900AEA51A;
-			remoteInfo = "Foundation-Windows-i386";
-		};
-		FE0C4EC01041CF2100D8C100 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE0C4EB81041CF2100D8C100 /* OpenGL.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
-			remoteInfo = "OpenGL-Windows-i386";
-		};
-		FE0C4EC41041CF3200D8C100 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE0C4EB81041CF2100D8C100 /* OpenGL.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
-			remoteInfo = "OpenGL-Windows-i386";
-		};
-		FE0DDFBA12BFF7DD008EC2E6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FED38C3B10E13DDF00A2A651 /* QuartzCore.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = FECA819410EBB231003472F1;
-			remoteInfo = "QuartzCore-Windows-i386";
-		};
-		FE39C6821203D5E200A80A71 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE39C67E1203D5E200A80A71 /* CoreData.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
-			remoteInfo = "CoreData-Windows-i386";
-		};
-		FE41B87912BEA2D900ED6C10 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FED38C3B10E13DDF00A2A651 /* QuartzCore.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FECA81A110EBB231003472F1;
-			remoteInfo = "QuartzCore-Windows-i386";
-		};
-		FE6EDEBC0DB7AF94005503A1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FECAF4C80DB710EE00BA2A8E /* ApplicationServices.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = FE01AAE20C5D9BF900AEA51A;
-			remoteInfo = "ApplicationServices-Windows-i386";
-		};
-		FECAF4D00DB710EE00BA2A8E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FECAF4C80DB710EE00BA2A8E /* ApplicationServices.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FE01AAED0C5D9BF900AEA51A;
-			remoteInfo = "ApplicationServices-Windows-i386";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		36570F980E818CD5008FE1BE /* NSGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSGradient.h; sourceTree = "<group>"; };
 		36570F990E818CD5008FE1BE /* NSGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSGradient.m; sourceTree = "<group>"; };
@@ -1451,7 +1391,6 @@
 		6E2B575B0976075500DA0954 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		6E404FE50A52FEA900FA9AE5 /* NSTextViewSharedData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTextViewSharedData.h; sourceTree = "<group>"; };
 		6E404FE60A52FEA900FA9AE5 /* NSTextViewSharedData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTextViewSharedData.m; sourceTree = "<group>"; };
-		6E46FEBE0A2D2DCF004CD27E /* Foundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Foundation.xcodeproj; path = ../Foundation/Foundation.xcodeproj; sourceTree = SOURCE_ROOT; };
 		6E81CA740A3883660089C666 /* NSClassSwapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSClassSwapper.h; sourceTree = "<group>"; };
 		6E81CA750A3883660089C666 /* NSClassSwapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSClassSwapper.m; sourceTree = "<group>"; };
 		6E81CCCE0A39CBE00089C666 /* NSCustomResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCustomResource.h; sourceTree = "<group>"; };
@@ -1474,6 +1413,14 @@
 		A1CC7018100534AB00DB9974 /* NSCachingBinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSCachingBinder.m; sourceTree = "<group>"; };
 		A1CC70401005371100DB9974 /* NSTextFieldBinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTextFieldBinder.h; sourceTree = "<group>"; };
 		A1CC70411005371100DB9974 /* NSTextFieldBinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTextFieldBinder.m; sourceTree = "<group>"; };
+		BF45ECB61E63465E0026C66C /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = "../ApplicationServices/build/sym/Windows-i386-i386-mingw32msvc/undefined_arch/ApplicationServices.framework"; sourceTree = "<group>"; };
+		BF45ECB71E63465E0026C66C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = "../CoreGraphics/build/sym/Windows-i386-i386-mingw32msvc/undefined_arch/CoreGraphics.framework"; sourceTree = "<group>"; };
+		BF45ECB81E63465E0026C66C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = "../CoreText/build/sym/Windows-i386-i386-mingw32msvc/undefined_arch/CoreText.framework"; sourceTree = "<group>"; };
+		BFBF53221E635E38003967E2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = ../QuartzCore/build/Debug/QuartzCore.framework; sourceTree = "<group>"; };
+		BFBF53241E635E41003967E2 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = "../DerivedData/guestOS/Build/Products/Debug-linux.x86_64/OpenGL.framework"; sourceTree = "<group>"; };
+		BFBF53281E63602E003967E2 /* O2Availability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2Availability.h; sourceTree = "<group>"; };
+		BFFA8C291E634E05006BD3AA /* AppKit.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppKit.xcconfig; sourceTree = "<group>"; };
+		BFFA8C2C1E634EE9006BD3AA /* Onyx2D.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Onyx2D.framework; path = "../Onyx2D/build/sym/Linux-i386-i386-mingw32msvc/undefined_arch/Onyx2D.framework"; sourceTree = "<group>"; };
 		C81BEA0D0EA6038800478D50 /* O2Context_cairo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2Context_cairo.h; sourceTree = "<group>"; };
 		C81BEA0E0EA6038800478D50 /* O2Context_cairo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2Context_cairo.m; sourceTree = "<group>"; };
 		C829A6A210FF911400A2306E /* NSGoLeftTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = NSGoLeftTemplate.pdf; sourceTree = "<group>"; };
@@ -1495,7 +1442,6 @@
 		C8C52C8E0E7ED1FF003F03B5 /* NSObservationProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObservationProxy.m; sourceTree = "<group>"; };
 		C8E4F57F0BFF7A8A0076D5E6 /* NSAffineTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSAffineTransform.h; sourceTree = "<group>"; };
 		C8E4F5800BFF7A8A0076D5E6 /* NSAffineTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSAffineTransform.m; sourceTree = "<group>"; };
-		CFBAE5181AFC56A900F2BB97 /* windows-i386-AppKit.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "windows-i386-AppKit.xcconfig"; sourceTree = "<group>"; };
 		FE01AAC10C5D9BCB00AEA51A /* AppKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE051BD91221A2F40097BA92 /* O2Font_freetype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2Font_freetype.h; sourceTree = "<group>"; };
 		FE051BDA1221A2F40097BA92 /* O2Font_freetype.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2Font_freetype.m; sourceTree = "<group>"; };
@@ -1520,37 +1466,13 @@
 		FE08C3210DDF299800B3169A /* NSColor_CGColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSColor_CGColor.h; sourceTree = "<group>"; };
 		FE08C3220DDF299800B3169A /* NSColor_CGColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSColor_CGColor.m; sourceTree = "<group>"; };
 		FE09AF3413FCC56600B53D10 /* NSSpellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSSpellProtocol.h; sourceTree = "<group>"; };
-		FE0C4EB81041CF2100D8C100 /* OpenGL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OpenGL.xcodeproj; path = ../OpenGL/OpenGL.xcodeproj; sourceTree = SOURCE_ROOT; };
 		FE1443681256D43D007FE685 /* _NSControllerArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _NSControllerArray.h; sourceTree = "<group>"; };
 		FE1443691256D43D007FE685 /* _NSControllerArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _NSControllerArray.m; sourceTree = "<group>"; };
 		FE1707FC1260A1E000D18E9E /* NSEnterFullScreenTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = NSEnterFullScreenTemplate.pdf; sourceTree = "<group>"; };
 		FE1CEA6B0C8F12F800184630 /* opengl_dll.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = opengl_dll.h; sourceTree = "<group>"; };
 		FE1CEA6C0C8F12F800184630 /* opengl_dll.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = opengl_dll.m; sourceTree = "<group>"; };
-		FE1E54DF1430303F000D60A1 /* darwin-i386.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-i386.xcconfig"; sourceTree = "<group>"; };
-		FE1E54E01430303F000D60A1 /* darwin-ppc.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-ppc.xcconfig"; sourceTree = "<group>"; };
-		FE1E54E11430303F000D60A1 /* darwin-x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-x86_64.xcconfig"; sourceTree = "<group>"; };
-		FE1E54E21430303F000D60A1 /* darwin.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = darwin.xcconfig; sourceTree = "<group>"; };
-		FE1E54E31430303F000D60A1 /* freebsd-i386.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "freebsd-i386.xcconfig"; sourceTree = "<group>"; };
-		FE1E54E41430303F000D60A1 /* freebsd.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = freebsd.xcconfig; sourceTree = "<group>"; };
-		FE1E54E51430303F000D60A1 /* linux-arm.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-arm.xcconfig"; sourceTree = "<group>"; };
-		FE1E54E61430303F000D60A1 /* linux-i386.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-i386.xcconfig"; sourceTree = "<group>"; };
-		FE1E54E71430303F000D60A1 /* linux-ppc.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-ppc.xcconfig"; sourceTree = "<group>"; };
-		FE1E54E81430303F000D60A1 /* linux.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = linux.xcconfig; sourceTree = "<group>"; };
-		FE1E54E91430303F000D60A1 /* platform.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = platform.xcconfig; sourceTree = "<group>"; };
-		FE1E54EA1430303F000D60A1 /* solaris-sparc.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "solaris-sparc.xcconfig"; sourceTree = "<group>"; };
-		FE1E54EB1430303F000D60A1 /* solaris.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = solaris.xcconfig; sourceTree = "<group>"; };
-		FE1E54EC1430303F000D60A1 /* windows-i386.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "windows-i386.xcconfig"; sourceTree = "<group>"; };
-		FE1E54ED1430303F000D60A1 /* windows.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = windows.xcconfig; sourceTree = "<group>"; };
 		FE1E86BF0BBCA62D0013B968 /* NSGraphicsStyle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NSGraphicsStyle.h; sourceTree = "<group>"; };
 		FE1E86C00BBCA62D0013B968 /* NSGraphicsStyle.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NSGraphicsStyle.m; sourceTree = "<group>"; };
-		FE1F65061508164F00C24624 /* darwin-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-i386-framework.xcconfig"; sourceTree = "<group>"; };
-		FE1F65071508165000C24624 /* darwin-ppc-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-ppc-framework.xcconfig"; sourceTree = "<group>"; };
-		FE1F65081508165000C24624 /* darwin-x86_64-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-x86_64-framework.xcconfig"; sourceTree = "<group>"; };
-		FE1F65091508165000C24624 /* freebsd-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "freebsd-i386-framework.xcconfig"; sourceTree = "<group>"; };
-		FE1F650A1508165000C24624 /* linux-arm-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-arm-framework.xcconfig"; sourceTree = "<group>"; };
-		FE1F650B1508165000C24624 /* linux-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-i386-framework.xcconfig"; sourceTree = "<group>"; };
-		FE1F650C1508165000C24624 /* linux-ppc-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-ppc-framework.xcconfig"; sourceTree = "<group>"; };
-		FE1F650D1508165100C24624 /* solaris-sparc-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "solaris-sparc-framework.xcconfig"; sourceTree = "<group>"; };
 		FE20C20711892436006F01BA /* CAAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CAAnimation.m; path = ../QuartzCore/CAAnimation.m; sourceTree = SOURCE_ROOT; };
 		FE20C20811892436006F01BA /* CIAffineTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CIAffineTransform.m; path = ../QuartzCore/CIAffineTransform.m; sourceTree = SOURCE_ROOT; };
 		FE20C20911892436006F01BA /* CIColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CIColor.m; path = ../QuartzCore/CIColor.m; sourceTree = SOURCE_ROOT; };
@@ -1652,7 +1574,6 @@
 		FE39BECA1201DD3A00A80A71 /* NSStopProgressFreestandingTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = NSStopProgressFreestandingTemplate.pdf; sourceTree = "<group>"; };
 		FE39C3291203304700A80A71 /* O2ClipState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2ClipState.m; sourceTree = "<group>"; };
 		FE39C3301203305900A80A71 /* O2ClipState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2ClipState.h; sourceTree = "<group>"; };
-		FE39C67E1203D5E200A80A71 /* CoreData.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CoreData.xcodeproj; path = ../CoreData/CoreData.xcodeproj; sourceTree = SOURCE_ROOT; };
 		FE39C6981203D72000A80A71 /* _NSManagedProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _NSManagedProxy.h; sourceTree = "<group>"; };
 		FE39C6991203D72000A80A71 /* _NSManagedProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _NSManagedProxy.m; sourceTree = "<group>"; };
 		FE39C69A1203D72000A80A71 /* NSPersistentDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSPersistentDocument.h; sourceTree = "<group>"; };
@@ -1728,7 +1649,6 @@
 		FE5C69A00D76039F00098551 /* O2DeviceContext_gdiDIBSection.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = O2DeviceContext_gdiDIBSection.m; sourceTree = "<group>"; };
 		FE5F4CA612A860BA00F5F334 /* O2Context_gdi+AppKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "O2Context_gdi+AppKit.h"; sourceTree = "<group>"; };
 		FE5F4CA712A860BA00F5F334 /* O2Context_gdi+AppKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "O2Context_gdi+AppKit.m"; sourceTree = "<group>"; };
-		FE642EF0170E6C3D00DFF7FF /* platform-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "platform-framework.xcconfig"; sourceTree = "<group>"; };
 		FE6466E10B2C611D00B302B0 /* NSMutableParagraphStyle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NSMutableParagraphStyle.h; sourceTree = "<group>"; };
 		FE6466E20B2C611D00B302B0 /* NSMutableParagraphStyle.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NSMutableParagraphStyle.m; sourceTree = "<group>"; };
 		FE64B8A70B81239D007EE513 /* O2ColorSpace.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = O2ColorSpace.h; sourceTree = "<group>"; };
@@ -1809,7 +1729,6 @@
 		FE6EE28D0DB91FDF005503A1 /* O2Surface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2Surface.m; sourceTree = "<group>"; };
 		FE6EE2E30DB92B11005503A1 /* VGPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGPath.h; sourceTree = "<group>"; };
 		FE6EE2E40DB92B11005503A1 /* VGPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGPath.m; sourceTree = "<group>"; };
-		FE70846E1431168800B99A95 /* windows-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "windows-i386-framework.xcconfig"; sourceTree = "<group>"; };
 		FE71DA7011F7403200E6F801 /* CIBloom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIBloom.m; sourceTree = "<group>"; };
 		FE71DA9111F7433000E6F801 /* CIBoxBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIBoxBlur.m; sourceTree = "<group>"; };
 		FE71DA9211F7433000E6F801 /* CILinearGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CILinearGradient.m; sourceTree = "<group>"; };
@@ -1924,7 +1843,6 @@
 		FEBF5B76100D851500F64C71 /* O2LZW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2LZW.m; sourceTree = "<group>"; };
 		FEC0C77F0F146AF800903F6D /* O2ImageSource_GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2ImageSource_GIF.h; sourceTree = "<group>"; };
 		FEC0C7800F146AF800903F6D /* O2ImageSource_GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2ImageSource_GIF.m; sourceTree = "<group>"; };
-		FECAF4C80DB710EE00BA2A8E /* ApplicationServices.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ApplicationServices.xcodeproj; path = ../ApplicationServices/ApplicationServices.xcodeproj; sourceTree = SOURCE_ROOT; };
 		FED166D40BE502AD00BF9889 /* NSSegmentItem.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NSSegmentItem.h; sourceTree = "<group>"; };
 		FED166D50BE502AD00BF9889 /* NSSegmentItem.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NSSegmentItem.m; sourceTree = "<group>"; };
 		FED167A40BE57EB300BF9889 /* NSTextBlock.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NSTextBlock.h; sourceTree = "<group>"; };
@@ -1941,7 +1859,6 @@
 		FED38C3110E13DCA00A2A651 /* CALayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CALayer.m; path = ../QuartzCore/CALayer.m; sourceTree = SOURCE_ROOT; };
 		FED38C3210E13DCA00A2A651 /* CARenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CARenderer.m; path = ../QuartzCore/CARenderer.m; sourceTree = SOURCE_ROOT; };
 		FED38C3310E13DCA00A2A651 /* CATransform3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CATransform3D.m; path = ../QuartzCore/CATransform3D.m; sourceTree = SOURCE_ROOT; };
-		FED38C3B10E13DDF00A2A651 /* QuartzCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = QuartzCore.xcodeproj; sourceTree = "<group>"; };
 		FED56E6411A2D87100D6D09B /* CGGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGGradient.m; sourceTree = "<group>"; };
 		FEDE655E1210A294003D3EF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = "/System/Library/Frameworks//CoreData.framework"; sourceTree = "<absolute>"; };
 		FEDEA8AC12C112E5008E5A59 /* CATransactionGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransactionGroup.m; sourceTree = "<group>"; };
@@ -1989,6 +1906,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFBF53251E635E41003967E2 /* OpenGL.framework in Frameworks */,
+				BFBF53231E635E38003967E2 /* QuartzCore.framework in Frameworks */,
+				BFFA8C2D1E634EE9006BD3AA /* Onyx2D.framework in Frameworks */,
+				BF45ECB91E63465E0026C66C /* ApplicationServices.framework in Frameworks */,
+				BF45ECBA1E63465E0026C66C /* CoreGraphics.framework in Frameworks */,
+				BF45ECBB1E63465E0026C66C /* CoreText.framework in Frameworks */,
 				FE01AABC0C5D9BCB00AEA51A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2022,7 +1945,7 @@
 		6E2B531A0976074C00DA0954 /* AppKit */ = {
 			isa = PBXGroup;
 			children = (
-				FE1E54DE1430303F000D60A1 /* xcconfig */,
+				BFFA8C291E634E05006BD3AA /* AppKit.xcconfig */,
 				FE4A25C51222C4E9009058C1 /* NSRuleEditorButtonCell.h */,
 				FE4A25C61222C4E9009058C1 /* NSRuleEditorButtonCell.m */,
 				FE4A25C71222C4E9009058C1 /* NSRuleEditorViewSliceRow.h */,
@@ -2032,10 +1955,6 @@
 				FE7EF2891211095500B2B398 /* NSTokenAttachmentCell.h */,
 				FE7EF28A1211095500B2B398 /* NSTokenAttachmentCell.m */,
 				FE39C6921203D65200A80A71 /* CoreData_ */,
-				FE39C67E1203D5E200A80A71 /* CoreData.xcodeproj */,
-				FE0C4EB81041CF2100D8C100 /* OpenGL.xcodeproj */,
-				6E46FEBE0A2D2DCF004CD27E /* Foundation.xcodeproj */,
-				FECAF4C80DB710EE00BA2A8E /* ApplicationServices.xcodeproj */,
 				FED38C2610E1305700A2A651 /* QuartzCore */,
 				6E2B53240976075200DA0954 /* Classes */,
 				6E2B54DE0976075300DA0954 /* Interfaces */,
@@ -2043,6 +1962,7 @@
 				6E2B55050976075300DA0954 /* Resources */,
 				6E2B575A0976075500DA0954 /* External Frameworks and Libraries */,
 				6E2B53230976074C00DA0954 /* Products */,
+				BF45ECB51E63465E0026C66C /* Frameworks */,
 			);
 			indentWidth = 4;
 			name = AppKit;
@@ -2908,55 +2828,18 @@
 			name = "External Frameworks and Libraries";
 			sourceTree = "<group>";
 		};
-		6E46FEBF0A2D2DCF004CD27E /* Products */ = {
+		BF45ECB51E63465E0026C66C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FE01AACA0C5D9BCC00AEA51A /* Foundation.framework */,
+				BFBF53241E635E41003967E2 /* OpenGL.framework */,
+				BFBF53221E635E38003967E2 /* QuartzCore.framework */,
+				BFFA8C2C1E634EE9006BD3AA /* Onyx2D.framework */,
+				BF45ECB61E63465E0026C66C /* ApplicationServices.framework */,
+				BF45ECB71E63465E0026C66C /* CoreGraphics.framework */,
+				BF45ECB81E63465E0026C66C /* CoreText.framework */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
-		};
-		FE0C4EB91041CF2100D8C100 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FE0C4EC11041CF2100D8C100 /* OpenGL.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		FE1E54DE1430303F000D60A1 /* xcconfig */ = {
-			isa = PBXGroup;
-			children = (
-				FE1F65061508164F00C24624 /* darwin-i386-framework.xcconfig */,
-				FE1E54DF1430303F000D60A1 /* darwin-i386.xcconfig */,
-				FE1F65071508165000C24624 /* darwin-ppc-framework.xcconfig */,
-				FE1E54E01430303F000D60A1 /* darwin-ppc.xcconfig */,
-				FE1F65081508165000C24624 /* darwin-x86_64-framework.xcconfig */,
-				FE1E54E11430303F000D60A1 /* darwin-x86_64.xcconfig */,
-				FE1E54E21430303F000D60A1 /* darwin.xcconfig */,
-				FE1F65091508165000C24624 /* freebsd-i386-framework.xcconfig */,
-				FE1E54E31430303F000D60A1 /* freebsd-i386.xcconfig */,
-				FE1E54E41430303F000D60A1 /* freebsd.xcconfig */,
-				FE1F650A1508165000C24624 /* linux-arm-framework.xcconfig */,
-				FE1E54E51430303F000D60A1 /* linux-arm.xcconfig */,
-				FE1F650B1508165000C24624 /* linux-i386-framework.xcconfig */,
-				FE1E54E61430303F000D60A1 /* linux-i386.xcconfig */,
-				FE1F650C1508165000C24624 /* linux-ppc-framework.xcconfig */,
-				FE1E54E71430303F000D60A1 /* linux-ppc.xcconfig */,
-				FE1E54E81430303F000D60A1 /* linux.xcconfig */,
-				FE642EF0170E6C3D00DFF7FF /* platform-framework.xcconfig */,
-				FE1E54E91430303F000D60A1 /* platform.xcconfig */,
-				FE1F650D1508165100C24624 /* solaris-sparc-framework.xcconfig */,
-				FE1E54EA1430303F000D60A1 /* solaris-sparc.xcconfig */,
-				FE1E54EB1430303F000D60A1 /* solaris.xcconfig */,
-				CFBAE5181AFC56A900F2BB97 /* windows-i386-AppKit.xcconfig */,
-				FE70846E1431168800B99A95 /* windows-i386-framework.xcconfig */,
-				FE1E54EC1430303F000D60A1 /* windows-i386.xcconfig */,
-				FE1E54ED1430303F000D60A1 /* windows.xcconfig */,
-			);
-			name = xcconfig;
-			path = ../xcconfig;
-			sourceTree = SOURCE_ROOT;
 		};
 		FE267E7F0B8BCB660000DDC0 /* ImageIO */ = {
 			isa = PBXGroup;
@@ -3009,14 +2892,6 @@
 			path = NSTextTable;
 			sourceTree = "<group>";
 		};
-		FE39C67F1203D5E200A80A71 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FE39C6831203D5E200A80A71 /* CoreData.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		FE39C6921203D65200A80A71 /* CoreData_ */ = {
 			isa = PBXGroup;
 			children = (
@@ -3026,14 +2901,6 @@
 				FE39C69B1203D72000A80A71 /* NSPersistentDocument.m */,
 			);
 			path = CoreData_;
-			sourceTree = "<group>";
-		};
-		FE41B87012BEA2D900ED6C10 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FE41B87A12BEA2D900ED6C10 /* QuartzCore.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		FE44327B0BB95F4300411464 /* NSInterfacePart */ = {
@@ -3067,6 +2934,7 @@
 		FE5C0EE511638FC600065D1C /* Onyx2D */ = {
 			isa = PBXGroup;
 			children = (
+				BFBF53281E63602E003967E2 /* O2Availability.h */,
 				FE9ACF10155EF59D002AFCA9 /* O2ImageDecoder_JPEG_libjpeg.m */,
 				FE9ACF11155EF59D002AFCA9 /* O2ImageDecoder_JPEG_stb.m */,
 				FE9ACF12155EF59D002AFCA9 /* O2ImageDecoder.m */,
@@ -3336,14 +3204,6 @@
 			path = ../CoreText;
 			sourceTree = "<group>";
 		};
-		FECAF4C90DB710EE00BA2A8E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FECAF4D10DB710EE00BA2A8E /* ApplicationServices.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		FED166CC0BE5022A00BF9889 /* NSSegmentedControl */ = {
 			isa = PBXGroup;
 			children = (
@@ -3399,7 +3259,6 @@
 				FE20C20C11892436006F01BA /* CIImage.m */,
 				FE71DA9211F7433000E6F801 /* CILinearGradient.m */,
 				FE20C20D11892436006F01BA /* CIVector.m */,
-				FED38C3B10E13DDF00A2A651 /* QuartzCore.xcodeproj */,
 				FEAE000911E4E43B00CA0912 /* CoreVideo */,
 			);
 			name = QuartzCore;
@@ -3718,6 +3577,7 @@
 				FE6EE28E0DB91FDF005503A1 /* O2Surface.h in Headers */,
 				FE6EE2E50DB92B11005503A1 /* VGPath.h in Headers */,
 				FE33952D0DB92D25009AB3E0 /* O2Blending.h in Headers */,
+				BFBF53291E63602E003967E2 /* O2Availability.h in Headers */,
 				FE3395590DB930F4009AB3E0 /* O2Context_builtin.h in Headers */,
 				FEBF55E50DCA112900CE5A1C /* O2ImageSource_JPEG.h in Headers */,
 				FEBF55E60DCA112900CE5A1C /* O2Paint.h in Headers */,
@@ -3827,7 +3687,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE01AABF0C5D9BCB00AEA51A /* Build configuration list for PBXNativeTarget "AppKit" */;
 			buildPhases = (
-				FE4C081E1434A30A0034EE26 /* Detect Libraries */,
 				6311B0C214C6583E007AD8C0 /* Generate Strings */,
 				FE01A80A0C5D9BCB00AEA51A /* Headers */,
 				FE01A9530C5D9BCB00AEA51A /* Sources */,
@@ -3838,10 +3697,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				FE01AACC0C5D9BE700AEA51A /* PBXTargetDependency */,
-				FE6EDEBD0DB7AF94005503A1 /* PBXTargetDependency */,
-				FE0C4EC51041CF3200D8C100 /* PBXTargetDependency */,
-				FE0DDFBB12BFF7DD008EC2E6 /* PBXTargetDependency */,
 			);
 			name = AppKit;
 			productInstallPath = /Library/Frameworks;
@@ -3873,72 +3728,12 @@
 			mainGroup = 6E2B531A0976074C00DA0954 /* AppKit */;
 			productRefGroup = 6E2B53230976074C00DA0954 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = FECAF4C90DB710EE00BA2A8E /* Products */;
-					ProjectRef = FECAF4C80DB710EE00BA2A8E /* ApplicationServices.xcodeproj */;
-				},
-				{
-					ProductGroup = FE39C67F1203D5E200A80A71 /* Products */;
-					ProjectRef = FE39C67E1203D5E200A80A71 /* CoreData.xcodeproj */;
-				},
-				{
-					ProductGroup = 6E46FEBF0A2D2DCF004CD27E /* Products */;
-					ProjectRef = 6E46FEBE0A2D2DCF004CD27E /* Foundation.xcodeproj */;
-				},
-				{
-					ProductGroup = FE0C4EB91041CF2100D8C100 /* Products */;
-					ProjectRef = FE0C4EB81041CF2100D8C100 /* OpenGL.xcodeproj */;
-				},
-				{
-					ProductGroup = FE41B87012BEA2D900ED6C10 /* Products */;
-					ProjectRef = FED38C3B10E13DDF00A2A651 /* QuartzCore.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				FE01A8070C5D9BCB00AEA51A /* AppKit */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		FE01AACA0C5D9BCC00AEA51A /* Foundation.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Foundation.framework;
-			remoteRef = FE01AAC90C5D9BCC00AEA51A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FE0C4EC11041CF2100D8C100 /* OpenGL.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = OpenGL.framework;
-			remoteRef = FE0C4EC01041CF2100D8C100 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FE39C6831203D5E200A80A71 /* CoreData.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CoreData.framework;
-			remoteRef = FE39C6821203D5E200A80A71 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FE41B87A12BEA2D900ED6C10 /* QuartzCore.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = QuartzCore.framework;
-			remoteRef = FE41B87912BEA2D900ED6C10 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FECAF4D10DB710EE00BA2A8E /* ApplicationServices.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ApplicationServices.framework;
-			remoteRef = FECAF4D00DB710EE00BA2A8E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FE01AA940C5D9BCB00AEA51A /* Resources */ = {
@@ -3990,7 +3785,6 @@
 				FE44BB3411EA30F500762BF1 /* NSLockUnlockedTemplate.pdf in Resources */,
 				FE44BCFE11EB928700762BF1 /* NSAdvanced.pdf in Resources */,
 				FE44BF2911EC0A8F00762BF1 /* NSPreferencesGeneral.pdf in Resources */,
-				CFBAE5191AFC56A900F2BB97 /* windows-i386-AppKit.xcconfig in Resources */,
 				FE71E94011FA88BF00E6F801 /* InfoPlist.strings in Resources */,
 				FE71E94111FA88BF00E6F801 /* Info.plist in Resources */,
 				FE39BE5F12013CFD00A80A71 /* NSSearchGlass.pdf in Resources */,
@@ -4045,21 +3839,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "rm -f \"${SRCROOT}/en.lproj/Localizable.strings\"\n# Then append the one from the code\ngenstrings -a -q -o \"${SRCROOT}/en.lproj\" \"${SRCROOT}\"/*m \"${SRCROOT}\"/NSColor.subproj/*m \"${SRCROOT}\"/NSColorPicker.subproj/*m \"${SRCROOT}\"/NSDrawer.subproj/*m \"\"${SRCROOT}\"/NSEvent.subproj/*m ${SRCROOT}\"/NSMenu.subproj/*m \"${SRCROOT}\"/NSTextView.subproj/*m \"${SRCROOT}\"/NSToolbar.subproj/*m \"${SRCROOT}\"/RTF.subproj/*m \"${SRCROOT}\"/Win32.subproj/*m";
-		};
-		FE4C081E1434A30A0034EE26 /* Detect Libraries */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Detect Libraries";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/O2Defines_FreeType.h",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\nmkdir -p $DERIVED_FILE_DIR\necho \"\" > $DERIVED_FILE_DIR/O2Defines_FreeType.h\n\nif [ -d ../system/i386-mingw32msvc/freetype-2.3.5 ]; then\n\techo \"FreeType 2.3.5 present.\"\n\techo \"#define FREETYPE_PRESENT 1\" >> $DERIVED_FILE_DIR/O2Defines_FreeType.h\nelse\n# Create empty libfreetype for link phase\n echo \"FreeType 2.3.5 not found\"\n touch $DERIVED_FILE_DIR/libfreetype.c\n /Developer/Cocotron/1.0/Windows/i386/gcc-4.3.1/bin/i386-pc-mingw32msvc-gcc $DERIVED_FILE_DIR/libfreetype.c -c -o $DERIVED_FILE_DIR/libfreetype.o\n /Developer/Cocotron/1.0/Windows/i386/gcc-4.3.1/bin/i386-pc-mingw32msvc-ar cr $DERIVED_FILE_DIR/libfreetype.a $DERIVED_FILE_DIR/libfreetype.o\nfi\n\necho \"\" > $DERIVED_FILE_DIR/O2Defines_libjpeg.h\nif [ -d ../system/i386-mingw32msvc/libjpeg ]; then\n\techo \"libjpeg present.\"\n\techo \"#define LIBJPEG_PRESENT 1\" >> $DERIVED_FILE_DIR/O2Defines_libjpeg.h\nelse\n# Create empty libjpeg for link phase\n echo \"libjpeg not found\"\n touch $DERIVED_FILE_DIR/libjpeg.c\n /Developer/Cocotron/1.0/Windows/i386/gcc-4.3.1/bin/i386-pc-mingw32msvc-gcc $DERIVED_FILE_DIR/libjpeg.c -c -o $DERIVED_FILE_DIR/libjpeg.o\n /Developer/Cocotron/1.0/Windows/i386/gcc-4.3.1/bin/i386-pc-mingw32msvc-ar cr $DERIVED_FILE_DIR/libjpeg.a $DERIVED_FILE_DIR/libjpeg.o\nfi\n\necho \"\" > $DERIVED_FILE_DIR/O2Defines_zlib.h\nif [ -d ../system/i386-mingw32msvc/zlib-1.2.5 ]; then\n\techo \"zlib present.\"\n\techo \"#define ZLIB_PRESENT 1\" >> $DERIVED_FILE_DIR/O2Defines_zlib.h\nelse\n# Create empty zlib for link phase\n echo \"zlib not found\"\n touch $DERIVED_FILE_DIR/zlib.c\n /Developer/Cocotron/1.0/Windows/i386/gcc-4.3.1/bin/i386-pc-mingw32msvc-gcc $DERIVED_FILE_DIR/zlib.c -c -o $DERIVED_FILE_DIR/zlib.o\n /Developer/Cocotron/1.0/Windows/i386/gcc-4.3.1/bin/i386-pc-mingw32msvc-ar cr $DERIVED_FILE_DIR/libz.a $DERIVED_FILE_DIR/zlib.o\nfi\n\necho \"\" > $DERIVED_FILE_DIR/O2Defines_libtiff.h\nif [ -d ../system/i386-mingw32msvc/libtiff ]; then\n\techo \"libitff present.\"\n\techo \"#define LIBTIFF_PRESENT 1\" >> $DERIVED_FILE_DIR/O2Defines_libtiff.h\nelse\n# Create empty libtiff for link phase\n echo \"libtiff not found\"\n touch $DERIVED_FILE_DIR/libtiff.c\n /Developer/Cocotron/1.0/Windows/i386/gcc-4.3.1/bin/i386-pc-mingw32msvc-gcc $DERIVED_FILE_DIR/libtiff.c -c -o $DERIVED_FILE_DIR/libtiff.o\n /Developer/Cocotron/1.0/Windows/i386/gcc-4.3.1/bin/i386-pc-mingw32msvc-ar cr $DERIVED_FILE_DIR/libtiff.a $DERIVED_FILE_DIR/libtiff.o\nfi\n\necho \"\" > $DERIVED_FILE_DIR/O2Defines_libpng.h\nif [ -d ../system/i386-mingw32msvc/libpng ]; then\n\techo \"libpng present.\"\n\techo \"#define LIBPNG_PRESENT 1\" >> $DERIVED_FILE_DIR/O2Defines_libpng.h\nelse\n# Create empty libpng for link phase\n echo \"libpng not found\"\n touch $DERIVED_FILE_DIR/libpng.c\n /Developer/Cocotron/1.0/Windows/i386/gcc-4.3.1/bin/i386-pc-mingw32msvc-gcc $DERIVED_FILE_DIR/libpng.c -c -o $DERIVED_FILE_DIR/libpng.o\n /Developer/Cocotron/1.0/Windows/i386/gcc-4.3.1/bin/i386-pc-mingw32msvc-ar cr $DERIVED_FILE_DIR/libpng.a $DERIVED_FILE_DIR/libpng.o\nfi\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -4511,29 +4290,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		FE01AACC0C5D9BE700AEA51A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Foundation-Windows-i386";
-			targetProxy = FE01AACB0C5D9BE700AEA51A /* PBXContainerItemProxy */;
-		};
-		FE0C4EC51041CF3200D8C100 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "OpenGL-Windows-i386";
-			targetProxy = FE0C4EC41041CF3200D8C100 /* PBXContainerItemProxy */;
-		};
-		FE0DDFBB12BFF7DD008EC2E6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "QuartzCore-Windows-i386";
-			targetProxy = FE0DDFBA12BFF7DD008EC2E6 /* PBXContainerItemProxy */;
-		};
-		FE6EDEBD0DB7AF94005503A1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "ApplicationServices-Windows-i386";
-			targetProxy = FE6EDEBC0DB7AF94005503A1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		630DC9D814CE3F2D0009A039 /* NSColorPanel.nib */ = {
 			isa = PBXVariantGroup;
@@ -4709,15 +4465,16 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		6E2B57760976075500DA0954 /* Windows-i386 */ = {
+		BFFA8C271E634DE8006BD3AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFFA8C291E634E05006BD3AA /* AppKit.xcconfig */;
 			buildSettings = {
+				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};
-			name = "Windows-i386";
+			name = Debug;
 		};
-		7E891F4D0D4967B6008150D3 /* Linux-i386 */ = {
+		BFFA8C281E634DE8006BD3AA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE1F650B1508165000C24624 /* linux-i386-framework.xcconfig */;
 			buildSettings = {
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_ENABLE_CPP_RTTI = NO;
@@ -4726,125 +4483,27 @@
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = AppKit;
 			};
-			name = "Linux-i386";
+			name = Debug;
 		};
-		7E891F4E0D4967B6008150D3 /* Linux-i386 */ = {
+		BFFA8C2A1E634E13006BD3AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFFA8C291E634E05006BD3AA /* AppKit.xcconfig */;
 			buildSettings = {
+				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};
-			name = "Linux-i386";
+			name = Release;
 		};
-		CFC5B4971AF46BF300FBB52A /* Darwin-i386 */ = {
+		BFFA8C2B1E634E13006BD3AA /* Release */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = "Darwin-i386";
-		};
-		CFC5B4981AF46BF300FBB52A /* Darwin-i386 */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE1F65061508164F00C24624 /* darwin-i386-framework.xcconfig */;
 			buildSettings = {
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_ENABLE_CPP_RTTI = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
-				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
-				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
-				GCC_WARN_MISSING_PARENTHESES = YES;
-				GCC_WARN_SHADOW = NO;
-				GCC_WARN_SIGN_COMPARE = NO;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_LABEL = YES;
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = AppKit;
 			};
-			name = "Darwin-i386";
-		};
-		CFC5B49C1AF46BF900FBB52A /* FreeBSD-i386 */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = "FreeBSD-i386";
-		};
-		CFC5B49D1AF46BF900FBB52A /* FreeBSD-i386 */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE1F65091508165000C24624 /* freebsd-i386-framework.xcconfig */;
-			buildSettings = {
-				GCC_ENABLE_CPP_EXCEPTIONS = NO;
-				GCC_ENABLE_CPP_RTTI = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
-				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
-				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
-				GCC_WARN_MISSING_PARENTHESES = YES;
-				GCC_WARN_SHADOW = NO;
-				GCC_WARN_SIGN_COMPARE = NO;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_LABEL = YES;
-				INFOPLIST_FILE = Info.plist;
-				PRODUCT_NAME = AppKit;
-			};
-			name = "FreeBSD-i386";
-		};
-		FE01AAC00C5D9BCB00AEA51A /* Windows-i386 */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CFBAE5181AFC56A900F2BB97 /* windows-i386-AppKit.xcconfig */;
-			buildSettings = {
-				GCC_ENABLE_CPP_EXCEPTIONS = NO;
-				GCC_ENABLE_CPP_RTTI = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
-				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
-				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
-				GCC_WARN_MISSING_PARENTHESES = YES;
-				GCC_WARN_SHADOW = NO;
-				GCC_WARN_SIGN_COMPARE = NO;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_LABEL = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(DSTROOT)",
-					"$(DSTROOT)/usr/include",
-					"$(DSTROOT)/freetype-2.3.5/include/freetype2/",
-					"$(DSTROOT)/freetype-2.3.5/include",
-				);
-				INFOPLIST_FILE = Info.plist;
-				LIBRARY_SEARCH_PATHS = (
-					"$(DSTROOT)/libtiff/lib",
-					"$(DSTROOT)/libpng/lib",
-					"$(DSTROOT)/libjpeg/lib",
-					"$(DSTROOT)/freetype-2.3.5/lib",
-					"$(DSTROOT)/zlib-1.2.5/lib",
-					"$(WINDOWS_i386_LIBRARY_SEARCH_PATHS)",
-				);
-				OTHER_LDFLAGS = (
-					"-lfreetype",
-					"-ltiff",
-					"-lpng",
-					"-ljpeg",
-					"-lz",
-					"-lmsimg32",
-					"-lole32",
-					"-lgdi32",
-					"-luser32",
-					"-lcomdlg32",
-					"-lcomctl32",
-					"-lopengl32",
-					"-lwinmm",
-					"$(WINDOWS_i386_FRAMEWORK_LDFLAGS)",
-				);
-				PRODUCT_NAME = AppKit;
-				WINDOWS_i386_FRAMEWORK_LDFLAGS = "-shared -Wl,--export-all-symbols -Wl,--enable-auto-import -Wl,--out-implib,$TARGET_BUILD_DIR/$(PRODUCT_NAME).framework/lib$(PRODUCT_NAME).a $(WINDOWS_i386_COMPILER_LDFLAGS)";
-			};
-			name = "Windows-i386";
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -4852,24 +4511,20 @@
 		6E2B57740976075500DA0954 /* Build configuration list for PBXProject "AppKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6E2B57760976075500DA0954 /* Windows-i386 */,
-				CFC5B49C1AF46BF900FBB52A /* FreeBSD-i386 */,
-				CFC5B4971AF46BF300FBB52A /* Darwin-i386 */,
-				7E891F4E0D4967B6008150D3 /* Linux-i386 */,
+				BFFA8C271E634DE8006BD3AA /* Debug */,
+				BFFA8C2A1E634E13006BD3AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Windows-i386";
+			defaultConfigurationName = Release;
 		};
 		FE01AABF0C5D9BCB00AEA51A /* Build configuration list for PBXNativeTarget "AppKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FE01AAC00C5D9BCB00AEA51A /* Windows-i386 */,
-				CFC5B49D1AF46BF900FBB52A /* FreeBSD-i386 */,
-				CFC5B4981AF46BF300FBB52A /* Darwin-i386 */,
-				7E891F4D0D4967B6008150D3 /* Linux-i386 */,
+				BFFA8C281E634DE8006BD3AA /* Debug */,
+				BFFA8C2B1E634E13006BD3AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Windows-i386";
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

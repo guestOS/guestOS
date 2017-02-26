@@ -1,3 +1,4 @@
+#ifdef WINDOWS
 #import <AppKit/NSSound.h>
 
 @interface NSSound_win32 : NSSound {
@@ -7,3 +8,5 @@
 }
 
 @end
+
+#endif

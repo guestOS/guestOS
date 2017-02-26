@@ -59,7 +59,12 @@
    _bufferObjects=malloc(_numberOfBuffers*sizeof(GLuint));
    _readPixels=malloc(_numberOfBuffers*sizeof(void *));
    _staticPixels=malloc(_numberOfBuffers*sizeof(void *));
+#ifdef WINDOWS
    _surface=[[O2Surface_DIBSection alloc] initWithWidth:_width height:-_height compatibleWithDeviceContext:nil];
+#else
+#warning FIXME!
+   _surface=nil;
+#endif
    
    for(i=0;i<_numberOfBuffers;i++){
     _bufferObjects[i]=0;

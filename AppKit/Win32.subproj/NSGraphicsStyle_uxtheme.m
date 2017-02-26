@@ -1,3 +1,4 @@
+#ifdef WINDOWS
 #import "NSGraphicsStyle_uxtheme.h"
 #import <AppKit/NSGraphicsContext.h>
 #import <Onyx2D/O2Context.h>
@@ -906,3 +907,5 @@ static inline RECT transformToRECT(O2AffineTransform matrix,NSRect rect) {
 }
 
 @end
+
+#endif

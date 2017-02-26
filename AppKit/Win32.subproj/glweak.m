@@ -1,3 +1,4 @@
+#ifdef WINDOWS
 #import <OpenGL/glweak.h>
 #import <windows.h>
 #import <Foundation/NSString.h>
@@ -87,3 +88,4 @@ void CGLBufferSubData(GLenum target,GLintptr offset,GLsizeiptr size,const GLvoid
    function(target,offset,size,data);
 }
 
+#endif

@@ -1,3 +1,4 @@
+#ifdef WINDOWS
 #import <AppKit/NSSound.h>
 
 #include <windows.h>
@@ -84,3 +85,5 @@ DECLARE_INTERFACE_(IMediaControl, IDispatch) {
 }
 
 @end
+
+#endif

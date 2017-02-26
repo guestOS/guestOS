@@ -12,7 +12,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #import <Onyx2D/O2LZW.h>
 #import <Foundation/NSDebug.h>
 
-#import "O2Defines_libtiff.h"
+#import "O2Availability.h"
 
 #if LIBTIFF_PRESENT
 #import <libtiff/include/tiffio.h>

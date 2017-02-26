@@ -1,7 +1,7 @@
 #import <Onyx2D/O2Encoder_PNG.h>
 
 #ifndef __APPLE__
-#import "O2Defines_libpng.h"
+#import "O2Availability.h"
 #endif
 
 O2PNGEncoderRef O2PNGEncoderCreate(O2DataConsumerRef consumer) {
@@ -16,7 +16,7 @@ void O2PNGEncoderDealloc(O2PNGEncoderRef self) {
    NSZoneFree(NULL,self);
 }
 
-#ifdef LIBPNG_PRESENT
+#if LIBPNG_PRESENT
 #include <libpng/include/png.h>
 #include <zlib-1.2.5/include/zlib.h>
 

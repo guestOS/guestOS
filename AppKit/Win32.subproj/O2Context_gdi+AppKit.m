@@ -1,3 +1,4 @@
+#ifdef WINDOWS
 #import "O2Context_gdi+AppKit.h"
 #import "Win32Window.h"
 #import "Win32DeviceContextPrinter.h"
@@ -67,3 +68,5 @@
 }
 
 @end
+
+#endif

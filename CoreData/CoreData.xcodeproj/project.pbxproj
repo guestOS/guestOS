@@ -58,49 +58,18 @@
 		FEDE52F61209C3AE003D3EF1 /* NSEntityDescription-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FEDE52F51209C3AE003D3EF1 /* NSEntityDescription-Private.h */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		FE39C6841203D5F800A80A71 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE59F2FF0D54301C00D54A25 /* Foundation.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = FE01A5970C5D9B6900AEA51A;
-			remoteInfo = "Foundation-Windows-i386";
-		};
-		FE59F30F0D54301D00D54A25 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE59F2FF0D54301C00D54A25 /* Foundation.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FE01A7EC0C5D9B6900AEA51A;
-			remoteInfo = "Foundation-Windows-i386";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* CoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF2150131E63448700036F88 /* CoreData.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CoreData.xcconfig; sourceTree = "<group>"; };
 		FE064327121AD56400373F23 /* NSManagedObjectSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSManagedObjectSet.h; sourceTree = "<group>"; };
 		FE064328121AD56400373F23 /* NSManagedObjectSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSManagedObjectSet.m; sourceTree = "<group>"; };
 		FE064329121AD56400373F23 /* NSManagedObjectSetEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSManagedObjectSetEnumerator.h; sourceTree = "<group>"; };
 		FE06432A121AD56400373F23 /* NSManagedObjectSetEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSManagedObjectSetEnumerator.m; sourceTree = "<group>"; };
 		FE06433D121AD7C200373F23 /* NSManagedObjectMutableSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSManagedObjectMutableSet.h; sourceTree = "<group>"; };
 		FE06433E121AD7C200373F23 /* NSManagedObjectMutableSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSManagedObjectMutableSet.m; sourceTree = "<group>"; };
-		FE06B1221430E7390071169B /* darwin-i386.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-i386.xcconfig"; sourceTree = "<group>"; };
-		FE06B1231430E7390071169B /* darwin-ppc.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-ppc.xcconfig"; sourceTree = "<group>"; };
-		FE06B1241430E7390071169B /* darwin-x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-x86_64.xcconfig"; sourceTree = "<group>"; };
-		FE06B1251430E7390071169B /* darwin.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = darwin.xcconfig; sourceTree = "<group>"; };
-		FE06B1261430E7390071169B /* freebsd-i386.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "freebsd-i386.xcconfig"; sourceTree = "<group>"; };
-		FE06B1271430E7390071169B /* freebsd.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = freebsd.xcconfig; sourceTree = "<group>"; };
-		FE06B1281430E7390071169B /* linux-arm.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-arm.xcconfig"; sourceTree = "<group>"; };
-		FE06B1291430E7390071169B /* linux-i386.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-i386.xcconfig"; sourceTree = "<group>"; };
-		FE06B12A1430E7390071169B /* linux-ppc.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-ppc.xcconfig"; sourceTree = "<group>"; };
-		FE06B12B1430E7390071169B /* linux.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = linux.xcconfig; sourceTree = "<group>"; };
-		FE06B12C1430E7390071169B /* platform.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = platform.xcconfig; sourceTree = "<group>"; };
-		FE06B12D1430E7390071169B /* solaris-sparc.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "solaris-sparc.xcconfig"; sourceTree = "<group>"; };
-		FE06B12E1430E7390071169B /* solaris.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = solaris.xcconfig; sourceTree = "<group>"; };
-		FE06B12F1430E7390071169B /* windows-i386.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "windows-i386.xcconfig"; sourceTree = "<group>"; };
-		FE06B1301430E7390071169B /* windows.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = windows.xcconfig; sourceTree = "<group>"; };
 		FE1FBEED11E6692400A9A87A /* NSAtomicStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSAtomicStore.h; sourceTree = "<group>"; };
 		FE1FBEEE11E6692400A9A87A /* NSAtomicStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSAtomicStore.m; sourceTree = "<group>"; };
 		FE1FBEEF11E6692400A9A87A /* NSAtomicStoreCacheNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSAtomicStoreCacheNode.h; sourceTree = "<group>"; };
@@ -114,8 +83,6 @@
 		FE2131390DBFC72700CEDC65 /* dllmain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dllmain.m; sourceTree = "<group>"; };
 		FE21328F0DBFD21900CEDC65 /* CoreDataExports.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataExports.h; sourceTree = "<group>"; };
 		FE2132910DBFD22000CEDC65 /* CoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreData.h; sourceTree = "<group>"; };
-		FE59F2FF0D54301C00D54A25 /* Foundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Foundation.xcodeproj; path = ../Foundation/Foundation.xcodeproj; sourceTree = SOURCE_ROOT; };
-		FE7085CF1431178000B99A95 /* windows-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "windows-i386-framework.xcconfig"; sourceTree = "<group>"; };
 		FE82F3BE0BF1042F00B18B54 /* NSAttributeDescription.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NSAttributeDescription.h; sourceTree = "<group>"; };
 		FE82F3BF0BF1042F00B18B54 /* NSAttributeDescription.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NSAttributeDescription.m; sourceTree = "<group>"; };
 		FE82F3C00BF1042F00B18B54 /* NSEntityDescription.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NSEntityDescription.h; sourceTree = "<group>"; };
@@ -140,14 +107,6 @@
 		FE82F3D30BF1042F00B18B54 /* NSRelationshipDescription.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NSRelationshipDescription.m; sourceTree = "<group>"; };
 		FEA2C92E12077436003B1BB9 /* NSManagedObject-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject-Private.h"; sourceTree = "<group>"; };
 		FEA2C92F12077436003B1BB9 /* NSManagedObjectID-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectID-Private.h"; sourceTree = "<group>"; };
-		FEC0A3681709354A002A60B7 /* darwin-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-i386-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A3691709354A002A60B7 /* darwin-ppc-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-ppc-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A36A1709354A002A60B7 /* darwin-x86_64-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-x86_64-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A36B1709354A002A60B7 /* freebsd-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "freebsd-i386-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A36C1709354A002A60B7 /* linux-arm-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-arm-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A36D1709354A002A60B7 /* linux-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-i386-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A36E1709354A002A60B7 /* linux-ppc-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-ppc-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A36F1709354A002A60B7 /* solaris-sparc-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "solaris-sparc-framework.xcconfig"; sourceTree = "<group>"; };
 		FEDE4B941208545A003D3EF1 /* NSPersistentStoreCoordinator-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSPersistentStoreCoordinator-Private.h"; sourceTree = "<group>"; };
 		FEDE4E4F12089EDC003D3EF1 /* CoreDataErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataErrors.h; sourceTree = "<group>"; };
 		FEDE4E5012089EDC003D3EF1 /* CoreDataErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataErrors.m; sourceTree = "<group>"; };
@@ -178,57 +137,11 @@
 		0867D691FE84028FC02AAC07 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				FE06B1211430E7390071169B /* xcconfig */,
-				FE06433D121AD7C200373F23 /* NSManagedObjectMutableSet.h */,
-				FE06433E121AD7C200373F23 /* NSManagedObjectMutableSet.m */,
-				FE064327121AD56400373F23 /* NSManagedObjectSet.h */,
-				FE064328121AD56400373F23 /* NSManagedObjectSet.m */,
-				FE064329121AD56400373F23 /* NSManagedObjectSetEnumerator.h */,
-				FE06432A121AD56400373F23 /* NSManagedObjectSetEnumerator.m */,
-				FEDE52F51209C3AE003D3EF1 /* NSEntityDescription-Private.h */,
-				FEDE51FD1209B1A0003D3EF1 /* NSManagedObjectContext-Private.h */,
-				FEDE4E4F12089EDC003D3EF1 /* CoreDataErrors.h */,
-				FEDE4E5012089EDC003D3EF1 /* CoreDataErrors.m */,
-				FEDE4B941208545A003D3EF1 /* NSPersistentStoreCoordinator-Private.h */,
-				FEA2C92E12077436003B1BB9 /* NSManagedObject-Private.h */,
-				FEA2C92F12077436003B1BB9 /* NSManagedObjectID-Private.h */,
+				BF2150131E63448700036F88 /* CoreData.xcconfig */,
+				BF2150111E63446400036F88 /* Headers */,
+				BF2150121E63446F00036F88 /* Sources */,
 				08FB77AEFE84172EC02AAC07 /* Classes */,
-				FE2132910DBFD22000CEDC65 /* CoreData.h */,
-				FE21328F0DBFD21900CEDC65 /* CoreDataExports.h */,
 				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
-				FE59F2FF0D54301C00D54A25 /* Foundation.xcodeproj */,
-				FE1FBEED11E6692400A9A87A /* NSAtomicStore.h */,
-				FE1FBEEE11E6692400A9A87A /* NSAtomicStore.m */,
-				FE1FBEEF11E6692400A9A87A /* NSAtomicStoreCacheNode.h */,
-				FE1FBEF011E6692400A9A87A /* NSAtomicStoreCacheNode.m */,
-				FE82F3BE0BF1042F00B18B54 /* NSAttributeDescription.h */,
-				FE82F3BF0BF1042F00B18B54 /* NSAttributeDescription.m */,
-				FE82F3C00BF1042F00B18B54 /* NSEntityDescription.h */,
-				FE82F3C10BF1042F00B18B54 /* NSEntityDescription.m */,
-				FE82F3C20BF1042F00B18B54 /* NSFetchedPropertyDescription.h */,
-				FE82F3C30BF1042F00B18B54 /* NSFetchedPropertyDescription.m */,
-				FE82F3C40BF1042F00B18B54 /* NSFetchRequest.h */,
-				FE82F3C50BF1042F00B18B54 /* NSFetchRequest.m */,
-				FE1FC22511E8116200A9A87A /* NSInMemoryPersistentStore.h */,
-				FE1FC22611E8116200A9A87A /* NSInMemoryPersistentStore.m */,
-				FE82F3C60BF1042F00B18B54 /* NSManagedObject.h */,
-				FE82F3C70BF1042F00B18B54 /* NSManagedObject.m */,
-				FE82F3C80BF1042F00B18B54 /* NSManagedObjectContext.h */,
-				FE82F3C90BF1042F00B18B54 /* NSManagedObjectContext.m */,
-				FE82F3CA0BF1042F00B18B54 /* NSManagedObjectID.h */,
-				FE82F3CB0BF1042F00B18B54 /* NSManagedObjectID.m */,
-				FE82F3CC0BF1042F00B18B54 /* NSManagedObjectModel.h */,
-				FE82F3CD0BF1042F00B18B54 /* NSManagedObjectModel.m */,
-				FE1FBEF111E6692400A9A87A /* NSPersistentStore.h */,
-				FE1FBEF211E6692400A9A87A /* NSPersistentStore.m */,
-				FE82F3CE0BF1042F00B18B54 /* NSPersistentStoreCoordinator.h */,
-				FE82F3CF0BF1042F00B18B54 /* NSPersistentStoreCoordinator.m */,
-				FE82F3D00BF1042F00B18B54 /* NSPropertyDescription.h */,
-				FE82F3D10BF1042F00B18B54 /* NSPropertyDescription.m */,
-				FE82F3D20BF1042F00B18B54 /* NSRelationshipDescription.h */,
-				FE82F3D30BF1042F00B18B54 /* NSRelationshipDescription.m */,
-				FE1FC22711E8116200A9A87A /* NSXMLPersistentStore.h */,
-				FE1FC22811E8116200A9A87A /* NSXMLPersistentStore.m */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				034768DFFF38A50411DB9C8B /* Products */,
 				089C1665FE841158C02AAC07 /* Resources */,
@@ -287,44 +200,65 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
-		FE06B1211430E7390071169B /* xcconfig */ = {
+		BF2150111E63446400036F88 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				FEC0A3681709354A002A60B7 /* darwin-i386-framework.xcconfig */,
-				FEC0A3691709354A002A60B7 /* darwin-ppc-framework.xcconfig */,
-				FEC0A36A1709354A002A60B7 /* darwin-x86_64-framework.xcconfig */,
-				FEC0A36B1709354A002A60B7 /* freebsd-i386-framework.xcconfig */,
-				FEC0A36C1709354A002A60B7 /* linux-arm-framework.xcconfig */,
-				FEC0A36D1709354A002A60B7 /* linux-i386-framework.xcconfig */,
-				FEC0A36E1709354A002A60B7 /* linux-ppc-framework.xcconfig */,
-				FEC0A36F1709354A002A60B7 /* solaris-sparc-framework.xcconfig */,
-				FE06B1221430E7390071169B /* darwin-i386.xcconfig */,
-				FE06B1231430E7390071169B /* darwin-ppc.xcconfig */,
-				FE06B1241430E7390071169B /* darwin-x86_64.xcconfig */,
-				FE06B1251430E7390071169B /* darwin.xcconfig */,
-				FE06B1261430E7390071169B /* freebsd-i386.xcconfig */,
-				FE06B1271430E7390071169B /* freebsd.xcconfig */,
-				FE06B1281430E7390071169B /* linux-arm.xcconfig */,
-				FE06B1291430E7390071169B /* linux-i386.xcconfig */,
-				FE06B12A1430E7390071169B /* linux-ppc.xcconfig */,
-				FE06B12B1430E7390071169B /* linux.xcconfig */,
-				FE06B12C1430E7390071169B /* platform.xcconfig */,
-				FE06B12D1430E7390071169B /* solaris-sparc.xcconfig */,
-				FE06B12E1430E7390071169B /* solaris.xcconfig */,
-				FE06B12F1430E7390071169B /* windows-i386.xcconfig */,
-				FE06B1301430E7390071169B /* windows.xcconfig */,
-				FE7085CF1431178000B99A95 /* windows-i386-framework.xcconfig */,
+				FE2132910DBFD22000CEDC65 /* CoreData.h */,
+				FEDE4E4F12089EDC003D3EF1 /* CoreDataErrors.h */,
+				FE21328F0DBFD21900CEDC65 /* CoreDataExports.h */,
+				FE1FBEED11E6692400A9A87A /* NSAtomicStore.h */,
+				FE1FBEEF11E6692400A9A87A /* NSAtomicStoreCacheNode.h */,
+				FE82F3BE0BF1042F00B18B54 /* NSAttributeDescription.h */,
+				FEDE52F51209C3AE003D3EF1 /* NSEntityDescription-Private.h */,
+				FE82F3C00BF1042F00B18B54 /* NSEntityDescription.h */,
+				FE82F3C20BF1042F00B18B54 /* NSFetchedPropertyDescription.h */,
+				FE82F3C40BF1042F00B18B54 /* NSFetchRequest.h */,
+				FE1FC22511E8116200A9A87A /* NSInMemoryPersistentStore.h */,
+				FEA2C92E12077436003B1BB9 /* NSManagedObject-Private.h */,
+				FE82F3C60BF1042F00B18B54 /* NSManagedObject.h */,
+				FEDE51FD1209B1A0003D3EF1 /* NSManagedObjectContext-Private.h */,
+				FE82F3C80BF1042F00B18B54 /* NSManagedObjectContext.h */,
+				FEA2C92F12077436003B1BB9 /* NSManagedObjectID-Private.h */,
+				FE82F3CA0BF1042F00B18B54 /* NSManagedObjectID.h */,
+				FE82F3CC0BF1042F00B18B54 /* NSManagedObjectModel.h */,
+				FE06433D121AD7C200373F23 /* NSManagedObjectMutableSet.h */,
+				FE064327121AD56400373F23 /* NSManagedObjectSet.h */,
+				FE064329121AD56400373F23 /* NSManagedObjectSetEnumerator.h */,
+				FE1FBEF111E6692400A9A87A /* NSPersistentStore.h */,
+				FEDE4B941208545A003D3EF1 /* NSPersistentStoreCoordinator-Private.h */,
+				FE82F3CE0BF1042F00B18B54 /* NSPersistentStoreCoordinator.h */,
+				FE82F3D00BF1042F00B18B54 /* NSPropertyDescription.h */,
+				FE82F3D20BF1042F00B18B54 /* NSRelationshipDescription.h */,
+				FE1FC22711E8116200A9A87A /* NSXMLPersistentStore.h */,
 			);
-			name = xcconfig;
-			path = ../xcconfig;
-			sourceTree = SOURCE_ROOT;
+			name = Headers;
+			sourceTree = "<group>";
 		};
-		FE59F3000D54301C00D54A25 /* Products */ = {
+		BF2150121E63446F00036F88 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				FE59F3100D54301D00D54A25 /* Foundation.framework */,
+				FEDE4E5012089EDC003D3EF1 /* CoreDataErrors.m */,
+				FE1FBEEE11E6692400A9A87A /* NSAtomicStore.m */,
+				FE1FBEF011E6692400A9A87A /* NSAtomicStoreCacheNode.m */,
+				FE82F3BF0BF1042F00B18B54 /* NSAttributeDescription.m */,
+				FE82F3C10BF1042F00B18B54 /* NSEntityDescription.m */,
+				FE82F3C30BF1042F00B18B54 /* NSFetchedPropertyDescription.m */,
+				FE82F3C50BF1042F00B18B54 /* NSFetchRequest.m */,
+				FE1FC22611E8116200A9A87A /* NSInMemoryPersistentStore.m */,
+				FE82F3C70BF1042F00B18B54 /* NSManagedObject.m */,
+				FE82F3C90BF1042F00B18B54 /* NSManagedObjectContext.m */,
+				FE82F3CB0BF1042F00B18B54 /* NSManagedObjectID.m */,
+				FE82F3CD0BF1042F00B18B54 /* NSManagedObjectModel.m */,
+				FE06433E121AD7C200373F23 /* NSManagedObjectMutableSet.m */,
+				FE064328121AD56400373F23 /* NSManagedObjectSet.m */,
+				FE06432A121AD56400373F23 /* NSManagedObjectSetEnumerator.m */,
+				FE1FBEF211E6692400A9A87A /* NSPersistentStore.m */,
+				FE82F3CF0BF1042F00B18B54 /* NSPersistentStoreCoordinator.m */,
+				FE82F3D10BF1042F00B18B54 /* NSPropertyDescription.m */,
+				FE82F3D30BF1042F00B18B54 /* NSRelationshipDescription.m */,
+				FE1FC22811E8116200A9A87A /* NSXMLPersistentStore.m */,
 			);
-			name = Products;
+			name = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,7 +313,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				FE39C6851203D5F800A80A71 /* PBXTargetDependency */,
 			);
 			name = CoreData;
 			productInstallPath = "$(HOME)/Library/Frameworks";
@@ -408,28 +341,12 @@
 			mainGroup = 0867D691FE84028FC02AAC07 /* CoreData */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = FE59F3000D54301C00D54A25 /* Products */;
-					ProjectRef = FE59F2FF0D54301C00D54A25 /* Foundation.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				8DC2EF4F0486A6940098B216 /* CoreData */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		FE59F3100D54301D00D54A25 /* Foundation.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Foundation.framework;
-			remoteRef = FE59F30F0D54301D00D54A25 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8DC2EF520486A6940098B216 /* Resources */ = {
@@ -472,14 +389,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		FE39C6851203D5F800A80A71 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Foundation-Windows-i386";
-			targetProxy = FE39C6841203D5F800A80A71 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -492,9 +401,16 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1DEB91AE08733DA50010E9CD /* Windows-i386 */ = {
+		BF21500D1E63440C00036F88 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE7085CF1431178000B99A95 /* windows-i386-framework.xcconfig */;
+			baseConfigurationReference = BF2150131E63448700036F88 /* CoreData.xcconfig */;
+			buildSettings = {
+				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
+			};
+			name = Debug;
+		};
+		BF21500E1E63440C00036F88 /* Debug */ = {
+			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = Info.plist;
 				OTHER_CFLAGS = (
@@ -503,23 +419,18 @@
 				);
 				PRODUCT_NAME = CoreData;
 			};
-			name = "Windows-i386";
+			name = Debug;
 		};
-		1DEB91B208733DA50010E9CD /* Windows-i386 */ = {
+		BF21500F1E63442000036F88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF2150131E63448700036F88 /* CoreData.xcconfig */;
 			buildSettings = {
+				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};
-			name = "Windows-i386";
+			name = Release;
 		};
-		BFFF97F41DEF1F6C00067F30 /* Darwin-i386 */ = {
+		BF2150101E63442000036F88 /* Release */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = "Darwin-i386";
-		};
-		BFFF97F51DEF1F6C00067F30 /* Darwin-i386 */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEC0A3681709354A002A60B7 /* darwin-i386-framework.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Info.plist;
 				OTHER_CFLAGS = (
@@ -528,45 +439,7 @@
 				);
 				PRODUCT_NAME = CoreData;
 			};
-			name = "Darwin-i386";
-		};
-		BFFF97F61DEF1F7B00067F30 /* Linux-i386 */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = "Linux-i386";
-		};
-		BFFF97F71DEF1F7B00067F30 /* Linux-i386 */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEC0A36D1709354A002A60B7 /* linux-i386-framework.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = Info.plist;
-				OTHER_CFLAGS = (
-					"-DCOREDATA_INSIDE_BUILD",
-					"$(OTHER_CFLAGS)",
-				);
-				PRODUCT_NAME = CoreData;
-			};
-			name = "Linux-i386";
-		};
-		BFFF97F81DEF1F8A00067F30 /* FreeBSD-i386 */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = "FreeBSD-i386";
-		};
-		BFFF97F91DEF1F8A00067F30 /* FreeBSD-i386 */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEC0A36B1709354A002A60B7 /* freebsd-i386-framework.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = Info.plist;
-				OTHER_CFLAGS = (
-					"-DCOREDATA_INSIDE_BUILD",
-					"$(OTHER_CFLAGS)",
-				);
-				PRODUCT_NAME = CoreData;
-			};
-			name = "FreeBSD-i386";
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -574,24 +447,20 @@
 		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "CoreData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DEB91AE08733DA50010E9CD /* Windows-i386 */,
-				BFFF97F51DEF1F6C00067F30 /* Darwin-i386 */,
-				BFFF97F71DEF1F7B00067F30 /* Linux-i386 */,
-				BFFF97F91DEF1F8A00067F30 /* FreeBSD-i386 */,
+				BF21500E1E63440C00036F88 /* Debug */,
+				BF2150101E63442000036F88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Windows-i386";
+			defaultConfigurationName = Release;
 		};
 		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "CoreData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DEB91B208733DA50010E9CD /* Windows-i386 */,
-				BFFF97F41DEF1F6C00067F30 /* Darwin-i386 */,
-				BFFF97F61DEF1F7B00067F30 /* Linux-i386 */,
-				BFFF97F81DEF1F8A00067F30 /* FreeBSD-i386 */,
+				BF21500D1E63440C00036F88 /* Debug */,
+				BF21500F1E63442000036F88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Windows-i386";
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

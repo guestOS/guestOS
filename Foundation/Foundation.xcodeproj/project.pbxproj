@@ -1190,7 +1190,6 @@
 		BF5C911C1E6196960039F83F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = ../CoreFoundation/build/Debug/CoreFoundation.framework; sourceTree = "<group>"; };
 		BF5C911D1E6196960039F83F /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = ../CoreServices/build/Debug/CoreServices.framework; sourceTree = "<group>"; };
 		BF5C918F1E63128C0039F83F /* Foundation.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Foundation.xcconfig; sourceTree = "<group>"; };
-		BFBE53DB1E4671D700ED77AD /* linux-x86_64-Foundation.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "linux-x86_64-Foundation.xcconfig"; sourceTree = "<group>"; };
 		BFBE53FC1E46877E00ED77AD /* dyld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dyld.h; sourceTree = "<group>"; };
 		C64663DB15590E7B00A162B8 /* libmain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = libmain.m; sourceTree = "<group>"; };
 		C64663DD15590E9400A162B8 /* libmain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = libmain.m; sourceTree = "<group>"; };
@@ -1226,7 +1225,6 @@
 		CF0F7AC01AE9E7C1003EA762 /* NSString_isoLatin2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString_isoLatin2.m; sourceTree = "<group>"; };
 		CF0F7AC41AE9EB16003EA762 /* NSBacktraceFunctions_solaris.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSBacktraceFunctions_solaris.m; path = platform_solaris/NSBacktraceFunctions_solaris.m; sourceTree = "<group>"; };
 		CF0F7AC61AE9EB23003EA762 /* NSBacktraceFunctions_win32.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSBacktraceFunctions_win32.m; sourceTree = "<group>"; };
-		CF2819791AF9A5BF00E93CEE /* windows-i386-Foundation.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "windows-i386-Foundation.xcconfig"; path = "../xcconfig/windows-i386-Foundation.xcconfig"; sourceTree = SOURCE_ROOT; };
 		CF595A8B1B1ABFB600F7BE40 /* objc_lock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objc_lock.h; sourceTree = "<group>"; };
 		CF652CEE1B116C5D0090D2FE /* objc_log.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = objc_log.c; sourceTree = "<group>"; };
 		CF652CEF1B116C5D0090D2FE /* objc_log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objc_log.h; sourceTree = "<group>"; };
@@ -1235,33 +1233,9 @@
 		CF652CF61B116D180090D2FE /* objc_exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = objc_exception.m; sourceTree = "<group>"; };
 		CF652CF81B116D4E0090D2FE /* objc-arc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "objc-arc.c"; sourceTree = "<group>"; };
 		CF7FA1FF1B18006E00840DB1 /* dyld.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dyld.c; sourceTree = "<group>"; };
-		CFB9BAFF1B058BF1001EE95E /* freebsd-i386-Foundation.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "freebsd-i386-Foundation.xcconfig"; sourceTree = "<group>"; };
-		CFB9BB011B058F52001EE95E /* darwin-x86_64-Foundation.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-x86_64-Foundation.xcconfig"; sourceTree = "<group>"; };
-		CFB9BB031B058F84001EE95E /* linux-arm-Foundation.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-arm-Foundation.xcconfig"; sourceTree = "<group>"; };
 		CFCEA4681B04318B00B3B087 /* NSPlatform_linux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSPlatform_linux.h; path = platform_linux/NSPlatform_linux.h; sourceTree = "<group>"; };
 		CFCEA4691B04318B00B3B087 /* NSPlatform_linux.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSPlatform_linux.m; path = platform_linux/NSPlatform_linux.m; sourceTree = "<group>"; };
-		CFCEA46C1B043F4E00B3B087 /* darwin-i386-Foundation.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-i386-Foundation.xcconfig"; sourceTree = "<group>"; };
-		CFCEA46D1B043F4E00B3B087 /* darwin-i386.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-i386.xcconfig"; sourceTree = "<group>"; };
-		CFCEA46E1B043F4E00B3B087 /* darwin-ppc.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-ppc.xcconfig"; sourceTree = "<group>"; };
-		CFCEA46F1B043F4E00B3B087 /* darwin-x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-x86_64.xcconfig"; sourceTree = "<group>"; };
-		CFCEA4701B043F4E00B3B087 /* darwin.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = darwin.xcconfig; sourceTree = "<group>"; };
-		CFCEA4711B043F4E00B3B087 /* freebsd-i386.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "freebsd-i386.xcconfig"; sourceTree = "<group>"; };
-		CFCEA4721B043F4E00B3B087 /* freebsd.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = freebsd.xcconfig; sourceTree = "<group>"; };
-		CFCEA4731B043F4E00B3B087 /* linux-arm.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-arm.xcconfig"; sourceTree = "<group>"; };
-		CFCEA4741B043F4E00B3B087 /* linux-ppc.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-ppc.xcconfig"; sourceTree = "<group>"; };
-		CFCEA4751B043F4E00B3B087 /* linux.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = linux.xcconfig; sourceTree = "<group>"; };
-		CFCEA4761B043F4E00B3B087 /* platform-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "platform-framework.xcconfig"; sourceTree = "<group>"; };
-		CFCEA4771B043F4E00B3B087 /* platform.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = platform.xcconfig; sourceTree = "<group>"; };
-		CFCEA4781B043F4E00B3B087 /* solaris-sparc-Foundation.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "solaris-sparc-Foundation.xcconfig"; sourceTree = "<group>"; };
-		CFCEA4791B043F4E00B3B087 /* solaris-sparc.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "solaris-sparc.xcconfig"; sourceTree = "<group>"; };
-		CFCEA47A1B043F4E00B3B087 /* solaris.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = solaris.xcconfig; sourceTree = "<group>"; };
-		CFCEA47B1B043F4E00B3B087 /* windows-i386-AppKit.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "windows-i386-AppKit.xcconfig"; sourceTree = "<group>"; };
-		CFCEA47C1B043F4E00B3B087 /* windows-i386-bundle.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "windows-i386-bundle.xcconfig"; sourceTree = "<group>"; };
-		CFCEA47D1B043F4E00B3B087 /* windows-i386-clang.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "windows-i386-clang.xcconfig"; sourceTree = "<group>"; };
-		CFCEA47E1B043F4E00B3B087 /* windows.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = windows.xcconfig; sourceTree = "<group>"; };
 		CFE3093A1B06E39E008442BF /* OBJCRegisterModule_Darwin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBJCRegisterModule_Darwin.h; sourceTree = "<group>"; };
-		CFECC8501AFF0F2000D34AE4 /* linux-i386-Foundation.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-i386-Foundation.xcconfig"; sourceTree = "<group>"; };
-		CFECC8521AFF0F4000D34AE4 /* linux-i386.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-i386.xcconfig"; sourceTree = "<group>"; };
 		FE01A7EC0C5D9B6900AEA51A /* Foundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Foundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE09AF6E13FCC68100B53D10 /* NSOrthography.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSOrthography.h; sourceTree = "<group>"; };
 		FE09AF6F13FCC68100B53D10 /* NSOrthography.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSOrthography.m; sourceTree = "<group>"; };
@@ -1355,7 +1329,6 @@
 		FE6CF89F1152743100B6D893 /* objc_malloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = objc_malloc.c; sourceTree = "<group>"; };
 		FE6DC2550BA902710082AC66 /* NSAffineTransform.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NSAffineTransform.h; sourceTree = "<group>"; };
 		FE6DC2560BA902710082AC66 /* NSAffineTransform.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NSAffineTransform.m; sourceTree = "<group>"; };
-		FE70869F143117F100B99A95 /* windows-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "windows-i386-framework.xcconfig"; sourceTree = "<group>"; };
 		FE720FD4124C56FA009B690D /* NSKeyPathObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSKeyPathObserver.h; sourceTree = "<group>"; };
 		FE720FD5124C56FA009B690D /* NSKeyPathObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSKeyPathObserver.m; sourceTree = "<group>"; };
 		FE721025124CE420009B690D /* NSKeyObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSKeyObserver.h; sourceTree = "<group>"; };
@@ -1541,14 +1514,6 @@
 		FEBF535B0F925FA3005DC684 /* objc_protocol.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = objc_protocol.c; sourceTree = "<group>"; };
 		FEBF53670F926025005DC684 /* objc_protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objc_protocol.h; sourceTree = "<group>"; };
 		FEBF545A0F93AE8A005DC684 /* objc_property.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = objc_property.c; sourceTree = "<group>"; };
-		FEC0A3801709355C002A60B7 /* darwin-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-i386-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A3811709355C002A60B7 /* darwin-ppc-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-ppc-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A3821709355C002A60B7 /* darwin-x86_64-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-x86_64-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A3831709355C002A60B7 /* freebsd-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "freebsd-i386-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A3841709355C002A60B7 /* linux-arm-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-arm-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A3851709355C002A60B7 /* linux-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-i386-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A3861709355C002A60B7 /* linux-ppc-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-ppc-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A3871709355C002A60B7 /* solaris-sparc-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "solaris-sparc-framework.xcconfig"; sourceTree = "<group>"; };
 		FEC1CFDF0F7AAB7900619DD5 /* FoundationErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundationErrors.h; sourceTree = "<group>"; };
 		FEC9F6AC0E2F98EA0034932A /* NSURLProtocol_http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLProtocol_http.h; sourceTree = "<group>"; };
 		FEC9F6AD0E2F98EA0034932A /* NSURLProtocol_http.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLProtocol_http.m; sourceTree = "<group>"; };
@@ -1603,7 +1568,6 @@
 		FEF5B4CC0BBEFDBA00A8FF26 /* NSString+KVCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSString+KVCAdditions.m"; sourceTree = "<group>"; };
 		FEFAA5391429098A00CEE177 /* NSScriptWhoseTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSScriptWhoseTests.h; sourceTree = "<group>"; };
 		FEFAA53A1429098A00CEE177 /* NSScriptWhoseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSScriptWhoseTests.m; sourceTree = "<group>"; };
-		FEFDFBF3174F283800CB0EBD /* windows-i386.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "windows-i386.xcconfig"; sourceTree = "<group>"; };
 		FEFF238D0BDCF136005357B8 /* NSCalendar.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = NSCalendar.h; path = NSDate/NSCalendar.h; sourceTree = "<group>"; };
 		FEFF238E0BDCF136005357B8 /* NSCalendar.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = NSCalendar.m; path = NSDate/NSCalendar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1634,7 +1598,6 @@
 			isa = PBXGroup;
 			children = (
 				BF5C918F1E63128C0039F83F /* Foundation.xcconfig */,
-				FE1E546214303009000D60A1 /* xcconfig */,
 				FE09AF8213FCC69200B53D10 /* NSTextCheckingResult.h */,
 				FE09AF8313FCC69200B53D10 /* NSTextCheckingResult.m */,
 				FE09AF6E13FCC68100B53D10 /* NSOrthography.h */,
@@ -2651,50 +2614,6 @@
 			);
 			path = platform_darwin;
 			sourceTree = "<group>";
-		};
-		FE1E546214303009000D60A1 /* xcconfig */ = {
-			isa = PBXGroup;
-			children = (
-				CFCEA46C1B043F4E00B3B087 /* darwin-i386-Foundation.xcconfig */,
-				FEC0A3801709355C002A60B7 /* darwin-i386-framework.xcconfig */,
-				CFCEA46D1B043F4E00B3B087 /* darwin-i386.xcconfig */,
-				FEC0A3811709355C002A60B7 /* darwin-ppc-framework.xcconfig */,
-				CFCEA46E1B043F4E00B3B087 /* darwin-ppc.xcconfig */,
-				CFB9BB011B058F52001EE95E /* darwin-x86_64-Foundation.xcconfig */,
-				FEC0A3821709355C002A60B7 /* darwin-x86_64-framework.xcconfig */,
-				CFCEA46F1B043F4E00B3B087 /* darwin-x86_64.xcconfig */,
-				CFCEA4701B043F4E00B3B087 /* darwin.xcconfig */,
-				CFB9BAFF1B058BF1001EE95E /* freebsd-i386-Foundation.xcconfig */,
-				FEC0A3831709355C002A60B7 /* freebsd-i386-framework.xcconfig */,
-				CFCEA4711B043F4E00B3B087 /* freebsd-i386.xcconfig */,
-				CFCEA4721B043F4E00B3B087 /* freebsd.xcconfig */,
-				CFB9BB031B058F84001EE95E /* linux-arm-Foundation.xcconfig */,
-				FEC0A3841709355C002A60B7 /* linux-arm-framework.xcconfig */,
-				CFCEA4731B043F4E00B3B087 /* linux-arm.xcconfig */,
-				CFECC8501AFF0F2000D34AE4 /* linux-i386-Foundation.xcconfig */,
-				FEC0A3851709355C002A60B7 /* linux-i386-framework.xcconfig */,
-				CFECC8521AFF0F4000D34AE4 /* linux-i386.xcconfig */,
-				FEC0A3861709355C002A60B7 /* linux-ppc-framework.xcconfig */,
-				CFCEA4741B043F4E00B3B087 /* linux-ppc.xcconfig */,
-				BFBE53DB1E4671D700ED77AD /* linux-x86_64-Foundation.xcconfig */,
-				CFCEA4751B043F4E00B3B087 /* linux.xcconfig */,
-				CFCEA4761B043F4E00B3B087 /* platform-framework.xcconfig */,
-				CFCEA4771B043F4E00B3B087 /* platform.xcconfig */,
-				CFCEA4781B043F4E00B3B087 /* solaris-sparc-Foundation.xcconfig */,
-				FEC0A3871709355C002A60B7 /* solaris-sparc-framework.xcconfig */,
-				CFCEA4791B043F4E00B3B087 /* solaris-sparc.xcconfig */,
-				CFCEA47A1B043F4E00B3B087 /* solaris.xcconfig */,
-				CFCEA47B1B043F4E00B3B087 /* windows-i386-AppKit.xcconfig */,
-				CFCEA47C1B043F4E00B3B087 /* windows-i386-bundle.xcconfig */,
-				CFCEA47D1B043F4E00B3B087 /* windows-i386-clang.xcconfig */,
-				CF2819791AF9A5BF00E93CEE /* windows-i386-Foundation.xcconfig */,
-				FE70869F143117F100B99A95 /* windows-i386-framework.xcconfig */,
-				FEFDFBF3174F283800CB0EBD /* windows-i386.xcconfig */,
-				CFCEA47E1B043F4E00B3B087 /* windows.xcconfig */,
-			);
-			name = xcconfig;
-			path = ../xcconfig;
-			sourceTree = SOURCE_ROOT;
 		};
 		FE2569E410F2F936005CE23E /* CFNetwork */ = {
 			isa = PBXGroup;
@@ -3897,6 +3816,7 @@
 /* Begin XCBuildConfiguration section */
 		BF2C52661E609B7700D90433 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF5C918F1E63128C0039F83F /* Foundation.xcconfig */;
 			buildSettings = {
 				CLANG_LINK_OBJC_RUNTIME = NO;
 				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
@@ -3905,7 +3825,6 @@
 		};
 		BF2C52671E609B7700D90433 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF5C918F1E63128C0039F83F /* Foundation.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
@@ -3922,6 +3841,7 @@
 		};
 		BF2C526B1E609BC000D90433 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF5C918F1E63128C0039F83F /* Foundation.xcconfig */;
 			buildSettings = {
 				CLANG_LINK_OBJC_RUNTIME = NO;
 				ONLY_ACTIVE_ARCH = YES;
@@ -3931,7 +3851,6 @@
 		};
 		BF2C526C1E609BC000D90433 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF5C918F1E63128C0039F83F /* Foundation.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;

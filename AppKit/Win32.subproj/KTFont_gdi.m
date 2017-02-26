@@ -1,3 +1,4 @@
+#ifdef WINDOWS
 #import "KTFont_gdi.h"
 #import <Onyx2D/O2Font.h>
 #import <Onyx2D/O2Context_gdi.h>
@@ -1005,3 +1006,5 @@ static void ConvertTTPolygonToPath(LPTTPOLYGONHEADER lpHeader, DWORD size, O2Mut
     return [NSString stringWithFormat: @"%@ name: %@", [super description], _name];
 }
 @end
+
+#endif

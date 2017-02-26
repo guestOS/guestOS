@@ -7,87 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF45ECC31E6346D60026C66C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF45ECC01E6346D60026C66C /* CoreFoundation.framework */; };
+		BF45ECC41E6346D60026C66C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF45ECC11E6346D60026C66C /* CoreGraphics.framework */; };
+		BF45ECC51E6346D60026C66C /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF45ECC21E6346D60026C66C /* CoreServices.framework */; };
+		BF45ECDA1E63486F0026C66C /* CoreText.m in Sources */ = {isa = PBXBuildFile; fileRef = BF45ECD91E63486F0026C66C /* CoreText.m */; };
 		FECF92110FFB217F007AECF1 /* CoreText.h in Headers */ = {isa = PBXBuildFile; fileRef = FECF920B0FFB217F007AECF1 /* CoreText.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FECF92120FFB217F007AECF1 /* CoreTextExport.h in Headers */ = {isa = PBXBuildFile; fileRef = FECF920C0FFB217F007AECF1 /* CoreTextExport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FECF92130FFB217F007AECF1 /* CTFont.h in Headers */ = {isa = PBXBuildFile; fileRef = FECF920D0FFB217F007AECF1 /* CTFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FECF92150FFB217F007AECF1 /* KTFont.h in Headers */ = {isa = PBXBuildFile; fileRef = FECF920F0FFB217F007AECF1 /* KTFont.h */; settings = {ATTRIBUTES = (Private, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		FE5A884810C6F286005E348A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FECF926B0FFB2BA7007AECF1 /* CoreGraphics.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FE5A884510C6F286005E348A;
-			remoteInfo = "CoreGraphics-Darwin-i386 copy";
-		};
-		FECF92710FFB2BA7007AECF1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FECF926B0FFB2BA7007AECF1 /* CoreGraphics.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
-			remoteInfo = "CoreGraphics-Windows-i386";
-		};
-		FECF92730FFB2BA7007AECF1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FECF926B0FFB2BA7007AECF1 /* CoreGraphics.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FE6F7BB30FD554A800C3244F;
-			remoteInfo = "CoreGraphics-Linux-i386";
-		};
-		FECF92750FFB2BA7007AECF1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FECF926B0FFB2BA7007AECF1 /* CoreGraphics.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FE6F7C980FD55FA300C3244F;
-			remoteInfo = "CoreGraphics-Darwin-i386";
-		};
-		FECF92770FFB2BB0007AECF1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FECF926B0FFB2BA7007AECF1 /* CoreGraphics.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
-			remoteInfo = "CoreGraphics-Windows-i386";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* CoreText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE06B2161430E7D90071169B /* darwin-i386.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-i386.xcconfig"; sourceTree = "<group>"; };
-		FE06B2171430E7D90071169B /* darwin-ppc.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-ppc.xcconfig"; sourceTree = "<group>"; };
-		FE06B2181430E7D90071169B /* darwin-x86_64.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-x86_64.xcconfig"; sourceTree = "<group>"; };
-		FE06B2191430E7D90071169B /* darwin.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = darwin.xcconfig; sourceTree = "<group>"; };
-		FE06B21A1430E7D90071169B /* freebsd-i386.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "freebsd-i386.xcconfig"; sourceTree = "<group>"; };
-		FE06B21B1430E7D90071169B /* freebsd.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = freebsd.xcconfig; sourceTree = "<group>"; };
-		FE06B21C1430E7D90071169B /* linux-arm.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-arm.xcconfig"; sourceTree = "<group>"; };
-		FE06B21D1430E7D90071169B /* linux-i386.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-i386.xcconfig"; sourceTree = "<group>"; };
-		FE06B21E1430E7D90071169B /* linux-ppc.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-ppc.xcconfig"; sourceTree = "<group>"; };
-		FE06B21F1430E7D90071169B /* linux.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = linux.xcconfig; sourceTree = "<group>"; };
-		FE06B2201430E7D90071169B /* platform.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = platform.xcconfig; sourceTree = "<group>"; };
-		FE06B2211430E7D90071169B /* solaris-sparc.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "solaris-sparc.xcconfig"; sourceTree = "<group>"; };
-		FE06B2221430E7D90071169B /* solaris.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = solaris.xcconfig; sourceTree = "<group>"; };
-		FE06B2231430E7D90071169B /* windows-i386.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "windows-i386.xcconfig"; sourceTree = "<group>"; };
-		FE06B2241430E7D90071169B /* windows.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = windows.xcconfig; sourceTree = "<group>"; };
-		FE708651143117C400B99A95 /* windows-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "windows-i386-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A3FE170935CA002A60B7 /* darwin-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-i386-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A3FF170935CA002A60B7 /* darwin-ppc-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-ppc-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A400170935CA002A60B7 /* darwin-x86_64-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-x86_64-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A401170935CA002A60B7 /* freebsd-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "freebsd-i386-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A402170935CA002A60B7 /* linux-arm-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-arm-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A403170935CA002A60B7 /* linux-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-i386-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A404170935CA002A60B7 /* linux-ppc-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-ppc-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A405170935CA002A60B7 /* solaris-sparc-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "solaris-sparc-framework.xcconfig"; sourceTree = "<group>"; };
+		BF45ECC01E6346D60026C66C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = "../DerivedData/guestOS/Build/Products/Release-linux.x86_64/CoreFoundation.framework"; sourceTree = "<group>"; };
+		BF45ECC11E6346D60026C66C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = "../CoreGraphics/build/sym/Windows-i386-i386-mingw32msvc/undefined_arch/CoreGraphics.framework"; sourceTree = "<group>"; };
+		BF45ECC21E6346D60026C66C /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = "../DerivedData/guestOS/Build/Products/Release-linux.x86_64/CoreServices.framework"; sourceTree = "<group>"; };
+		BF45ECD91E63486F0026C66C /* CoreText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreText.m; sourceTree = "<group>"; };
+		BF45ECDB1E63492B0026C66C /* CoreText.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CoreText.xcconfig; sourceTree = "<group>"; };
 		FECF920B0FFB217F007AECF1 /* CoreText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreText.h; sourceTree = "<group>"; };
 		FECF920C0FFB217F007AECF1 /* CoreTextExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextExport.h; sourceTree = "<group>"; };
 		FECF920D0FFB217F007AECF1 /* CTFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTFont.h; sourceTree = "<group>"; };
 		FECF920E0FFB217F007AECF1 /* CTFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTFont.m; sourceTree = "<group>"; };
 		FECF920F0FFB217F007AECF1 /* KTFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTFont.h; sourceTree = "<group>"; };
 		FECF92100FFB217F007AECF1 /* KTFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTFont.m; sourceTree = "<group>"; };
-		FECF926B0FFB2BA7007AECF1 /* CoreGraphics.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CoreGraphics.xcodeproj; path = ../CoreGraphics/CoreGraphics.xcodeproj; sourceTree = SOURCE_ROOT; };
 		FECF928B0FFB2C5C007AECF1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Cocotron/1.0/Windows/i386/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF45ECBE1E6346C30026C66C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF45ECC31E6346D60026C66C /* CoreFoundation.framework in Frameworks */,
+				BF45ECC41E6346D60026C66C /* CoreGraphics.framework in Frameworks */,
+				BF45ECC51E6346D60026C66C /* CoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		034768DFFF38A50411DB9C8B /* Products */ = {
@@ -101,13 +60,13 @@
 		0867D691FE84028FC02AAC07 /* CoreText */ = {
 			isa = PBXGroup;
 			children = (
-				FE06B2151430E7D90071169B /* xcconfig */,
-				FECF926B0FFB2BA7007AECF1 /* CoreGraphics.xcodeproj */,
+				BF45ECDB1E63492B0026C66C /* CoreText.xcconfig */,
 				08FB77AEFE84172EC02AAC07 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				089C1665FE841158C02AAC07 /* Resources */,
 				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
 				034768DFFF38A50411DB9C8B /* Products */,
+				BF45ECBF1E6346D50026C66C /* Frameworks */,
 			);
 			indentWidth = 4;
 			name = CoreText;
@@ -142,6 +101,7 @@
 				FECF920E0FFB217F007AECF1 /* CTFont.m */,
 				FECF920F0FFB217F007AECF1 /* KTFont.h */,
 				FECF92100FFB217F007AECF1 /* KTFont.m */,
+				BF45ECD91E63486F0026C66C /* CoreText.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -168,47 +128,14 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
-		FE06B2151430E7D90071169B /* xcconfig */ = {
+		BF45ECBF1E6346D50026C66C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FEC0A3FE170935CA002A60B7 /* darwin-i386-framework.xcconfig */,
-				FEC0A3FF170935CA002A60B7 /* darwin-ppc-framework.xcconfig */,
-				FEC0A400170935CA002A60B7 /* darwin-x86_64-framework.xcconfig */,
-				FEC0A401170935CA002A60B7 /* freebsd-i386-framework.xcconfig */,
-				FEC0A402170935CA002A60B7 /* linux-arm-framework.xcconfig */,
-				FEC0A403170935CA002A60B7 /* linux-i386-framework.xcconfig */,
-				FEC0A404170935CA002A60B7 /* linux-ppc-framework.xcconfig */,
-				FEC0A405170935CA002A60B7 /* solaris-sparc-framework.xcconfig */,
-				FE06B2161430E7D90071169B /* darwin-i386.xcconfig */,
-				FE06B2171430E7D90071169B /* darwin-ppc.xcconfig */,
-				FE06B2181430E7D90071169B /* darwin-x86_64.xcconfig */,
-				FE06B2191430E7D90071169B /* darwin.xcconfig */,
-				FE06B21A1430E7D90071169B /* freebsd-i386.xcconfig */,
-				FE06B21B1430E7D90071169B /* freebsd.xcconfig */,
-				FE06B21C1430E7D90071169B /* linux-arm.xcconfig */,
-				FE06B21D1430E7D90071169B /* linux-i386.xcconfig */,
-				FE06B21E1430E7D90071169B /* linux-ppc.xcconfig */,
-				FE06B21F1430E7D90071169B /* linux.xcconfig */,
-				FE06B2201430E7D90071169B /* platform.xcconfig */,
-				FE06B2211430E7D90071169B /* solaris-sparc.xcconfig */,
-				FE06B2221430E7D90071169B /* solaris.xcconfig */,
-				FE06B2231430E7D90071169B /* windows-i386.xcconfig */,
-				FE06B2241430E7D90071169B /* windows.xcconfig */,
-				FE708651143117C400B99A95 /* windows-i386-framework.xcconfig */,
+				BF45ECC01E6346D60026C66C /* CoreFoundation.framework */,
+				BF45ECC11E6346D60026C66C /* CoreGraphics.framework */,
+				BF45ECC21E6346D60026C66C /* CoreServices.framework */,
 			);
-			name = xcconfig;
-			path = ../xcconfig;
-			sourceTree = SOURCE_ROOT;
-		};
-		FECF926C0FFB2BA7007AECF1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FECF92720FFB2BA7007AECF1 /* CoreGraphics.framework */,
-				FECF92740FFB2BA7007AECF1 /* CoreGraphics.framework */,
-				FECF92760FFB2BA7007AECF1 /* CoreGraphics.framework */,
-				FE5A884910C6F286005E348A /* CoreGraphics.framework */,
-			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,11 +161,12 @@
 			buildPhases = (
 				8DC2EF500486A6940098B216 /* Headers */,
 				8DC2EF520486A6940098B216 /* Resources */,
+				BF45ECD81E6348540026C66C /* Sources */,
+				BF45ECBE1E6346C30026C66C /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FECF92780FFB2BB0007AECF1 /* PBXTargetDependency */,
 			);
 			name = CoreText;
 			productInstallPath = "$(HOME)/Library/Frameworks";
@@ -267,49 +195,12 @@
 			mainGroup = 0867D691FE84028FC02AAC07 /* CoreText */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = FECF926C0FFB2BA7007AECF1 /* Products */;
-					ProjectRef = FECF926B0FFB2BA7007AECF1 /* CoreGraphics.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				8DC2EF4F0486A6940098B216 /* CoreText */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		FE5A884910C6F286005E348A /* CoreGraphics.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CoreGraphics.framework;
-			remoteRef = FE5A884810C6F286005E348A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FECF92720FFB2BA7007AECF1 /* CoreGraphics.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CoreGraphics.framework;
-			remoteRef = FECF92710FFB2BA7007AECF1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FECF92740FFB2BA7007AECF1 /* CoreGraphics.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CoreGraphics.framework;
-			remoteRef = FECF92730FFB2BA7007AECF1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FECF92760FFB2BA7007AECF1 /* CoreGraphics.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CoreGraphics.framework;
-			remoteRef = FECF92750FFB2BA7007AECF1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8DC2EF520486A6940098B216 /* Resources */ = {
@@ -321,74 +212,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		FECF92780FFB2BB0007AECF1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "CoreGraphics-Windows-i386";
-			targetProxy = FECF92770FFB2BB0007AECF1 /* PBXContainerItemProxy */;
+/* Begin PBXSourcesBuildPhase section */
+		BF45ECD81E6348540026C66C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF45ECDA1E63486F0026C66C /* CoreText.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXTargetDependency section */
+/* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		1DEB91AF08733DA50010E9CD /* Windows-i386 */ = {
+		BF45ECD41E63482C0026C66C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE708651143117C400B99A95 /* windows-i386-framework.xcconfig */;
+			baseConfigurationReference = BF45ECDB1E63492B0026C66C /* CoreText.xcconfig */;
+			buildSettings = {
+				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
+			};
+			name = Debug;
+		};
+		BF45ECD51E63482C0026C66C /* Debug */ = {
+			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = CoreText;
 			};
-			name = "Windows-i386";
+			name = Debug;
 		};
-		1DEB91B308733DA50010E9CD /* Windows-i386 */ = {
+		BF45ECD61E6348360026C66C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF45ECDB1E63492B0026C66C /* CoreText.xcconfig */;
 			buildSettings = {
+				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};
-			name = "Windows-i386";
+			name = Release;
 		};
-		CFF0A1521AF472C000160EAA /* Darwin-i386 */ = {
+		BF45ECD71E6348360026C66C /* Release */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = "Darwin-i386";
-		};
-		CFF0A1531AF472C000160EAA /* Darwin-i386 */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEC0A3FE170935CA002A60B7 /* darwin-i386-framework.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = CoreText;
 			};
-			name = "Darwin-i386";
-		};
-		CFF0A1571AF472C600160EAA /* FreeBSD-i386 */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = "FreeBSD-i386";
-		};
-		CFF0A1581AF472C600160EAA /* FreeBSD-i386 */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEC0A401170935CA002A60B7 /* freebsd-i386-framework.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = Info.plist;
-				PRODUCT_NAME = CoreText;
-			};
-			name = "FreeBSD-i386";
-		};
-		FEDE64B8118A7266009C3494 /* Linux-i386 */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = "Linux-i386";
-		};
-		FEDE64B9118A7266009C3494 /* Linux-i386 */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEC0A403170935CA002A60B7 /* linux-i386-framework.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = Info.plist;
-				PRODUCT_NAME = CoreText;
-			};
-			name = "Linux-i386";
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -396,24 +262,20 @@
 		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "CoreText" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DEB91AF08733DA50010E9CD /* Windows-i386 */,
-				CFF0A1581AF472C600160EAA /* FreeBSD-i386 */,
-				CFF0A1531AF472C000160EAA /* Darwin-i386 */,
-				FEDE64B9118A7266009C3494 /* Linux-i386 */,
+				BF45ECD51E63482C0026C66C /* Debug */,
+				BF45ECD71E6348360026C66C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Windows-i386";
+			defaultConfigurationName = Release;
 		};
 		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "CoreText" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DEB91B308733DA50010E9CD /* Windows-i386 */,
-				CFF0A1571AF472C600160EAA /* FreeBSD-i386 */,
-				CFF0A1521AF472C000160EAA /* Darwin-i386 */,
-				FEDE64B8118A7266009C3494 /* Linux-i386 */,
+				BF45ECD41E63482C0026C66C /* Debug */,
+				BF45ECD61E6348360026C66C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Windows-i386";
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

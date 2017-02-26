@@ -1,3 +1,4 @@
+#ifdef WINDOWS
 #import <OpenGL/OpenGL.h>
 #import <Foundation/NSString.h>
 #import <Foundation/NSRaise.h>
@@ -1016,3 +1017,4 @@ CGLError CGLTexImagePBuffer(CGLContextObj context,CGLPBufferObj pbuffer,GLenum s
     return kCGLNoError;
 }
 
+#endif
