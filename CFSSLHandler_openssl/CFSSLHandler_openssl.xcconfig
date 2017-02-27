@@ -1,0 +1,8 @@
+
+// Note: legacy
+//OTHER_LDFLAGS[sdk=guestos.windows.i386] = -shared -lssl -lcrypto -lgdi32 -lws2_32 -Wl,--enable-auto-import
+//EXECUTABLE_FOLDER_PATH[sdk=guestos.windows.i386] = $(CONTENTS_FOLDER_PATH)/Windows
+//EXECUTABLE_SUFFIX[sdk=guestos.windows.i386] = .1.0.dll
+//GCC_MODEL_TUNING[config=Release][sdk=guestos.windows.i386] = G5
+
+OTHER_LDFLAGS[sdk=guestos.linux.x86_64] = $(inherited) -lobjc -l:libssl.so.1.0.0 -l:libcrypto.so.1.0.0

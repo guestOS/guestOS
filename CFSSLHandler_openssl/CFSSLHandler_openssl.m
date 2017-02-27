@@ -6,6 +6,11 @@
 #include <pthread.h>
 #import <openssl/err.h>
 
+#if defined(__unix__)
+extern const SSL_METHOD * __attribute__((weak)) SSLv2_client_method(void);
+#endif
+
+
 @implementation CFSSLHandler(openssl)
 
 +allocWithZone:(NSZone *)zone {
