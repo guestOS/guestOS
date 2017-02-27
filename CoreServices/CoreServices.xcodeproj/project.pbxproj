@@ -20,17 +20,7 @@
 		8DC2EF5B0486A6940098B216 /* CoreServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5C91881E6310820039F83F /* CoreServices.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreServices.m; sourceTree = "<group>"; };
 		BF5C91911E6313340039F83F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = ../CFNetwork/build/Debug/CFNetwork.framework; sourceTree = "<group>"; };
-		BFBE53E21E46819100ED77AD /* linux-x86_64-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-x86_64-framework.xcconfig"; sourceTree = "<group>"; };
-		FE708626143117B300B99A95 /* windows-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "windows-i386-framework.xcconfig"; sourceTree = "<group>"; };
 		FE7433A810A89ED7004CDF00 /* CoreServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreServices.h; sourceTree = "<group>"; };
-		FEC0A3911709356B002A60B7 /* darwin-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-i386-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A3921709356B002A60B7 /* darwin-ppc-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-ppc-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A3931709356B002A60B7 /* darwin-x86_64-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-x86_64-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A3941709356B002A60B7 /* freebsd-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "freebsd-i386-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A3951709356B002A60B7 /* linux-arm-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-arm-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A3961709356B002A60B7 /* linux-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-i386-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A3971709356B002A60B7 /* linux-ppc-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-ppc-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A3981709356B002A60B7 /* solaris-sparc-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "solaris-sparc-framework.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +46,6 @@
 		0867D691FE84028FC02AAC07 /* CoreServices */ = {
 			isa = PBXGroup;
 			children = (
-				FE06B1BD1430E7AF0071169B /* xcconfig */,
 				FE7433A810A89ED7004CDF00 /* CoreServices.h */,
 				BF5C91881E6310820039F83F /* CoreServices.m */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
@@ -118,24 +107,6 @@
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
-		};
-		FE06B1BD1430E7AF0071169B /* xcconfig */ = {
-			isa = PBXGroup;
-			children = (
-				BFBE53E21E46819100ED77AD /* linux-x86_64-framework.xcconfig */,
-				FEC0A3911709356B002A60B7 /* darwin-i386-framework.xcconfig */,
-				FEC0A3921709356B002A60B7 /* darwin-ppc-framework.xcconfig */,
-				FEC0A3931709356B002A60B7 /* darwin-x86_64-framework.xcconfig */,
-				FEC0A3941709356B002A60B7 /* freebsd-i386-framework.xcconfig */,
-				FEC0A3951709356B002A60B7 /* linux-arm-framework.xcconfig */,
-				FEC0A3961709356B002A60B7 /* linux-i386-framework.xcconfig */,
-				FEC0A3971709356B002A60B7 /* linux-ppc-framework.xcconfig */,
-				FEC0A3981709356B002A60B7 /* solaris-sparc-framework.xcconfig */,
-				FE708626143117B300B99A95 /* windows-i386-framework.xcconfig */,
-			);
-			name = xcconfig;
-			path = ../xcconfig;
-			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 

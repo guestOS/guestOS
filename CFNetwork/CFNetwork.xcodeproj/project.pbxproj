@@ -26,17 +26,7 @@
 		BF5C91261E6304F60039F83F /* CFSocketStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFSocketStream.m; sourceTree = "<group>"; };
 		BF5C912D1E6306240039F83F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = ../CoreFoundation/build/Debug/CoreFoundation.framework; sourceTree = "<group>"; };
 		BF5C91861E630A760039F83F /* CFNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFNetwork.m; sourceTree = "<group>"; };
-		BFBE53E41E4681CC00ED77AD /* linux-x86_64-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-x86_64-framework.xcconfig"; sourceTree = "<group>"; };
-		FE7084D21431172900B99A95 /* windows-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "windows-i386-framework.xcconfig"; sourceTree = "<group>"; };
 		FE74338510A89A9D004CDF00 /* CFNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFNetwork.h; sourceTree = "<group>"; };
-		FEC0A3A117093576002A60B7 /* darwin-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-i386-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A3A217093576002A60B7 /* darwin-ppc-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-ppc-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A3A317093576002A60B7 /* darwin-x86_64-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "darwin-x86_64-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A3A417093576002A60B7 /* freebsd-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "freebsd-i386-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A3A517093576002A60B7 /* linux-arm-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-arm-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A3A617093576002A60B7 /* linux-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-i386-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A3A717093576002A60B7 /* linux-ppc-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "linux-ppc-framework.xcconfig"; sourceTree = "<group>"; };
-		FEC0A3A817093576002A60B7 /* solaris-sparc-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "solaris-sparc-framework.xcconfig"; sourceTree = "<group>"; };
 		FEC121A810EFC6C000FD1B47 /* CFSocketStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFSocketStream.h; sourceTree = "<group>"; };
 		FEC121CC10EFC89500FD1B47 /* CFNetServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFNetServices.h; sourceTree = "<group>"; };
 		FEC121D610EFC92800FD1B47 /* CFHost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFHost.h; sourceTree = "<group>"; };
@@ -72,7 +62,6 @@
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				034768DFFF38A50411DB9C8B /* Products */,
 				089C1665FE841158C02AAC07 /* Resources */,
-				FE1E55BD143030B7000D60A1 /* xcconfig */,
 				BF5C912C1E6306240039F83F /* Frameworks */,
 			);
 			indentWidth = 4;
@@ -151,24 +140,6 @@
 			);
 			name = Headers;
 			sourceTree = "<group>";
-		};
-		FE1E55BD143030B7000D60A1 /* xcconfig */ = {
-			isa = PBXGroup;
-			children = (
-				BFBE53E41E4681CC00ED77AD /* linux-x86_64-framework.xcconfig */,
-				FEC0A3A117093576002A60B7 /* darwin-i386-framework.xcconfig */,
-				FEC0A3A217093576002A60B7 /* darwin-ppc-framework.xcconfig */,
-				FEC0A3A317093576002A60B7 /* darwin-x86_64-framework.xcconfig */,
-				FEC0A3A417093576002A60B7 /* freebsd-i386-framework.xcconfig */,
-				FEC0A3A517093576002A60B7 /* linux-arm-framework.xcconfig */,
-				FEC0A3A617093576002A60B7 /* linux-i386-framework.xcconfig */,
-				FEC0A3A717093576002A60B7 /* linux-ppc-framework.xcconfig */,
-				FEC0A3A817093576002A60B7 /* solaris-sparc-framework.xcconfig */,
-				FE7084D21431172900B99A95 /* windows-i386-framework.xcconfig */,
-			);
-			name = xcconfig;
-			path = ../xcconfig;
-			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 

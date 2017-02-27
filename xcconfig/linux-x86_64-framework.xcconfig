@@ -1,8 +1,0 @@
-#include "linux-x86_64"
-#include "platform-framework"
-
-EXECUTABLE_SUFFIX = .so
-EXECUTABLE_PREFIX = lib
-LD_DEPENDENCY_INFO_FILE =
-
-LINUX_x86_64_FRAMEWORK_LDFLAGS = -shared -Wl,-Bshareable -Wl,--no-omagic -Wl,--no-undefined $(LINUX_x86_64_LDFLAGS)

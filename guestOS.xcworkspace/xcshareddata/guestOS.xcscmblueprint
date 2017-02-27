@@ -9,7 +9,7 @@
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8EFB6E18-D1D6-4D6D-8A90-E56DDC435ADE",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "D23006023D8263B18CE7E4572DE5FF530EDE0D45" : "cocotron\/",
+    "D23006023D8263B18CE7E4572DE5FF530EDE0D45" : "guestOS\/",
     "A1542464AF4650100223A307F1642F6E4DB4499A" : "cocotron\/libobjc2\/libobjc2\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "guestOS",
