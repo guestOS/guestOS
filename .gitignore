@@ -1,7 +1,8 @@
-*.xcworkspace
-xcuserdata
-xcshareddata
 build
 system
 .DS_Store
 DerivedData/
+
+**/*.xcodeproj/xcuserdata/
+**/*.xcodeproj/*.xcworkspace/
+**/*.xcworkspace/xcuserdata/

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:AppKit/AppKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ApplicationServices/ApplicationServices.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Carbon/Carbon.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CFNetwork/CFNetwork.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CFSSLHandler_openssl/CFSSLHandler_openssl.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Cocoa/Cocoa.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CommonCrypto/CommonCrypto.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CoreData/CoreData.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CoreFoundation/CoreFoundation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CoreGraphics/CoreGraphics.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CoreServices/CoreServices.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CoreText/CoreText.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CoreVideo/CoreVideo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Foundation/Foundation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ImageKit/ImageKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NSSpellEngine_hunspell/NSSpellEngine_hunspell.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:O2Context_AntiGrain/O2Context_AntiGrain.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Onyx2D/Onyx2D.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:OpenGL/OpenGL.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:PDFKit/PDFKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Quartz/Quartz.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:QuartzCore/QuartzCore.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Security/Security.xcodeproj">
+   </FileRef>
+</Workspace>
