@@ -1,3 +1,4 @@
+#ifdef WINDOWS
 #import <Foundation/NSObject.h>
 #import <Security/Security.h>
 #import <windows.h>
@@ -20,3 +21,5 @@
 - (void)incrementIndex;
 
 @end
+
+#endif

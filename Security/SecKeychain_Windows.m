@@ -6,6 +6,7 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
+#ifdef WINDOWS
 #import "SecKeychain.h"
 #import "SecKeychainItem.h"
 #import "SecKeychainCursor.h"
@@ -472,3 +473,5 @@ static void *decryptData(void *bytes,unsigned length,unsigned *resultLength){
 }
 
 @end
+
+#endif

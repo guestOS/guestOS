@@ -1,3 +1,4 @@
+#ifdef WINDOWS
 #import "SecKeychainCursor.h"
 
 @implementation SecKeychainCursor
@@ -37,3 +38,5 @@
 }
 
 @end
+
+#endif
