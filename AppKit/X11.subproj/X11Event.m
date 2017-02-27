@@ -1,3 +1,4 @@
+#if defined(__unix__)
 #import "X11Event.h"
 
 @implementation X11Event
@@ -9,3 +10,5 @@
 
 
 @end
+
+#endif

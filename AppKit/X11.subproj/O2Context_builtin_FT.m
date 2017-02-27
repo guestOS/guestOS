@@ -1,3 +1,4 @@
+#if defined(__unix__)
 #import "O2Context_builtin_FT.h"
 #import <Onyx2D/O2GraphicsState.h>
 #import "O2Font_FT.h"
@@ -168,3 +169,5 @@ static void drawFreeTypeBitmap(O2Context_builtin_FT *self,O2Surface *surface,FT_
 }
 
 @end
+
+#endif

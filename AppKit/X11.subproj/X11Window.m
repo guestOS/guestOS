@@ -6,10 +6,11 @@
  
  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
 
-#import <AppKit/X11Window.h>
+#if defined(__unix__)
+#import "X11Window.h"
 #import <AppKit/NSWindow.h>
 #import <AppKit/NSPanel.h>
-#import <AppKit/X11Display.h>
+#import "X11Display.h"
 #import <AppKit/NSRaise.h>
 #import <X11/Xutil.h>
 #import <Foundation/NSException.h>
@@ -462,3 +463,5 @@ CGRect CGOutsetRectForNativeWindowBorder(CGRect frame,unsigned styleMask){
     
     return frame;
 }
+
+#endif

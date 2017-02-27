@@ -45,12 +45,23 @@
 		A1CC701A100534AB00DB9974 /* NSCachingBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CC7018100534AB00DB9974 /* NSCachingBinder.m */; };
 		A1CC70481005371100DB9974 /* NSTextFieldBinder.h in Headers */ = {isa = PBXBuildFile; fileRef = A1CC70401005371100DB9974 /* NSTextFieldBinder.h */; };
 		A1CC70491005371100DB9974 /* NSTextFieldBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CC70411005371100DB9974 /* NSTextFieldBinder.m */; };
+		BF3185121E6420A50065BA55 /* X11Window.m in Sources */ = {isa = PBXBuildFile; fileRef = C8746B400EA396D0007A6BE2 /* X11Window.m */; };
+		BF3185131E6420B50065BA55 /* KTFont_FT.m in Sources */ = {isa = PBXBuildFile; fileRef = C8746BAC0EA3EE11007A6BE2 /* KTFont_FT.m */; };
+		BF3185141E6420C00065BA55 /* O2Surface_cairo.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA2CD1D10D6C1C0003C8FF5 /* O2Surface_cairo.m */; };
+		BF3185151E6420D00065BA55 /* O2FontState_cairo.m in Sources */ = {isa = PBXBuildFile; fileRef = FE881E7F10D57CFD00C73204 /* O2FontState_cairo.m */; };
+		BF3185161E6420DD0065BA55 /* O2Font_FT.m in Sources */ = {isa = PBXBuildFile; fileRef = FE34054910CAB38F00A989F0 /* O2Font_FT.m */; };
+		BF3185171E6420F30065BA55 /* O2Context_builtin_FT.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA2CD4510D6D870003C8FF5 /* O2Context_builtin_FT.m */; };
+		BF3185181E6420FB0065BA55 /* O2Context_cairo.m in Sources */ = {isa = PBXBuildFile; fileRef = C81BEA0E0EA6038800478D50 /* O2Context_cairo.m */; };
+		BF3185191E6421050065BA55 /* CGLContext.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE7E0B610E26487004A50F8 /* CGLContext.m */; };
+		BF31851A1E6421130065BA55 /* X11Event.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9131D710E93C0500FFF5D7 /* X11Event.m */; };
 		BF45ECB91E63465E0026C66C /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF45ECB61E63465E0026C66C /* ApplicationServices.framework */; };
 		BF45ECBA1E63465E0026C66C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF45ECB71E63465E0026C66C /* CoreGraphics.framework */; };
 		BF45ECBB1E63465E0026C66C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF45ECB81E63465E0026C66C /* CoreText.framework */; };
+		BFB8E27B1E6424F500CFCE85 /* CAWindowOpenGLContext.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7AA0CC10F9788100FEDD9C /* CAWindowOpenGLContext.m */; };
 		BFBF53231E635E38003967E2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBF53221E635E38003967E2 /* QuartzCore.framework */; };
 		BFBF53251E635E41003967E2 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBF53241E635E41003967E2 /* OpenGL.framework */; };
 		BFBF53291E63602E003967E2 /* O2Availability.h in Headers */ = {isa = PBXBuildFile; fileRef = BFBF53281E63602E003967E2 /* O2Availability.h */; };
+		BFEA882B1E64158F006FB98A /* X11Display.m in Sources */ = {isa = PBXBuildFile; fileRef = C8746B2D0EA379DE007A6BE2 /* X11Display.m */; };
 		BFFA8C2D1E634EE9006BD3AA /* Onyx2D.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFA8C2C1E634EE9006BD3AA /* Onyx2D.framework */; };
 		C829A6A310FF911400A2306E /* NSGoLeftTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C829A6A210FF911400A2306E /* NSGoLeftTemplate.pdf */; };
 		C829A6B310FFA2D100A2306E /* NSGoRightTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C829A6B210FFA2D100A2306E /* NSGoRightTemplate.pdf */; };
@@ -3862,6 +3873,7 @@
 				FE01A95C0C5D9BCB00AEA51A /* NSButton.m in Sources */,
 				FE01A95D0C5D9BCB00AEA51A /* NSButtonCell.m in Sources */,
 				FE01A95E0C5D9BCB00AEA51A /* NSCachedImageRep.m in Sources */,
+				BF3185181E6420FB0065BA55 /* O2Context_cairo.m in Sources */,
 				FE01A95F0C5D9BCB00AEA51A /* NSCell.m in Sources */,
 				FE01A9600C5D9BCB00AEA51A /* NSClipView.m in Sources */,
 				FE01A9610C5D9BCB00AEA51A /* NSColorList.m in Sources */,
@@ -3886,6 +3898,7 @@
 				FE01A9740C5D9BCB00AEA51A /* NSFormCell.m in Sources */,
 				FE01A9750C5D9BCB00AEA51A /* NSFontFamily.m in Sources */,
 				FE01A9760C5D9BCB00AEA51A /* NSFontManager.m in Sources */,
+				BF3185161E6420DD0065BA55 /* O2Font_FT.m in Sources */,
 				FE01A9770C5D9BCB00AEA51A /* NSFontMetric.m in Sources */,
 				FE01A9780C5D9BCB00AEA51A /* NSFontPanel.m in Sources */,
 				FE01A9790C5D9BCB00AEA51A /* NSFontPanelCell.m in Sources */,
@@ -3942,6 +3955,7 @@
 				FE01A9AC0C5D9BCB00AEA51A /* NSTextField.m in Sources */,
 				FE01A9AD0C5D9BCB00AEA51A /* NSTextFieldCell.m in Sources */,
 				FE01A9AE0C5D9BCB00AEA51A /* NSTrackingArea.m in Sources */,
+				BF3185141E6420C00065BA55 /* O2Surface_cairo.m in Sources */,
 				FE01A9AF0C5D9BCB00AEA51A /* NSView.m in Sources */,
 				FE01A9B00C5D9BCB00AEA51A /* NSWindow.m in Sources */,
 				FE01A9B10C5D9BCB00AEA51A /* NSThemeFrame.m in Sources */,
@@ -4077,8 +4091,10 @@
 				FE01AA460C5D9BCB00AEA51A /* NSTokenField.m in Sources */,
 				FE01AA470C5D9BCB00AEA51A /* NSTokenFieldCell.m in Sources */,
 				FE01AA480C5D9BCB00AEA51A /* O2ColorSpace.m in Sources */,
+				BFB8E27B1E6424F500CFCE85 /* CAWindowOpenGLContext.m in Sources */,
 				FE01AA490C5D9BCB00AEA51A /* O2Context.m in Sources */,
 				FE01AA4A0C5D9BCB00AEA51A /* O2DataProvider.m in Sources */,
+				BF3185121E6420A50065BA55 /* X11Window.m in Sources */,
 				FE01AA4B0C5D9BCB00AEA51A /* O2Function.m in Sources */,
 				FE01AA4C0C5D9BCB00AEA51A /* O2Image.m in Sources */,
 				FE01AA4D0C5D9BCB00AEA51A /* O2PDFArray.m in Sources */,
@@ -4144,6 +4160,7 @@
 				FE01AA890C5D9BCB00AEA51A /* NSTextTableBlock.m in Sources */,
 				FE01AA8C0C5D9BCB00AEA51A /* NSAffineTransform.m in Sources */,
 				FE01AA8D0C5D9BCB00AEA51A /* NSTextList.m in Sources */,
+				BF3185191E6421050065BA55 /* CGLContext.m in Sources */,
 				FE01AA8E0C5D9BCB00AEA51A /* NSTextAttachmentCell.m in Sources */,
 				FE01AA8F0C5D9BCB00AEA51A /* NSTypesetter_concrete.m in Sources */,
 				FE01AA900C5D9BCB00AEA51A /* KTFont.m in Sources */,
@@ -4191,8 +4208,11 @@
 				FEC0C7820F146AF800903F6D /* O2ImageSource_GIF.m in Sources */,
 				FE38749D0F4333D600EC9F00 /* NSToolbarItemView.m in Sources */,
 				FE6BE4470F446B92007D7F3F /* NSToolbarItemGroup.m in Sources */,
+				BF3185171E6420F30065BA55 /* O2Context_builtin_FT.m in Sources */,
+				BF3185151E6420D00065BA55 /* O2FontState_cairo.m in Sources */,
 				C8AB730F0F40C21A00D93B96 /* NSControllerMarker.m in Sources */,
 				FEAED79B0FD6C95D0043F915 /* CGDataConsumer.m in Sources */,
+				BF31851A1E6421130065BA55 /* X11Event.m in Sources */,
 				FEAED7A30FD6C96E0043F915 /* O2DataConsumer.m in Sources */,
 				FEAED7A70FD6C9820043F915 /* CGPDFContext.m in Sources */,
 				FEA661240FF5C6F300E2C03B /* O2Font_gdi.m in Sources */,
@@ -4222,6 +4242,7 @@
 				FEF0889F10C5B06400D38A2F /* CGImageDestination.m in Sources */,
 				FE20C20E11892436006F01BA /* CAAnimation.m in Sources */,
 				FE20C20F11892436006F01BA /* CIAffineTransform.m in Sources */,
+				BFEA882B1E64158F006FB98A /* X11Display.m in Sources */,
 				FE20C21011892436006F01BA /* CIColor.m in Sources */,
 				FE20C21111892436006F01BA /* CIContext.m in Sources */,
 				FE20C21211892436006F01BA /* CIFilter.m in Sources */,
@@ -4233,6 +4254,7 @@
 				FED56E6511A2D87200D6D09B /* CGGradient.m in Sources */,
 				FED56E6A11A2D89400D6D09B /* CALayer.m in Sources */,
 				FED56E6B11A2D89900D6D09B /* CARenderer.m in Sources */,
+				BF3185131E6420B50065BA55 /* KTFont_FT.m in Sources */,
 				FED56E6C11A2D89E00D6D09B /* CATransform3D.m in Sources */,
 				FEAEFF7A11E4D1B600CA0912 /* glweak.m in Sources */,
 				FEAE000C11E4E45600CA0912 /* CVDisplayLink.m in Sources */,

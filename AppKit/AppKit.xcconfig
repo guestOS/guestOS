@@ -2,6 +2,8 @@
 OTHER_CFLAGS = $(inherited) -DQUARTZCORE_INSIDE_BUILD -DAPPKIT_INSIDE_BUILD -DCORETEXT_INSIDE_BUILD -DCOREGRAPHICS_INSIDE_BUILD -DCGL_INSIDE_BUILD
 
 OTHER_LDFLAGS = $(inherited) -lobjc
-OTHER_LDFLAGS[sdk=guestos.linux.x86_64] = $(inherited) -lm -lfreetype -lglx
+OTHER_LDFLAGS[sdk=guestos.linux.x86_64] = $(inherited) -lm -lpthread -lfreetype -l:libGL.so.1 -l:libcairo.so.2 -l:libfontconfig.so.1 -lX11
 
-HEADER_SEARCH_PATHS[sdk=guestos.linux.x86_64] = $(inherited) $(SDK_DIR_guestos_linux_x86_64)/usr/include/freetype2
+HEADER_SEARCH_PATHS[sdk=guestos.linux.x86_64] = $(inherited) $(SDK_DIR)/usr/include/freetype2 $(SDK_DIR)/usr/include/fontconfig $(SDK_DIR)/usr/include/cairo
+
+LIBRARY_SEARCH_PATHS[sdk=guestos.linux.x86_64] = $(inherited) $(SDK_DIR)/usr/lib/x86_64-linux-gnu/mesa

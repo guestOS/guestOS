@@ -12,7 +12,7 @@
 #import <ft2build.h>
 
 #if defined(__linux__)
-typedef int ptrdiff_t;
+#   include <linux/stddef.h>
 #endif
 #import FT_FREETYPE_H
 #import FT_RENDER_H

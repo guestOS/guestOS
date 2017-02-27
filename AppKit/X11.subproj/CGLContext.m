@@ -1,3 +1,4 @@
+#if defined(__unix__)
 #import <OpenGL/OpenGL.h>
 #import <Foundation/NSString.h>
 #import "X11Display.h"
@@ -449,3 +450,5 @@ CGL_EXPORT GLboolean CGLUnmapBuffer(GLenum target) {
 void CGLBufferSubData(GLenum target,GLintptr offset,GLsizeiptr size,const GLvoid *data) {
     glBufferSubData(target,offset,size,data);
 }
+
+#endif

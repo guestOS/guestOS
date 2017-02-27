@@ -1,3 +1,4 @@
+#if defined(__unix__)
 #import "O2FontState_cairo.h"
 #import "O2Font_FT.h"
 
@@ -21,3 +22,5 @@
 }
 
 @end
+
+#endif

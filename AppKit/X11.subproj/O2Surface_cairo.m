@@ -1,3 +1,4 @@
+#if defined(__unix__)
 #import "O2Surface_cairo.h"
 
 @implementation O2Surface_cairo
@@ -33,3 +34,5 @@
 }
 
 @end
+
+#endif

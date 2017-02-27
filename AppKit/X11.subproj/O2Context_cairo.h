@@ -10,7 +10,7 @@
 #import <cairo.h>
 #import <X11/Xlib.h>
 #import <cairo-xlib.h>
-#import <AppKit/X11Window.h>
+#import "X11Window.h"
 
 @interface O2Context_cairo : O2Context {
     cairo_t *_context;
