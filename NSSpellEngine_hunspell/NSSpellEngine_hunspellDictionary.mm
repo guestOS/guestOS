@@ -10,6 +10,7 @@
 #import <Foundation/NSTextCheckingResult.h>
 #import <Foundation/NSPathUtilities.h>
 #import <string.h>
+#import <stdlib.h>
 #import <Foundation/NSString.h>
 
 /* hunspelldll.h is a rough C cover over the C++ library, if more functionality is needed use the C++
@@ -20,8 +21,18 @@
 // However, windows.h should not be included in public Foundation headers, so that needs to be
 // cleaned up. For now we #undef near
 
-#undef near
-#import "hunspelldll.h"
+#ifdef WINDOWS
+#   undef near
+#   import "hunspelldll.h"
+#else
+#   include <hunspell/hunspell.h>
+#   define Hunspell Hunhandle
+#   define hunspell_initialize(...) Hunspell_create(__VA_ARGS__)
+#   define hunspell_get_dic_encoding(...) Hunspell_get_dic_encoding(__VA_ARGS__)
+#   define hunspell_spell(...) Hunspell_spell(__VA_ARGS__)
+#   define hunspell_suggest(handle, word, list) Hunspell_suggest(handle, list, word)
+#   define hunspell_suggest_free(handle, list, n) Hunspell_free_list(handle, &(list), n)
+#endif
 
 @implementation NSSpellEngine_hunspellDictionary
 
