@@ -13,6 +13,7 @@
 //          http://www.antigrain.com
 //----------------------------------------------------------------------------
 
+#ifdef WINDOWS
 #include <stdio.h>
 #include "agg_font_win32_tt.h"
 #include "agg_bitset_iterator.h"
@@ -941,3 +942,5 @@ namespace agg
         return false;
     }
 }
+
+#endif

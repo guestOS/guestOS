@@ -16,6 +16,7 @@
 #ifndef AGG_FONT_WIN32_TT_INCLUDED
 #define AGG_FONT_WIN32_TT_INCLUDED
 
+#ifdef WINDOWS
 #include <windows.h>
 #include "agg_scanline_storage_aa.h"
 #include "agg_scanline_storage_bin.h"
@@ -214,4 +215,5 @@ namespace agg
 
 }
 
+#endif
 #endif

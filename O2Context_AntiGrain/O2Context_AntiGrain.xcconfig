@@ -1,0 +1,9 @@
+
+// Note: legacsy
+OTHER_CFLAGS[sdk=guestos.windows.i386] = $(inherited) -D__SSE2__ -D__SSE__ -D__LITTLE_ENDIAN__
+OTHER_LDFLAGS[sdk=guestos.windows.i386] = $(inherited) -static -lagg -lgdi32
+EXECUTABLE_FOLDER_PATH[sdk=guestos.windows.i386] = $(CONTENTS_FOLDER_PATH)/Windows
+EXECUTABLE_SUFFIX[sdk=guestos.windows.i386] = .1.0.dll
+GCC_ENABLE_SSE3_EXTENSIONS[sdk=guestos.windows.i386] = YES
+
+OTHER_LDFLAGS[sdk=guestos.linux.x86_64] = $(inherited) -lobjc

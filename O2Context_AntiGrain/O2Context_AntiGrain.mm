@@ -5,7 +5,7 @@
 #import <Onyx2D/O2ClipPhase.h>
 #import <Onyx2D/O2MutablePath.h>
 
-#ifdef ANTIGRAIN_PRESENT
+#if ANTIGRAIN_PRESENT
 
 #include <agg_color_rgba.h>
 #include <agg_span_gradient.h>
@@ -1118,7 +1118,7 @@ template <class StrokeType> void O2AGGStrokeToO2Path(O2Context_AntiGrain *self, 
 
 @implementation O2Context_AntiGrain
 
-#ifdef ANTIGRAIN_PRESENT
+#if ANTIGRAIN_PRESENT
 // If AntiGrain is not present it will just be a non-overriding subclass of the builtin context, so no problems
 
 static void O2AGGContextFillPathWithRule(O2Context_AntiGrain *self,o2agg::rgba color, const agg::trans_affine &deviceMatrix,agg::filling_rule_e fillingRule) {

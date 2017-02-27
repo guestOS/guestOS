@@ -12,9 +12,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
  */
 
 #import <Onyx2D/O2Context_builtin_gdi.h>
-#import "O2Defines_AntiGrain.h"
+#import "AggAvailability.h"
 
-#ifdef ANTIGRAIN_PRESENT
+#if ANTIGRAIN_PRESENT
 #include <agg_basics.h>
 #include "o2agg_pixfmt_rgba.h"
 
@@ -83,10 +83,12 @@ typedef agg::amask_no_clip_gray8 MaskType;
 - (context_renderer *)renderer;
 - (BOOL)isPremultiplied;
 @end
-#else
-#import <Onyx2D/O2Context_builtin_gdi.h>
 
-@interface O2Context_AntiGrain : O2Context_builtin_gdi
+#else // ANTIGRAIN_PRESENT
+
+#import <Onyx2D/O2Context_builtin.h>
+
+@interface O2Context_AntiGrain : O2Context_builtin
 @end
 
-#endif
+#endif // ANTIGRAIN_PRESENT
