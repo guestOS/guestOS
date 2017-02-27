@@ -79,9 +79,9 @@
 				BFB8E28E1E6432D800CFCE85 /* Security.xcconfig */,
 				BFB8E28C1E6432B900CFCE85 /* Headers */,
 				BFB8E28D1E6432C300CFCE85 /* Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
 				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
 				034768DFFF38A50411DB9C8B /* Products */,
-				089C1665FE841158C02AAC07 /* Resources */,
 			);
 			indentWidth = 4;
 			name = Security;

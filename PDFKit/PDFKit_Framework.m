@@ -6,7 +6,9 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-__declspec(dllexport) void PDFKit_Framework();
+#import "PDFKitExport.h"
 
-__declspec(dllexport) void PDFKit_Framework() {
+PDFKIT_EXPORT void PDFKit_Framework();
+
+PDFKIT_EXPORT void PDFKit_Framework() {
 }
