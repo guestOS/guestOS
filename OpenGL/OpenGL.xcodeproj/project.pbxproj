@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BFFA8C1C1E634C18006BD3AA /* OpenGL.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFA8C161E634BA4006BD3AA /* OpenGL.m */; };
-		BFFA8C231E634C2E006BD3AA /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFA8C1F1E634C2E006BD3AA /* ApplicationServices.framework */; };
 		BFFA8C241E634C2E006BD3AA /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFA8C201E634C2E006BD3AA /* CoreFoundation.framework */; };
 		BFFA8C261E634C2E006BD3AA /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFA8C221E634C2E006BD3AA /* CoreServices.framework */; };
 		FE3B34AA0D55939B009E0AA5 /* glext.h in Headers */ = {isa = PBXBuildFile; fileRef = FE3B34A90D55939B009E0AA5 /* glext.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -45,7 +44,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFFA8C231E634C2E006BD3AA /* ApplicationServices.framework in Frameworks */,
 				BFFA8C241E634C2E006BD3AA /* CoreFoundation.framework in Frameworks */,
 				BFFA8C261E634C2E006BD3AA /* CoreServices.framework in Frameworks */,
 			);

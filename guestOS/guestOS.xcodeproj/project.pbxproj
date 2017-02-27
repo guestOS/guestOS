@@ -1,0 +1,269 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF31F6BC1E645A0500CF40C6 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF31F6A71E645A0500CF40C6 /* AppKit.framework */; };
+		BF31F6BD1E645A0500CF40C6 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF31F6A81E645A0500CF40C6 /* ApplicationServices.framework */; };
+		BF31F6BE1E645A0500CF40C6 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF31F6A91E645A0500CF40C6 /* Carbon.framework */; };
+		BF31F6BF1E645A0500CF40C6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF31F6AA1E645A0500CF40C6 /* CFNetwork.framework */; };
+		BF31F6C01E645A0500CF40C6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF31F6AB1E645A0500CF40C6 /* Cocoa.framework */; };
+		BF31F6C11E645A0500CF40C6 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF31F6AC1E645A0500CF40C6 /* CommonCrypto.framework */; };
+		BF31F6C21E645A0500CF40C6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF31F6AD1E645A0500CF40C6 /* CoreData.framework */; };
+		BF31F6C31E645A0500CF40C6 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF31F6AE1E645A0500CF40C6 /* CoreFoundation.framework */; };
+		BF31F6C41E645A0500CF40C6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF31F6AF1E645A0500CF40C6 /* CoreGraphics.framework */; };
+		BF31F6C51E645A0500CF40C6 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF31F6B01E645A0500CF40C6 /* CoreServices.framework */; };
+		BF31F6C61E645A0500CF40C6 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF31F6B11E645A0500CF40C6 /* CoreText.framework */; };
+		BF31F6C71E645A0500CF40C6 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF31F6B21E645A0500CF40C6 /* CoreVideo.framework */; };
+		BF31F6C81E645A0500CF40C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF31F6B31E645A0500CF40C6 /* Foundation.framework */; };
+		BF31F6C91E645A0500CF40C6 /* ImageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF31F6B41E645A0500CF40C6 /* ImageKit.framework */; };
+		BF31F6CA1E645A0500CF40C6 /* objc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF31F6B51E645A0500CF40C6 /* objc.framework */; };
+		BF31F6CB1E645A0500CF40C6 /* Onyx2D.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF31F6B61E645A0500CF40C6 /* Onyx2D.framework */; };
+		BF31F6CC1E645A0500CF40C6 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF31F6B71E645A0500CF40C6 /* OpenGL.framework */; };
+		BF31F6CD1E645A0500CF40C6 /* PDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF31F6B81E645A0500CF40C6 /* PDFKit.framework */; };
+		BF31F6CE1E645A0500CF40C6 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF31F6B91E645A0500CF40C6 /* Quartz.framework */; };
+		BF31F6CF1E645A0500CF40C6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF31F6BA1E645A0500CF40C6 /* QuartzCore.framework */; };
+		BF31F6D01E645A0500CF40C6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF31F6BB1E645A0500CF40C6 /* Security.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BF31F69D1E6459F100CF40C6 /* guestOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = guestOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF31F6A71E645A0500CF40C6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = ../AppKit/build/Debug/AppKit.framework; sourceTree = "<group>"; };
+		BF31F6A81E645A0500CF40C6 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = ../ApplicationServices/build/Debug/ApplicationServices.framework; sourceTree = "<group>"; };
+		BF31F6A91E645A0500CF40C6 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = ../Carbon/build/Debug/Carbon.framework; sourceTree = "<group>"; };
+		BF31F6AA1E645A0500CF40C6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = ../CFNetwork/build/Debug/CFNetwork.framework; sourceTree = "<group>"; };
+		BF31F6AB1E645A0500CF40C6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = ../Cocoa/build/Debug/Cocoa.framework; sourceTree = "<group>"; };
+		BF31F6AC1E645A0500CF40C6 /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = ../CommonCrypto/build/Debug/CommonCrypto.framework; sourceTree = "<group>"; };
+		BF31F6AD1E645A0500CF40C6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = ../CoreData/build/Debug/CoreData.framework; sourceTree = "<group>"; };
+		BF31F6AE1E645A0500CF40C6 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = ../CoreFoundation/build/Debug/CoreFoundation.framework; sourceTree = "<group>"; };
+		BF31F6AF1E645A0500CF40C6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = ../CoreGraphics/build/Debug/CoreGraphics.framework; sourceTree = "<group>"; };
+		BF31F6B01E645A0500CF40C6 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = ../CoreServices/build/Debug/CoreServices.framework; sourceTree = "<group>"; };
+		BF31F6B11E645A0500CF40C6 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = ../CoreText/build/Debug/CoreText.framework; sourceTree = "<group>"; };
+		BF31F6B21E645A0500CF40C6 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = ../CoreVideo/build/Debug/CoreVideo.framework; sourceTree = "<group>"; };
+		BF31F6B31E645A0500CF40C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = ../Foundation/build/Debug/Foundation.framework; sourceTree = "<group>"; };
+		BF31F6B41E645A0500CF40C6 /* ImageKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageKit.framework; path = ../ImageKit/build/Debug/ImageKit.framework; sourceTree = "<group>"; };
+		BF31F6B51E645A0500CF40C6 /* objc.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = objc.framework; path = "../objc/build/sym/Windows-i386-i386-mingw32msvc/undefined_arch/objc.framework"; sourceTree = "<group>"; };
+		BF31F6B61E645A0500CF40C6 /* Onyx2D.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Onyx2D.framework; path = ../Onyx2D/build/Debug/Onyx2D.framework; sourceTree = "<group>"; };
+		BF31F6B71E645A0500CF40C6 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = ../OpenGL/build/Debug/OpenGL.framework; sourceTree = "<group>"; };
+		BF31F6B81E645A0500CF40C6 /* PDFKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PDFKit.framework; path = ../PDFKit/build/Debug/PDFKit.framework; sourceTree = "<group>"; };
+		BF31F6B91E645A0500CF40C6 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = ../Quartz/build/Debug/Quartz.framework; sourceTree = "<group>"; };
+		BF31F6BA1E645A0500CF40C6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = ../QuartzCore/build/Debug/QuartzCore.framework; sourceTree = "<group>"; };
+		BF31F6BB1E645A0500CF40C6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = "../DerivedData/guestOS/Build/Products/Debug-linux.x86_64/Security.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF31F6991E6459F100CF40C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF31F6BC1E645A0500CF40C6 /* AppKit.framework in Frameworks */,
+				BF31F6BD1E645A0500CF40C6 /* ApplicationServices.framework in Frameworks */,
+				BF31F6BE1E645A0500CF40C6 /* Carbon.framework in Frameworks */,
+				BF31F6BF1E645A0500CF40C6 /* CFNetwork.framework in Frameworks */,
+				BF31F6C01E645A0500CF40C6 /* Cocoa.framework in Frameworks */,
+				BF31F6C11E645A0500CF40C6 /* CommonCrypto.framework in Frameworks */,
+				BF31F6C21E645A0500CF40C6 /* CoreData.framework in Frameworks */,
+				BF31F6C31E645A0500CF40C6 /* CoreFoundation.framework in Frameworks */,
+				BF31F6C41E645A0500CF40C6 /* CoreGraphics.framework in Frameworks */,
+				BF31F6C51E645A0500CF40C6 /* CoreServices.framework in Frameworks */,
+				BF31F6C61E645A0500CF40C6 /* CoreText.framework in Frameworks */,
+				BF31F6C71E645A0500CF40C6 /* CoreVideo.framework in Frameworks */,
+				BF31F6C81E645A0500CF40C6 /* Foundation.framework in Frameworks */,
+				BF31F6C91E645A0500CF40C6 /* ImageKit.framework in Frameworks */,
+				BF31F6CA1E645A0500CF40C6 /* objc.framework in Frameworks */,
+				BF31F6CB1E645A0500CF40C6 /* Onyx2D.framework in Frameworks */,
+				BF31F6CC1E645A0500CF40C6 /* OpenGL.framework in Frameworks */,
+				BF31F6CD1E645A0500CF40C6 /* PDFKit.framework in Frameworks */,
+				BF31F6CE1E645A0500CF40C6 /* Quartz.framework in Frameworks */,
+				BF31F6CF1E645A0500CF40C6 /* QuartzCore.framework in Frameworks */,
+				BF31F6D01E645A0500CF40C6 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF31F6871E6458B000CF40C6 = {
+			isa = PBXGroup;
+			children = (
+				BF31F69E1E6459F100CF40C6 /* Products */,
+				BF31F6A61E645A0500CF40C6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BF31F69E1E6459F100CF40C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF31F69D1E6459F100CF40C6 /* guestOS.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF31F6A61E645A0500CF40C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF31F6A71E645A0500CF40C6 /* AppKit.framework */,
+				BF31F6A81E645A0500CF40C6 /* ApplicationServices.framework */,
+				BF31F6A91E645A0500CF40C6 /* Carbon.framework */,
+				BF31F6AA1E645A0500CF40C6 /* CFNetwork.framework */,
+				BF31F6AB1E645A0500CF40C6 /* Cocoa.framework */,
+				BF31F6AC1E645A0500CF40C6 /* CommonCrypto.framework */,
+				BF31F6AD1E645A0500CF40C6 /* CoreData.framework */,
+				BF31F6AE1E645A0500CF40C6 /* CoreFoundation.framework */,
+				BF31F6AF1E645A0500CF40C6 /* CoreGraphics.framework */,
+				BF31F6B01E645A0500CF40C6 /* CoreServices.framework */,
+				BF31F6B11E645A0500CF40C6 /* CoreText.framework */,
+				BF31F6B21E645A0500CF40C6 /* CoreVideo.framework */,
+				BF31F6B31E645A0500CF40C6 /* Foundation.framework */,
+				BF31F6B41E645A0500CF40C6 /* ImageKit.framework */,
+				BF31F6B51E645A0500CF40C6 /* objc.framework */,
+				BF31F6B61E645A0500CF40C6 /* Onyx2D.framework */,
+				BF31F6B71E645A0500CF40C6 /* OpenGL.framework */,
+				BF31F6B81E645A0500CF40C6 /* PDFKit.framework */,
+				BF31F6B91E645A0500CF40C6 /* Quartz.framework */,
+				BF31F6BA1E645A0500CF40C6 /* QuartzCore.framework */,
+				BF31F6BB1E645A0500CF40C6 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BF31F69A1E6459F100CF40C6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BF31F69C1E6459F100CF40C6 /* guestOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF31F6A31E6459F100CF40C6 /* Build configuration list for PBXNativeTarget "guestOS" */;
+			buildPhases = (
+				BF31F6981E6459F100CF40C6 /* Sources */,
+				BF31F6991E6459F100CF40C6 /* Frameworks */,
+				BF31F69A1E6459F100CF40C6 /* Headers */,
+				BF31F69B1E6459F100CF40C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = guestOS;
+			productName = guestOS;
+			productReference = BF31F69D1E6459F100CF40C6 /* guestOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF31F6881E6458B000CF40C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				TargetAttributes = {
+					BF31F69C1E6459F100CF40C6 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BF31F68B1E6458B000CF40C6 /* Build configuration list for PBXProject "guestOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BF31F6871E6458B000CF40C6;
+			productRefGroup = BF31F69E1E6459F100CF40C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF31F69C1E6459F100CF40C6 /* guestOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF31F69B1E6459F100CF40C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF31F6981E6459F100CF40C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BF31F68C1E6458B000CF40C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
+			};
+			name = Debug;
+		};
+		BF31F68D1E6458B000CF40C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
+			};
+			name = Release;
+		};
+		BF31F6A41E6459F100CF40C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = guestOS;
+			};
+			name = Debug;
+		};
+		BF31F6A51E6459F100CF40C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = guestOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF31F68B1E6458B000CF40C6 /* Build configuration list for PBXProject "guestOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF31F68C1E6458B000CF40C6 /* Debug */,
+				BF31F68D1E6458B000CF40C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF31F6A31E6459F100CF40C6 /* Build configuration list for PBXNativeTarget "guestOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF31F6A41E6459F100CF40C6 /* Debug */,
+				BF31F6A51E6459F100CF40C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF31F6881E6458B000CF40C6 /* Project object */;
+}

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D2AAC0C605546C1D00DB518D"
-               BuildableName = "pthread.1.0.dll"
+               BuildableName = "pthread.dylib"
                BlueprintName = "pthread"
                ReferencedContainer = "container:pthread.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D2AAC0C605546C1D00DB518D"
-            BuildableName = "pthread.1.0.dll"
+            BuildableName = "pthread.dylib"
             BlueprintName = "pthread"
             ReferencedContainer = "container:pthread.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D2AAC0C605546C1D00DB518D"
-            BuildableName = "pthread.1.0.dll"
+            BuildableName = "pthread.dylib"
             BlueprintName = "pthread"
             ReferencedContainer = "container:pthread.xcodeproj">
          </BuildableReference>

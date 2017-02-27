@@ -70,4 +70,7 @@
    <FileRef
       location = "group:Security/Security.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:guestOS/guestOS.xcodeproj">
+   </FileRef>
 </Workspace>

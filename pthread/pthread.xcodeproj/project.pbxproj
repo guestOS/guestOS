@@ -12,20 +12,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FE67838B143385CD0009A0A0 /* windows-i386-framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "windows-i386-framework.xcconfig"; sourceTree = "<group>"; };
-		FE67838C143385CD0009A0A0 /* windows-i386.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "windows-i386.xcconfig"; sourceTree = "<group>"; };
-		FE67838D143385CD0009A0A0 /* windows.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = windows.xcconfig; sourceTree = "<group>"; };
 		FE67838E143386160009A0A0 /* pthread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pthread.h; sourceTree = "<group>"; };
 		FE67838F143386160009A0A0 /* pthread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pthread.m; sourceTree = "<group>"; };
 		FE678390143386160009A0A0 /* sched.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sched.h; sourceTree = "<group>"; };
-		FE6786871433A2530009A0A0 /* pthread.1.0.dll */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = pthread.1.0.dll; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE6786871433A2530009A0A0 /* pthread.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = pthread.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		034768DFFF38A50411DB9C8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FE6786871433A2530009A0A0 /* pthread.1.0.dll */,
+				FE6786871433A2530009A0A0 /* pthread.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -36,7 +33,6 @@
 				FE67838E143386160009A0A0 /* pthread.h */,
 				FE67838F143386160009A0A0 /* pthread.m */,
 				FE678390143386160009A0A0 /* sched.h */,
-				FE67837D143385CD0009A0A0 /* xcconfig */,
 				034768DFFF38A50411DB9C8B /* Products */,
 			);
 			indentWidth = 4;
@@ -44,17 +40,6 @@
 			sourceTree = "<group>";
 			tabWidth = 4;
 			usesTabs = 0;
-		};
-		FE67837D143385CD0009A0A0 /* xcconfig */ = {
-			isa = PBXGroup;
-			children = (
-				FE67838B143385CD0009A0A0 /* windows-i386-framework.xcconfig */,
-				FE67838C143385CD0009A0A0 /* windows-i386.xcconfig */,
-				FE67838D143385CD0009A0A0 /* windows.xcconfig */,
-			);
-			name = xcconfig;
-			path = ../xcconfig;
-			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -83,7 +68,7 @@
 			);
 			name = pthread;
 			productName = pthread;
-			productReference = FE6786871433A2530009A0A0 /* pthread.1.0.dll */;
+			productReference = FE6786871433A2530009A0A0 /* pthread.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
@@ -117,7 +102,6 @@
 /* Begin XCBuildConfiguration section */
 		1DEB917E08733D990010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE67838B143385CD0009A0A0 /* windows-i386-framework.xcconfig */;
 			buildSettings = {
 				INSTALL_PATH = /;
 				PRIVATE_HEADERS_FOLDER_PATH = /include;
@@ -128,7 +112,6 @@
 		};
 		1DEB917F08733D990010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE67838B143385CD0009A0A0 /* windows-i386-framework.xcconfig */;
 			buildSettings = {
 				INSTALL_PATH = /;
 				PRIVATE_HEADERS_FOLDER_PATH = /include;
@@ -140,12 +123,14 @@
 		1DEB918208733D990010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};
 			name = Debug;
 		};
 		1DEB918308733D990010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};
 			name = Release;
 		};

@@ -33,8 +33,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFC4DE791E6349E80035F3F9 /* CoreGraphics.framework in Frameworks */,
-				BFC4DE7B1E6349E80035F3F9 /* CoreText.framework in Frameworks */,
 				BFC4DE7A1E6349E80035F3F9 /* CoreServices.framework in Frameworks */,
+				BFC4DE7B1E6349E80035F3F9 /* CoreText.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0820"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FE01AAE20C5D9BF900AEA51A"
-               BuildableName = "ApplicationServices.framework"
-               BlueprintName = "ApplicationServices"
-               ReferencedContainer = "container:ApplicationServices.xcodeproj">
+               BlueprintIdentifier = "BF31F69C1E6459F100CF40C6"
+               BuildableName = "guestOS.framework"
+               BlueprintName = "guestOS"
+               ReferencedContainer = "container:guestOS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FE01AAE20C5D9BF900AEA51A"
-            BuildableName = "ApplicationServices.framework"
-            BlueprintName = "ApplicationServices"
-            ReferencedContainer = "container:ApplicationServices.xcodeproj">
+            BlueprintIdentifier = "BF31F69C1E6459F100CF40C6"
+            BuildableName = "guestOS.framework"
+            BlueprintName = "guestOS"
+            ReferencedContainer = "container:guestOS.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,10 +63,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FE01AAE20C5D9BF900AEA51A"
-            BuildableName = "ApplicationServices.framework"
-            BlueprintName = "ApplicationServices"
-            ReferencedContainer = "container:ApplicationServices.xcodeproj">
+            BlueprintIdentifier = "BF31F69C1E6459F100CF40C6"
+            BuildableName = "guestOS.framework"
+            BlueprintName = "guestOS"
+            ReferencedContainer = "container:guestOS.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

@@ -11,6 +11,7 @@
 		BF45ECC41E6346D60026C66C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF45ECC11E6346D60026C66C /* CoreGraphics.framework */; };
 		BF45ECC51E6346D60026C66C /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF45ECC21E6346D60026C66C /* CoreServices.framework */; };
 		BF45ECDA1E63486F0026C66C /* CoreText.m in Sources */ = {isa = PBXBuildFile; fileRef = BF45ECD91E63486F0026C66C /* CoreText.m */; };
+		BFF7187F1E645C9C00DAF453 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF7187E1E645C9C00DAF453 /* Foundation.framework */; };
 		FECF92110FFB217F007AECF1 /* CoreText.h in Headers */ = {isa = PBXBuildFile; fileRef = FECF920B0FFB217F007AECF1 /* CoreText.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FECF92120FFB217F007AECF1 /* CoreTextExport.h in Headers */ = {isa = PBXBuildFile; fileRef = FECF920C0FFB217F007AECF1 /* CoreTextExport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FECF92130FFB217F007AECF1 /* CTFont.h in Headers */ = {isa = PBXBuildFile; fileRef = FECF920D0FFB217F007AECF1 /* CTFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -26,6 +27,7 @@
 		BF45ECC21E6346D60026C66C /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = "../DerivedData/guestOS/Build/Products/Release-linux.x86_64/CoreServices.framework"; sourceTree = "<group>"; };
 		BF45ECD91E63486F0026C66C /* CoreText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreText.m; sourceTree = "<group>"; };
 		BF45ECDB1E63492B0026C66C /* CoreText.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CoreText.xcconfig; sourceTree = "<group>"; };
+		BFF7187E1E645C9C00DAF453 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = "../DerivedData/guestOS/Build/Products/Debug-linux.x86_64/Foundation.framework"; sourceTree = "<group>"; };
 		FECF920B0FFB217F007AECF1 /* CoreText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreText.h; sourceTree = "<group>"; };
 		FECF920C0FFB217F007AECF1 /* CoreTextExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextExport.h; sourceTree = "<group>"; };
 		FECF920D0FFB217F007AECF1 /* CTFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTFont.h; sourceTree = "<group>"; };
@@ -40,9 +42,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF45ECC31E6346D60026C66C /* CoreFoundation.framework in Frameworks */,
 				BF45ECC41E6346D60026C66C /* CoreGraphics.framework in Frameworks */,
 				BF45ECC51E6346D60026C66C /* CoreServices.framework in Frameworks */,
+				BF45ECC31E6346D60026C66C /* CoreFoundation.framework in Frameworks */,
+				BFF7187F1E645C9C00DAF453 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +134,7 @@
 		BF45ECBF1E6346D50026C66C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BFF7187E1E645C9C00DAF453 /* Foundation.framework */,
 				BF45ECC01E6346D60026C66C /* CoreFoundation.framework */,
 				BF45ECC11E6346D60026C66C /* CoreGraphics.framework */,
 				BF45ECC21E6346D60026C66C /* CoreServices.framework */,
