@@ -359,110 +359,35 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		1DEB91B308733DA50010E9CD /* Windows-i386 */ = {
+		BFBD228D1E69C90F0072E745 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				WARNING_CFLAGS = "-Wno-deprecated-objc-isa-usage";
 			};
-			name = "Windows-i386";
+			name = Debug;
 		};
-		7E891EBB0D4961EA008150D3 /* Linux-i386 */ = {
+		BFBD228E1E69C90F0072E745 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = objc;
 			};
-			name = "Linux-i386";
+			name = Debug;
 		};
-		7E891EBC0D4961EA008150D3 /* Linux-i386 */ = {
+		BFBD228F1E69C9140072E745 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				WARNING_CFLAGS = "-Wno-deprecated-objc-isa-usage";
 			};
-			name = "Linux-i386";
+			name = Release;
 		};
-		CFC5B3CA1AF464BC00FBB52A /* Solaris-sparc */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				WARNING_CFLAGS = "-Wno-deprecated-objc-isa-usage";
-			};
-			name = "Solaris-sparc";
-		};
-		CFC5B3CB1AF464BC00FBB52A /* Solaris-sparc */ = {
+		BFBD22901E69C9140072E745 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = objc;
 			};
-			name = "Solaris-sparc";
-		};
-		CFC5B3D51AF464C300FBB52A /* Darwin-i386 */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				WARNING_CFLAGS = "-Wno-deprecated-objc-isa-usage";
-			};
-			name = "Darwin-i386";
-		};
-		CFC5B3D61AF464C300FBB52A /* Darwin-i386 */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = Info.plist;
-				PRODUCT_NAME = objc;
-			};
-			name = "Darwin-i386";
-		};
-		CFC5B3E01AF464D500FBB52A /* Darwin-x86_64 */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				WARNING_CFLAGS = "-Wno-deprecated-objc-isa-usage";
-			};
-			name = "Darwin-x86_64";
-		};
-		CFC5B3E11AF464D500FBB52A /* Darwin-x86_64 */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = Info.plist;
-				PRODUCT_NAME = objc;
-			};
-			name = "Darwin-x86_64";
-		};
-		CFC5B3EB1AF464E900FBB52A /* Linux-arm */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				WARNING_CFLAGS = "-Wno-deprecated-objc-isa-usage";
-			};
-			name = "Linux-arm";
-		};
-		CFC5B3EC1AF464E900FBB52A /* Linux-arm */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = Info.plist;
-				PRODUCT_NAME = objc;
-			};
-			name = "Linux-arm";
-		};
-		CFC5B3F61AF464F600FBB52A /* FreeBSD-i386 */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				WARNING_CFLAGS = "-Wno-deprecated-objc-isa-usage";
-			};
-			name = "FreeBSD-i386";
-		};
-		CFC5B3F71AF464F600FBB52A /* FreeBSD-i386 */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = Info.plist;
-				PRODUCT_NAME = objc;
-			};
-			name = "FreeBSD-i386";
-		};
-		FE01A5880C5D9B3100AEA51A /* Windows-i386 */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = Info.plist;
-				PRODUCT_NAME = objc;
-			};
-			name = "Windows-i386";
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -470,30 +395,20 @@
 		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "objc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DEB91B308733DA50010E9CD /* Windows-i386 */,
-				CFC5B3F61AF464F600FBB52A /* FreeBSD-i386 */,
-				CFC5B3D51AF464C300FBB52A /* Darwin-i386 */,
-				CFC5B3E01AF464D500FBB52A /* Darwin-x86_64 */,
-				7E891EBC0D4961EA008150D3 /* Linux-i386 */,
-				CFC5B3EB1AF464E900FBB52A /* Linux-arm */,
-				CFC5B3CA1AF464BC00FBB52A /* Solaris-sparc */,
+				BFBD228D1E69C90F0072E745 /* Debug */,
+				BFBD228F1E69C9140072E745 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Windows-i386";
+			defaultConfigurationName = Release;
 		};
 		FE01A5870C5D9B3100AEA51A /* Build configuration list for PBXNativeTarget "objc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FE01A5880C5D9B3100AEA51A /* Windows-i386 */,
-				CFC5B3F71AF464F600FBB52A /* FreeBSD-i386 */,
-				CFC5B3D61AF464C300FBB52A /* Darwin-i386 */,
-				CFC5B3E11AF464D500FBB52A /* Darwin-x86_64 */,
-				7E891EBB0D4961EA008150D3 /* Linux-i386 */,
-				CFC5B3EC1AF464E900FBB52A /* Linux-arm */,
-				CFC5B3CB1AF464BC00FBB52A /* Solaris-sparc */,
+				BFBD228E1E69C90F0072E745 /* Debug */,
+				BFBD22901E69C9140072E745 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Windows-i386";
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
