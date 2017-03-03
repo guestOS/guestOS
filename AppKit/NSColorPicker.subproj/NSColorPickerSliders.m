@@ -44,7 +44,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	
     switch ([[typeButton selectedItem] tag]) {
         case NSGrayModeColorPanel: {
-            float gray, alpha;
+            CGFloat gray, alpha;
 			
             color = [color colorUsingColorSpaceName:NSCalibratedWhiteColorSpace];
             [color getWhite:&gray alpha:&alpha];
@@ -55,7 +55,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         }
             
         case NSRGBModeColorPanel: {
-            float red, green, blue, alpha;
+            CGFloat red, green, blue, alpha;
 			
             color = [color colorUsingColorSpaceName:NSCalibratedRGBColorSpace];
             [color getRed:&red green:&green blue:&blue alpha:&alpha];
@@ -71,7 +71,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         }
 			
         case NSCMYKModeColorPanel: {
-            float cyan, magenta, yellow, black, alpha;
+            CGFloat cyan, magenta, yellow, black, alpha;
 			
             color = [color colorUsingColorSpaceName:NSDeviceCMYKColorSpace];
             [color getCyan:&cyan magenta:&magenta yellow:&yellow black:&black alpha:&alpha];
@@ -89,7 +89,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         }
 			
         case NSHSBModeColorPanel: {
-            float hue, saturation, brightness, alpha;
+            CGFloat hue, saturation, brightness, alpha;
 			
             color = [color colorUsingColorSpaceName:NSCalibratedRGBColorSpace];
             [color getHue:&hue saturation:&saturation brightness:&brightness alpha:&alpha];

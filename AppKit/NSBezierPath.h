@@ -106,7 +106,7 @@ typedef enum {
 - (void)setWindingRule:(NSWindingRule)rule;
 - (void)setLineCapStyle:(NSLineCapStyle)style;
 - (void)setLineJoinStyle:(NSLineJoinStyle)style;
-- (void)setLineDash:(const float *)dashes count:(int)count phase:(float)phase;
+- (void)setLineDash:(const CGFloat *)dashes count:(int)count phase:(CGFloat)phase;
 - (void)setCachesBezierPath:(BOOL)flag;
 
 - (BOOL)isEmpty;

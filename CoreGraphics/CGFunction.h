@@ -12,7 +12,7 @@ typedef struct O2Function *CGFunctionRef;
 
 typedef struct {
     unsigned version;
-    void (*evaluate)(void *, const float *, float *);
+    void (*evaluate)(void *, const CGFloat *, CGFloat *);
     void (*releaseInfo)(void *);
 } CGFunctionCallbacks;
 

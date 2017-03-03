@@ -158,7 +158,7 @@ COREGRAPHICS_EXPORT void CGContextClipToRects(CGContextRef context, const CGRect
 COREGRAPHICS_EXPORT void CGContextSetStrokeColorSpace(CGContextRef context, CGColorSpaceRef colorSpace);
 COREGRAPHICS_EXPORT void CGContextSetFillColorSpace(CGContextRef context, CGColorSpaceRef colorSpace);
 
-COREGRAPHICS_EXPORT void CGContextSetStrokeColor(CGContextRef context, const float *components);
+COREGRAPHICS_EXPORT void CGContextSetStrokeColor(CGContextRef context, const CGFloat *components);
 COREGRAPHICS_EXPORT void CGContextSetStrokeColorWithColor(CGContextRef context, CGColorRef color);
 COREGRAPHICS_EXPORT void CGContextSetGrayStrokeColor(CGContextRef context, float gray, float alpha);
 COREGRAPHICS_EXPORT void CGContextSetRGBStrokeColor(CGContextRef context, float r, float g, float b, float alpha);
@@ -166,7 +166,7 @@ COREGRAPHICS_EXPORT void CGContextSetCMYKStrokeColor(CGContextRef context, float
 COREGRAPHICS_EXPORT void CGContextSetCalibratedRGBStrokeColor(CGContextRef context, float red, float green, float blue, float alpha);
 COREGRAPHICS_EXPORT void CGContextSetCalibratedGrayStrokeColor(CGContextRef context, float gray, float alpha);
 
-COREGRAPHICS_EXPORT void CGContextSetFillColor(CGContextRef context, const float *components);
+COREGRAPHICS_EXPORT void CGContextSetFillColor(CGContextRef context, const CGFloat *components);
 COREGRAPHICS_EXPORT void CGContextSetFillColorWithColor(CGContextRef context, CGColorRef color);
 COREGRAPHICS_EXPORT void CGContextSetGrayFillColor(CGContextRef context, float gray, float alpha);
 COREGRAPHICS_EXPORT void CGContextSetRGBFillColor(CGContextRef context, float r, float g, float b, float alpha);

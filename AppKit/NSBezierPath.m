@@ -390,7 +390,7 @@ static int numberOfPointsForOperator(int op){
    _lineJoinStyleIsDefault=NO;
 }
 
--(void)setLineDash:(const float *)dashes count:(int)count phase:(float)phase {
+-(void)setLineDash:(const CGFloat *)dashes count:(int)count phase:(CGFloat)phase {
    if(_dashes!=NULL)
     NSZoneFree(NULL,_dashes);
     

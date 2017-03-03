@@ -13,24 +13,7 @@
 		8D15AC310486D014006FF6A4 /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */; settings = {ATTRIBUTES = (); }; };
 		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
-		FE2021971751B01F002A9EDC /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */; };
-		FEBCB9391750326300056F54 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEBCB9381750326300056F54 /* AppKit.framework */; };
-		FEBCB93B1750326E00056F54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEBCB93A1750326E00056F54 /* Foundation.framework */; };
-		FEF2CA110B35153A005449C7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
-		FEF2CA120B35153A005449C7 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */; };
-		FEF2CA130B35153A005449C7 /* MyDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B4FDCFA73011CA2CEA /* MyDocument.nib */; };
-		FEF2CA170B35153A005449C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		BFB43C8B1DF35A38000DBE51 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FEB4EF2D15267D2000EC3CA1 /* Cocoa.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BFFF97EC1DEF1E3900067F30;
-			remoteInfo = Cocoa;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
@@ -44,10 +27,7 @@
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D15AC370486D014006FF6A4 /* TextEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FEB4EF2D15267D2000EC3CA1 /* Cocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cocoa.xcodeproj; path = ../../Cocoa/Cocoa.xcodeproj; sourceTree = "<group>"; };
-		FEBCB9381750326300056F54 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = "../../AppKit/build/sym/Release-i386-mingw32msvc/AppKit.framework"; sourceTree = "<group>"; };
-		FEBCB93A1750326E00056F54 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = "../../Foundation/build/sym/Release-i386-pc-linux/Foundation.framework"; sourceTree = "<group>"; };
-		FEF2CA1C0B35153A005449C7 /* TextEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8DCAE41E69D58000060425 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +36,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FEF2CA180B35153A005449C7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FEBCB9391750326300056F54 /* AppKit.framework in Frameworks */,
-				FEBCB93B1750326E00056F54 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				8D15AC370486D014006FF6A4 /* TextEditor.app */,
-				FEF2CA1C0B35153A005449C7 /* TextEditor.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,9 +70,6 @@
 		2A37F4AAFDCFA73011CA2CEA /* TextEditor */ = {
 			isa = PBXGroup;
 			children = (
-				FEBCB93A1750326E00056F54 /* Foundation.framework */,
-				FEBCB9381750326300056F54 /* AppKit.framework */,
-				FEB4EF2D15267D2000EC3CA1 /* Cocoa.xcodeproj */,
 				2A37F4ABFDCFA73011CA2CEA /* Classes */,
 				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
 				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
@@ -143,26 +110,19 @@
 		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BF8DCAE41E69D58000060425 /* AppKit.framework */,
 				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
 				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FEB4EF2E15267D2000EC3CA1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BFB43C8C1DF35A38000DBE51 /* Cocoa.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D15AC270486D014006FF6A4 /* TextEditor-Mac */ = {
+		8D15AC270486D014006FF6A4 /* TextEditor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "TextEditor-Mac" */;
+			buildConfigurationList = C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "TextEditor" */;
 			buildPhases = (
 				8D15AC2B0486D014006FF6A4 /* Resources */,
 				8D15AC300486D014006FF6A4 /* Sources */,
@@ -172,29 +132,10 @@
 			);
 			dependencies = (
 			);
-			name = "TextEditor-Mac";
+			name = TextEditor;
 			productInstallPath = "$(HOME)/Applications";
 			productName = TextEditor;
 			productReference = 8D15AC370486D014006FF6A4 /* TextEditor.app */;
-			productType = "com.apple.product-type.application";
-		};
-		FEF2CA0F0B35153A005449C7 /* TextEditor-Windows */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FEF2CA1A0B35153A005449C7 /* Build configuration list for PBXNativeTarget "TextEditor-Windows" */;
-			buildPhases = (
-				FEF2CA100B35153A005449C7 /* Resources */,
-				FEF2CA150B35153A005449C7 /* Sources */,
-				FEF2CA180B35153A005449C7 /* Frameworks */,
-				FEB6746C0D2F2909006EE835 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "TextEditor-Windows";
-			productInstallPath = "$(HOME)/Applications";
-			productName = TextEditor;
-			productReference = FEF2CA1C0B35153A005449C7 /* TextEditor.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -214,29 +155,12 @@
 			);
 			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* TextEditor */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = FEB4EF2E15267D2000EC3CA1 /* Products */;
-					ProjectRef = FEB4EF2D15267D2000EC3CA1 /* Cocoa.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
-				8D15AC270486D014006FF6A4 /* TextEditor-Mac */,
-				FEF2CA0F0B35153A005449C7 /* TextEditor-Windows */,
+				8D15AC270486D014006FF6A4 /* TextEditor */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		BFB43C8C1DF35A38000DBE51 /* Cocoa.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Cocoa.framework;
-			remoteRef = BFB43C8B1DF35A38000DBE51 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8D15AC2B0486D014006FF6A4 /* Resources */ = {
@@ -249,33 +173,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FEF2CA100B35153A005449C7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FEF2CA110B35153A005449C7 /* Credits.rtf in Resources */,
-				FEF2CA120B35153A005449C7 /* MainMenu.nib in Resources */,
-				FEF2CA130B35153A005449C7 /* MyDocument.nib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		FEB6746C0D2F2909006EE835 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/Developer/Cocotron/1.0/bin/retargetBundle -framework Foundation -framework AppKit -destination $TARGET_BUILD_DIR\"/\"$EXECUTABLE_FOLDER_PATH\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D15AC300486D014006FF6A4 /* Sources */ = {
@@ -284,15 +182,6 @@
 			files = (
 				8D15AC310486D014006FF6A4 /* MyDocument.m in Sources */,
 				8D15AC320486D014006FF6A4 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FEF2CA150B35153A005449C7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FEF2CA170B35153A005449C7 /* main.m in Sources */,
-				FE2021971751B01F002A9EDC /* MyDocument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,9 +219,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_MODEL_TUNING = "";
-				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = TextEditor;
 				WRAPPER_EXTENSION = app;
@@ -343,12 +230,16 @@
 		C05733CC08A9546B00998B17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};
 			name = Release;
 		};
 		FEBCB9291750249800056F54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = 0;
+				ONLY_ACTIVE_ARCH = YES;
+				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};
 			name = Debug;
 		};
@@ -356,9 +247,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_MODEL_TUNING = "";
-				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = TextEditor;
 				WRAPPER_EXTENSION = app;
@@ -366,80 +255,10 @@
 			};
 			name = Debug;
 		};
-		FEBCB92B1750249800056F54 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = i386;
-				COPY_PHASE_STRIP = YES;
-				DEPLOYMENT_LOCATION = YES;
-				DSTROOT = build;
-				EFFECTIVE_PLATFORM_NAME = "-windows";
-				EXECUTABLE_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Windows";
-				EXECUTABLE_SUFFIX = .exe;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../system/i386-mingw32msvc/Frameworks";
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_MODEL_TUNING = "";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_VERSION = org.cocotron.1.0.windows.i386.gcc.4.3.1;
-				INFOPLIST_FILE = Info.plist;
-				OTHER_CFLAGS = (
-					"$(WINDOWS_i386_COMPILER_CFLAGS)",
-					"-isystem",
-					/Developer/Cocotron/1.0/Windows/i386/sysroot/mingw/include/,
-					"-mwindows",
-					"-mconsole",
-				);
-				OTHER_LDFLAGS = (
-					"-mwindows",
-					"-mconsole",
-					"$(WINDOWS_i386_COMPILER_LDFLAGS)",
-				);
-				PRODUCT_NAME = TextEditor;
-				XWINDOWS_i386_COMPILER_CFLAGS = "-ccc-host-triple i386-pc-mingw32msvc -ccc-gcc-name i386-mingw32msvc-gcc";
-				XWINDOWS_i386_COMPILER_LDFLAGS = "-ccc-host-triple i386-pc-mingw32msvc -ccc-gcc-name i386-mingw32msvc-gcc";
-			};
-			name = Debug;
-		};
-		FEF2CA1B0B35153A005449C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = i386;
-				COPY_PHASE_STRIP = YES;
-				DEPLOYMENT_LOCATION = YES;
-				DSTROOT = build;
-				EFFECTIVE_PLATFORM_NAME = "-windows";
-				EXECUTABLE_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Windows";
-				EXECUTABLE_SUFFIX = .exe;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../system/i386-mingw32msvc/Frameworks";
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_MODEL_TUNING = "";
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_VERSION = org.cocotron.1.0.windows.i386.gcc.4.3.1;
-				INFOPLIST_FILE = Info.plist;
-				OTHER_CFLAGS = (
-					"$(WINDOWS_i386_COMPILER_CFLAGS)",
-					"-isystem",
-					/Developer/Cocotron/1.0/Windows/i386/sysroot/mingw/include/,
-					"-mwindows",
-					"-mconsole",
-				);
-				OTHER_LDFLAGS = (
-					"-mwindows",
-					"-mconsole",
-					"$(WINDOWS_i386_COMPILER_LDFLAGS)",
-				);
-				PRODUCT_NAME = TextEditor;
-				XWINDOWS_i386_COMPILER_CFLAGS = "-ccc-host-triple i386-pc-mingw32msvc -ccc-gcc-name i386-mingw32msvc-gcc";
-				XWINDOWS_i386_COMPILER_LDFLAGS = "-ccc-host-triple i386-pc-mingw32msvc -ccc-gcc-name i386-mingw32msvc-gcc";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "TextEditor-Mac" */ = {
+		C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "TextEditor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C05733C808A9546B00998B17 /* Release */,
@@ -453,15 +272,6 @@
 			buildConfigurations = (
 				C05733CC08A9546B00998B17 /* Release */,
 				FEBCB9291750249800056F54 /* Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FEF2CA1A0B35153A005449C7 /* Build configuration list for PBXNativeTarget "TextEditor-Windows" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FEF2CA1B0B35153A005449C7 /* Release */,
-				FEBCB92B1750249800056F54 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

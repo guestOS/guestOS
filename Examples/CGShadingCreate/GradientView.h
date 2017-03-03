@@ -3,8 +3,8 @@
 #import <Cocoa/Cocoa.h>
 
 @interface GradientView : NSView {
-    float _C0[4];
-    float _C1[4];
+    CGFloat _C0[4];
+    CGFloat _C1[4];
     NSPoint _startPoint;
     NSPoint _endPoint;
     BOOL _extendStart;

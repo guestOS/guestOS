@@ -15,7 +15,7 @@
 {
 	NSColor* color = [[self colorPanel] color];
 	
-	float hue, saturation, brightness, alpha;
+	CGFloat hue, saturation, brightness, alpha;
 
 	color = [color colorUsingColorSpaceName:NSCalibratedRGBColorSpace];
 	

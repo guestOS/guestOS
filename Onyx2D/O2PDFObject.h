@@ -12,7 +12,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 typedef BOOL O2PDFBoolean;
 typedef int O2PDFInteger;
-typedef float O2PDFReal;
+#ifdef __LP64__
+    typedef double O2PDFReal;
+#else
+    typedef float O2PDFReal;
+#endif
 
 typedef enum {
     kO2PDFObjectTypeNull = 1,

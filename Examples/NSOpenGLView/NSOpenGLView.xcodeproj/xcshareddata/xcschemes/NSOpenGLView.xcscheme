@@ -3,7 +3,7 @@
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
-      buildImplicitDependencies = "NO">
+      buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
@@ -13,28 +13,28 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FEF2CA0F0B35153A005449C7"
-               BuildableName = "TextEditor.app"
-               BlueprintName = "TextEditor-Windows"
-               ReferencedContainer = "container:TextEditor.xcodeproj">
+               BlueprintIdentifier = "8D1107260486CEB800E47090"
+               BuildableName = "NSOpenGLView.app"
+               BlueprintName = "NSOpenGLView"
+               ReferencedContainer = "container:NSOpenGLView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Deployment"
-      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.GDB"
-      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.GDB"
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FEF2CA0F0B35153A005449C7"
-            BuildableName = "TextEditor.app"
-            BlueprintName = "TextEditor-Windows"
-            ReferencedContainer = "container:TextEditor.xcodeproj">
+            BlueprintIdentifier = "8D1107260486CEB800E47090"
+            BuildableName = "NSOpenGLView.app"
+            BlueprintName = "NSOpenGLView"
+            ReferencedContainer = "container:NSOpenGLView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -54,17 +54,17 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FEF2CA0F0B35153A005449C7"
-            BuildableName = "TextEditor.app"
-            BlueprintName = "TextEditor-Windows"
-            ReferencedContainer = "container:TextEditor.xcodeproj">
+            BlueprintIdentifier = "8D1107260486CEB800E47090"
+            BuildableName = "NSOpenGLView.app"
+            BlueprintName = "NSOpenGLView"
+            ReferencedContainer = "container:NSOpenGLView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Deployment"
+      buildConfiguration = "Release"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -73,18 +73,18 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FEF2CA0F0B35153A005449C7"
-            BuildableName = "TextEditor.app"
-            BlueprintName = "TextEditor-Windows"
-            ReferencedContainer = "container:TextEditor.xcodeproj">
+            BlueprintIdentifier = "8D1107260486CEB800E47090"
+            BuildableName = "NSOpenGLView.app"
+            BlueprintName = "NSOpenGLView"
+            ReferencedContainer = "container:NSOpenGLView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Deployment">
+      buildConfiguration = "Debug">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Deployment"
+      buildConfiguration = "Release"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

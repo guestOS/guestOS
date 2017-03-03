@@ -16,7 +16,11 @@ extern "C" {
 #define ONYX2D_STATIC static
 #define ONYX2D_STATIC_INLINE static inline
 
-typedef float O2Float;
+#ifdef __LP64__
+    typedef double O2Float;
+#else
+    typedef float O2Float;
+#endif
 
 typedef NSPoint O2Point;
 typedef NSSize O2Size;

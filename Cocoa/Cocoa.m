@@ -9,7 +9,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 // Original - Christopher Lloyd <cjwl@objc.net>
 #import <Cocoa/Cocoa.h>
 
-static void Cocoa(){
+void Cocoa() {
    [NSObject class];
    [NSApplication class];
 }

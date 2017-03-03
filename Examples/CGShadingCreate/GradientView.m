@@ -43,7 +43,7 @@
    [self updateRadius];
 }
 
-void evaluate(void *info,const float *in, float *output) {
+void evaluate(void *info,const CGFloat *in, CGFloat *output) {
    float         x=in[0];
    GradientView *self=info;
    int           i;
@@ -56,8 +56,8 @@ void evaluate(void *info,const float *in, float *output) {
    CGContextRef  context=[[NSGraphicsContext currentContext] graphicsPort];
    CGFunctionRef function;
    CGShadingRef  shading;
-   float         domain[2]={0,1};
-   float         range[8]={0,1,0,1,0,1,0,1};
+   CGFloat       domain[2]={0,1};
+   CGFloat       range[8]={0,1,0,1,0,1,0,1};
    CGFunctionCallbacks callbacks={0,evaluate,NULL};
    
    [[NSColor whiteColor] set];
