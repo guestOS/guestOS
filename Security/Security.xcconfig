@@ -2,8 +2,6 @@
 OTHER_CFLAGS = $(inherited) -DSECURITY_INSIDE_BUILD
 WARNING_CFLAGS = $(inherited) -Wno-multichar
 
-OTHER_LDFLAGS = $(inherited) -lobjc
-
 // Note: legacy, should be provided by SDK itself
 // OTHER_CFLAGS[sdk=guestos.windows.i386] = $(inherited) -DWINVER=0x500 -D__LITTLE_ENDIAN__ -march=i686
 // OTHER_LDFLAGS[sdk=guestos.windows.i386] = $(inherited) -shared -lrpcrt4 -lcrypt32 -Wl,--enable-auto-import -Wl,--export-all-symbols -Wl,--image-base=0x10000000 -Wl,--out-implib,$TARGET_BUILD_DIR/$(PRODUCT_NAME).framework/lib$(PRODUCT_NAME).a

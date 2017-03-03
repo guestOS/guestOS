@@ -1,3 +1,3 @@
 
 //OTHER_LDFLAGS[sdk=guestos.windows.i386] = $(inherited) -lssl -lcrypto -lgdi32
-OTHER_LDFLAGS[sdk=guestos.linux.x86_64] = $(inherited) -lobjc -l:libssl.so.1.0.0 -l:libcrypto.so.1.0.0
+OTHER_LDFLAGS[sdk=guestos.linux.x86_64] = $(inherited) -l:libssl.so.1.0.0 -l:libcrypto.so.1.0.0

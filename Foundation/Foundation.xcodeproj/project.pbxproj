@@ -3818,7 +3818,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BF5C918F1E63128C0039F83F /* Foundation.xcconfig */;
 			buildSettings = {
-				CLANG_LINK_OBJC_RUNTIME = NO;
 				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};
 			name = Release;
@@ -3843,7 +3842,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BF5C918F1E63128C0039F83F /* Foundation.xcconfig */;
 			buildSettings = {
-				CLANG_LINK_OBJC_RUNTIME = NO;
 				ONLY_ACTIVE_ARCH = YES;
 				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};
