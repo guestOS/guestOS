@@ -122,6 +122,7 @@
 		5AD0CB4F14F2E5C6002F0A2B /* O2Defines_libjpeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2Defines_libjpeg.h; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* Onyx2D.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Onyx2D.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFBD229A1E69D1AD0072E745 /* Onyx2D.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Onyx2D.xcconfig; sourceTree = "<group>"; };
 		BFBF53261E635E7D003967E2 /* O2Availability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = O2Availability.h; sourceTree = "<group>"; };
 		BFFA8C391E634FD8006BD3AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = "../DerivedData/guestOS/Build/Products/Debug-linux.x86_64/Foundation.framework"; sourceTree = "<group>"; };
 		BFFA8C3B1E634FEC006BD3AA /* Onyx2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Onyx2D.m; sourceTree = "<group>"; };
@@ -346,6 +347,7 @@
 		0867D691FE84028FC02AAC07 /* Onyx2D */ = {
 			isa = PBXGroup;
 			children = (
+				BFBD229A1E69D1AD0072E745 /* Onyx2D.xcconfig */,
 				BFFA8C341E634F9F006BD3AA /* Headers */,
 				BFFA8C351E634FAE006BD3AA /* Sources */,
 				FE069F4C1245A9260040F165 /* English.lproj */,
@@ -845,6 +847,7 @@
 /* Begin XCBuildConfiguration section */
 		BFFA8C301E634F2A006BD3AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBD229A1E69D1AD0072E745 /* Onyx2D.xcconfig */;
 			buildSettings = {
 				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};
@@ -862,6 +865,7 @@
 		};
 		BFFA8C321E634F2E006BD3AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBD229A1E69D1AD0072E745 /* Onyx2D.xcconfig */;
 			buildSettings = {
 				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};

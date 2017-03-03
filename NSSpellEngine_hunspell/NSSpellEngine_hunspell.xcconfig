@@ -1,3 +1,4 @@
+#include "../guestOS"
 
 // Note: legacy
 //EXECUTABLE_FOLDER_PATH[sdk=guestos.windows.i386] = $(CONTENTS_FOLDER_PATH)/Windows

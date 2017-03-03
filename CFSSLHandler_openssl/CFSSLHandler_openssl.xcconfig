@@ -1,3 +1,4 @@
+#include "../guestOS"
 
 // Note: legacy
 //OTHER_LDFLAGS[sdk=guestos.windows.i386] = -shared -lssl -lcrypto -lgdi32 -lws2_32 -Wl,--enable-auto-import

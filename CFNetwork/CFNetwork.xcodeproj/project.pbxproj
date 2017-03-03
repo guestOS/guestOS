@@ -26,6 +26,7 @@
 		BF5C91261E6304F60039F83F /* CFSocketStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFSocketStream.m; sourceTree = "<group>"; };
 		BF5C912D1E6306240039F83F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = ../CoreFoundation/build/Debug/CoreFoundation.framework; sourceTree = "<group>"; };
 		BF5C91861E630A760039F83F /* CFNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFNetwork.m; sourceTree = "<group>"; };
+		BFBD22941E69D0C00072E745 /* CFNetwork.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CFNetwork.xcconfig; sourceTree = "<group>"; };
 		FE74338510A89A9D004CDF00 /* CFNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFNetwork.h; sourceTree = "<group>"; };
 		FEC121A810EFC6C000FD1B47 /* CFSocketStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFSocketStream.h; sourceTree = "<group>"; };
 		FEC121CC10EFC89500FD1B47 /* CFNetServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFNetServices.h; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 		0867D691FE84028FC02AAC07 /* CFNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				BFBD22941E69D0C00072E745 /* CFNetwork.xcconfig */,
 				BF5C91851E630A520039F83F /* Headers */,
 				BF5C91841E630A480039F83F /* Sources */,
 				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
@@ -230,6 +232,7 @@
 /* Begin XCBuildConfiguration section */
 		BF5C91181E61961E0039F83F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBD22941E69D0C00072E745 /* CFNetwork.xcconfig */;
 			buildSettings = {
 				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};
@@ -245,6 +248,7 @@
 		};
 		BF5C911A1E6196270039F83F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBD22941E69D0C00072E745 /* CFNetwork.xcconfig */;
 			buildSettings = {
 				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};

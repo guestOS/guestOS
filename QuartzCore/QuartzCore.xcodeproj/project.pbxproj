@@ -46,6 +46,7 @@
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFBD229E1E69D21E0072E745 /* QuartzCore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QuartzCore.xcconfig; sourceTree = "<group>"; };
 		BFFA8C431E63512C006BD3AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = "../DerivedData/guestOS/Build/Products/Debug-linux.x86_64/Foundation.framework"; sourceTree = "<group>"; };
 		BFFA8C441E63512C006BD3AA /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = "../DerivedData/guestOS/Build/Products/Debug-linux.x86_64/OpenGL.framework"; sourceTree = "<group>"; };
 		BFFA8C5C1E635242006BD3AA /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = "../DerivedData/guestOS/Build/Products/Debug-linux.x86_64/CoreFoundation.framework"; sourceTree = "<group>"; };
@@ -127,6 +128,7 @@
 		0867D691FE84028FC02AAC07 /* QuartzCore */ = {
 			isa = PBXGroup;
 			children = (
+				BFBD229E1E69D21E0072E745 /* QuartzCore.xcconfig */,
 				BFFA8C641E635258006BD3AA /* Headers */,
 				BFFA8C651E635263006BD3AA /* Sources */,
 				08FB77AEFE84172EC02AAC07 /* Classes */,
@@ -381,6 +383,7 @@
 /* Begin XCBuildConfiguration section */
 		BFFA8C661E635281006BD3AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBD229E1E69D21E0072E745 /* QuartzCore.xcconfig */;
 			buildSettings = {
 				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};
@@ -396,6 +399,7 @@
 		};
 		BFFA8C681E635285006BD3AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBD229E1E69D21E0072E745 /* QuartzCore.xcconfig */;
 			buildSettings = {
 				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};

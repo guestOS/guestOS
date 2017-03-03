@@ -73,4 +73,7 @@
    <FileRef
       location = "group:guestOS/guestOS.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:guestOS.xcconfig">
+   </FileRef>
 </Workspace>

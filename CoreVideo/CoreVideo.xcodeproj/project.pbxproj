@@ -52,6 +52,7 @@
 		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* CoreVideo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreVideo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFBD22981E69D15D0072E745 /* CoreVideo.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CoreVideo.xcconfig; sourceTree = "<group>"; };
 		BFFA8C4E1E6351C6006BD3AA /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = "../DerivedData/guestOS/Build/Products/Debug-linux.x86_64/CoreFoundation.framework"; sourceTree = "<group>"; };
 		BFFA8C4F1E6351C6006BD3AA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = "../DerivedData/guestOS/Build/Products/Debug-linux.x86_64/CoreGraphics.framework"; sourceTree = "<group>"; };
 		BFFA8C501E6351C6006BD3AA /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = "../DerivedData/guestOS/Build/Products/Debug-linux.x86_64/CoreServices.framework"; sourceTree = "<group>"; };
@@ -92,6 +93,7 @@
 		0867D691FE84028FC02AAC07 /* CoreVideo */ = {
 			isa = PBXGroup;
 			children = (
+				BFBD22981E69D15D0072E745 /* CoreVideo.xcconfig */,
 				BFFA8C581E6351E2006BD3AA /* CoreVideo.m */,
 				FE43045A11E2779700EBDD56 /* CVReturn.h */,
 				FE43045811E2769E00EBDD56 /* CVBase.h */,
@@ -289,6 +291,7 @@
 /* Begin XCBuildConfiguration section */
 		BFFA8C471E63514A006BD3AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBD22981E69D15D0072E745 /* CoreVideo.xcconfig */;
 			buildSettings = {
 				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};
@@ -304,6 +307,7 @@
 		};
 		BFFA8C491E63514E006BD3AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBD22981E69D15D0072E745 /* CoreVideo.xcconfig */;
 			buildSettings = {
 				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};

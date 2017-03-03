@@ -1,3 +1,4 @@
+#include "../guestOS"
 
 // Note: legacsy
 OTHER_CFLAGS[sdk=guestos.windows.i386] = $(inherited) -D__SSE2__ -D__SSE__ -D__LITTLE_ENDIAN__

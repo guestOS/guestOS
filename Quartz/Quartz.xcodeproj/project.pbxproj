@@ -27,6 +27,7 @@
 		BF31F66A1E64533C00CF40C6 /* ImageKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageKit.framework; path = "../DerivedData/guestOS/Build/Products/Debug-linux.x86_64/ImageKit.framework"; sourceTree = "<group>"; };
 		BF31F66B1E64533C00CF40C6 /* PDFKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PDFKit.framework; path = "../DerivedData/guestOS/Build/Products/Debug-linux.x86_64/PDFKit.framework"; sourceTree = "<group>"; };
 		BF31F66E1E64534900CF40C6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = "../DerivedData/guestOS/Build/Products/Debug-linux.x86_64/QuartzCore.framework"; sourceTree = "<group>"; };
+		BFBD229D1E69D2030072E745 /* Quartz.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Quartz.xcconfig; sourceTree = "<group>"; };
 		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		FE43023D11E2599200EBDD56 /* Quartz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quartz.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,6 +57,7 @@
 		0867D691FE84028FC02AAC07 /* Quartz */ = {
 			isa = PBXGroup;
 			children = (
+				BFBD229D1E69D2030072E745 /* Quartz.xcconfig */,
 				BF31F6661E64531E00CF40C6 /* Quartz.m */,
 				FE43023D11E2599200EBDD56 /* Quartz.h */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
@@ -232,6 +234,7 @@
 		};
 		1DEB91B308733DA50010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBD229D1E69D2030072E745 /* Quartz.xcconfig */;
 			buildSettings = {
 				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};
@@ -239,6 +242,7 @@
 		};
 		BF31F6601E64515000CF40C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBD229D1E69D2030072E745 /* Quartz.xcconfig */;
 			buildSettings = {
 				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};

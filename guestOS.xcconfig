@@ -1,0 +1,4 @@
+DSTROOT = $(SDK_DIR)
+DSTROOT[sdk=macosx*] = ~/Library/guestOS/
+
+DEPLOYMENT_LOCATION = YES

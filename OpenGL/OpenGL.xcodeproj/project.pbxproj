@@ -24,6 +24,7 @@
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* OpenGL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OpenGL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFBD229B1E69D1C90072E745 /* OpenGL.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = OpenGL.xcconfig; sourceTree = "<group>"; };
 		BFFA8C161E634BA4006BD3AA /* OpenGL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGL.m; sourceTree = "<group>"; };
 		BFFA8C1F1E634C2E006BD3AA /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = "../DerivedData/guestOS/Build/Products/Release-linux.x86_64/ApplicationServices.framework"; sourceTree = "<group>"; };
 		BFFA8C201E634C2E006BD3AA /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = "../DerivedData/guestOS/Build/Products/Release-linux.x86_64/CoreFoundation.framework"; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 		0867D691FE84028FC02AAC07 /* OpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				BFBD229B1E69D1C90072E745 /* OpenGL.xcconfig */,
 				FE92E41D1342721400919549 /* wglext.h */,
 				FEAEFF7011E4D09900CA0912 /* glweak.h */,
 				FED35B66104DF7F80038ED7C /* CGLTypes.h */,
@@ -234,6 +236,7 @@
 /* Begin XCBuildConfiguration section */
 		BFFA8C171E634BEF006BD3AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBD229B1E69D1C90072E745 /* OpenGL.xcconfig */;
 			buildSettings = {
 				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};
@@ -249,6 +252,7 @@
 		};
 		BFFA8C191E634BF5006BD3AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBD229B1E69D1C90072E745 /* OpenGL.xcconfig */;
 			buildSettings = {
 				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};

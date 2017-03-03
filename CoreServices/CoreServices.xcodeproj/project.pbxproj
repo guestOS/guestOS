@@ -20,6 +20,7 @@
 		8DC2EF5B0486A6940098B216 /* CoreServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5C91881E6310820039F83F /* CoreServices.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreServices.m; sourceTree = "<group>"; };
 		BF5C91911E6313340039F83F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = ../CFNetwork/build/Debug/CFNetwork.framework; sourceTree = "<group>"; };
+		BFBD22971E69D1310072E745 /* CoreServices.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CoreServices.xcconfig; sourceTree = "<group>"; };
 		FE7433A810A89ED7004CDF00 /* CoreServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreServices.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,6 +47,7 @@
 		0867D691FE84028FC02AAC07 /* CoreServices */ = {
 			isa = PBXGroup;
 			children = (
+				BFBD22971E69D1310072E745 /* CoreServices.xcconfig */,
 				FE7433A810A89ED7004CDF00 /* CoreServices.h */,
 				BF5C91881E6310820039F83F /* CoreServices.m */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
@@ -205,6 +207,7 @@
 /* Begin XCBuildConfiguration section */
 		BF5C91141E6195ED0039F83F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBD22971E69D1310072E745 /* CoreServices.xcconfig */;
 			buildSettings = {
 				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};
@@ -220,6 +223,7 @@
 		};
 		BF5C91161E6195FA0039F83F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBD22971E69D1310072E745 /* CoreServices.xcconfig */;
 			buildSettings = {
 				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};

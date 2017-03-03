@@ -35,6 +35,7 @@
 		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* PDFKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PDFKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFBD229C1E69D1E10072E745 /* PDFKit.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PDFKit.xcconfig; sourceTree = "<group>"; };
 		FE1FBF9C11E769D300A9A87A /* PDFPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFPage.h; sourceTree = "<group>"; };
 		FE1FBF9D11E769D300A9A87A /* PDFPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFPage.m; sourceTree = "<group>"; };
 		FE2758F71233FE7A00BD6643 /* PDFSelectedRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFSelectedRange.h; sourceTree = "<group>"; };
@@ -80,6 +81,7 @@
 		0867D691FE84028FC02AAC07 /* PDFKit */ = {
 			isa = PBXGroup;
 			children = (
+				BFBD229C1E69D1E10072E745 /* PDFKit.xcconfig */,
 				FE2758F71233FE7A00BD6643 /* PDFSelectedRange.h */,
 				FE2758F81233FE7A00BD6643 /* PDFSelectedRange.m */,
 				FE4302AF11E2637A00EBDD56 /* PDFDocument.h */,
@@ -271,6 +273,7 @@
 		};
 		1DEB91B308733DA50010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBD229C1E69D1E10072E745 /* PDFKit.xcconfig */;
 			buildSettings = {
 				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};
@@ -278,6 +281,7 @@
 		};
 		BF31F6641E64519C00CF40C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBD229C1E69D1E10072E745 /* PDFKit.xcconfig */;
 			buildSettings = {
 				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};

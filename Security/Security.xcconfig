@@ -1,3 +1,4 @@
+#include "../guestOS"
 
 OTHER_CFLAGS = $(inherited) -DSECURITY_INSIDE_BUILD
 WARNING_CFLAGS = $(inherited) -Wno-multichar

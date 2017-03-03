@@ -133,6 +133,7 @@
 		BF45ECCD1E6347C00026C66C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = "../DerivedData/guestOS/Build/Products/Debug-linux.x86_64/CoreFoundation.framework"; sourceTree = "<group>"; };
 		BF45ECCE1E6347C00026C66C /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = "../DerivedData/guestOS/Build/Products/Debug-linux.x86_64/CoreServices.framework"; sourceTree = "<group>"; };
 		BF45ECD21E6347F10026C66C /* CoreGraphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreGraphics.m; sourceTree = "<group>"; };
+		BFBD22961E69D1170072E745 /* CoreGraphics.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CoreGraphics.xcconfig; sourceTree = "<group>"; };
 		BFBF53201E635E20003967E2 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		BFFA8C2E1E634F1B006BD3AA /* Onyx2D.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Onyx2D.framework; path = "../Onyx2D/build/sym/Linux-i386-i386-mingw32msvc/undefined_arch/Onyx2D.framework"; sourceTree = "<group>"; };
 		FE2752DA12301F4500BD6643 /* CGLPixelSurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGLPixelSurface.h; sourceTree = "<group>"; };
@@ -384,6 +385,7 @@
 		0867D691FE84028FC02AAC07 /* CoreGraphics */ = {
 			isa = PBXGroup;
 			children = (
+				BFBD22961E69D1170072E745 /* CoreGraphics.xcconfig */,
 				BF45ECCA1E6347530026C66C /* Headers */,
 				BF45ECCB1E63475D0026C66C /* Sources */,
 				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
@@ -879,6 +881,7 @@
 /* Begin XCBuildConfiguration section */
 		BF45ECC61E6346E30026C66C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBD22961E69D1170072E745 /* CoreGraphics.xcconfig */;
 			buildSettings = {
 				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};
@@ -894,6 +897,7 @@
 		};
 		BF45ECC81E6346F20026C66C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBD22961E69D1170072E745 /* CoreGraphics.xcconfig */;
 			buildSettings = {
 				SUPPORTED_PLATFORMS = "guestos.linux.x86_64 macosx";
 			};
