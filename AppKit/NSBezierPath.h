@@ -51,13 +51,15 @@ typedef enum {
     int _dashCount;
     float *_dashes;
     float _dashPhase;
-    unsigned _cachesPath : 1;
-    unsigned _lineWidthIsDefault : 1;
-    unsigned _miterLimitIsDefault : 1;
-    unsigned _flatnessIsDefault : 1;
-    unsigned _windingRuleIsDefault : 1;
-    unsigned _lineCapStyleIsDefault : 1;
-    unsigned _lineJoinStyleIsDefault : 1;
+    struct {
+        unsigned _cachesPath : 1;
+        unsigned _lineWidthIsDefault : 1;
+        unsigned _miterLimitIsDefault : 1;
+        unsigned _flatnessIsDefault : 1;
+        unsigned _windingRuleIsDefault : 1;
+        unsigned _lineCapStyleIsDefault : 1;
+        unsigned _lineJoinStyleIsDefault : 1;
+    } flags;
 }
 
 + (NSBezierPath *)bezierPath;

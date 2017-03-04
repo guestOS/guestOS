@@ -63,8 +63,10 @@ typedef enum {
     NSString *_alternateTitle;
     NSImage *_alternateImage;
     int _imagePosition;
-    unsigned _highlightsBy : 4;
-    unsigned _showsStateBy : 4;
+    struct {
+        unsigned _highlightsBy : 4;
+        unsigned _showsStateBy : 4;
+    } options;
     NSBezelStyle _bezelStyle;
     BOOL _isTransparent;
     BOOL _imageDimsWhenDisabled;

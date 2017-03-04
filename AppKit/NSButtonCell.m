@@ -38,8 +38,8 @@ static const float kImageMargin = 2.;
    [coder encodeObject:_titleOrAttributedTitle forKey:@"NSButtonCell title"];
    [coder encodeObject:_alternateTitle forKey:@"NSButtonCell alternateTitle"];
    [coder encodeInt:_imagePosition forKey:@"NSButtonCell imagePosition"];
-   [coder encodeInt:_highlightsBy forKey:@"NSButtonCell highlightsBy"];
-   [coder encodeInt:_showsStateBy forKey:@"NSButtonCell showsStateBy"];
+   [coder encodeInt:options._highlightsBy forKey:@"NSButtonCell highlightsBy"];
+   [coder encodeInt:options._showsStateBy forKey:@"NSButtonCell showsStateBy"];
    [coder encodeBool:_isTransparent forKey:@"NSButtonCell transparent"];
    [coder encodeBool:_imageDimsWhenDisabled forKey:@"NSButtonCell imageDimsWhenDisabled"];
    [coder encodeObject:_alternateImage forKey:@"NSButtonCell alternateImage"];
@@ -93,23 +93,23 @@ static const float kImageMargin = 2.;
       break;
     }
         
-    _highlightsBy=0;
-    _showsStateBy=0;
+    options._highlightsBy=0;
+    options._showsStateBy=0;
     
     if(flags&0x80000000)
-     _highlightsBy|=NSPushInCellMask;
+     options._highlightsBy|=NSPushInCellMask;
     if(flags&0x40000000)
-     _showsStateBy|=NSContentsCellMask;
+     options._showsStateBy|=NSContentsCellMask;
     if(flags&0x20000000)
-     _showsStateBy|=NSChangeBackgroundCellMask;
+     options._showsStateBy|=NSChangeBackgroundCellMask;
     if(flags&0x10000000)
-     _showsStateBy|=NSChangeGrayCellMask;
+     options._showsStateBy|=NSChangeGrayCellMask;
     if(flags&0x08000000)
-     _highlightsBy|=NSContentsCellMask;
+     options._highlightsBy|=NSContentsCellMask;
     if(flags&0x04000000)
-     _highlightsBy|=NSChangeBackgroundCellMask;
+     options._highlightsBy|=NSChangeBackgroundCellMask;
     if(flags&0x02000000)
-     _highlightsBy|=NSChangeGrayCellMask;
+     options._highlightsBy|=NSChangeGrayCellMask;
     
     _isBordered=(flags&0x00800000)?YES:NO; // err, this flag is in NSCell too
 
@@ -158,8 +158,8 @@ static const float kImageMargin = 2.;
    _titleOrAttributedTitle=[string copy];
    _alternateTitle=@"";
    _imagePosition=NSNoImage;
-   _highlightsBy=NSPushInCellMask;
-   _showsStateBy=0;
+   options._highlightsBy=NSPushInCellMask;
+   options._showsStateBy=0;
    _isTransparent=NO;
    _imageDimsWhenDisabled=NO;
    _alternateImage=nil;
@@ -291,11 +291,11 @@ static const float kImageMargin = 2.;
 }
 
 -(int)highlightsBy {
-   return _highlightsBy;
+   return options._highlightsBy;
 }
 
 -(int)showsStateBy {
-   return _showsStateBy;
+   return options._showsStateBy;
 }
 
 -(BOOL)imageDimsWhenDisabled {
@@ -402,11 +402,11 @@ static const float kImageMargin = 2.;
 }
 
 -(void)setHighlightsBy:(int)type {
-   _highlightsBy=type;
+   options._highlightsBy=type;
 }
 
 -(void)setShowsStateBy:(int)type {
-   _showsStateBy=type;
+   options._showsStateBy=type;
 }
 
 -(void)setImageDimsWhenDisabled:(BOOL)flag {
@@ -448,44 +448,44 @@ static const float kImageMargin = 2.;
    switch (buttonType)
    {
       case NSMomentaryLightButton:
-         _highlightsBy = NSChangeBackgroundCellMask;
-	      _showsStateBy = NSNoCellMask;
+         options._highlightsBy = NSChangeBackgroundCellMask;
+	     options._showsStateBy = NSNoCellMask;
          _imageDimsWhenDisabled = YES;
          break;
 
       case NSMomentaryPushInButton:
-	      _highlightsBy = NSPushInCellMask|NSChangeGrayCellMask;
-	      _showsStateBy = NSNoCellMask;
+	      options._highlightsBy = NSPushInCellMask|NSChangeGrayCellMask;
+	      options._showsStateBy = NSNoCellMask;
          _imageDimsWhenDisabled = YES;
          break;
 
       case NSMomentaryChangeButton:
-	      _highlightsBy = NSContentsCellMask;
-	      _showsStateBy = NSNoCellMask;
+	      options._highlightsBy = NSContentsCellMask;
+	      options._showsStateBy = NSNoCellMask;
          _imageDimsWhenDisabled = YES;
          break;
 
       case NSPushOnPushOffButton:
-	      _highlightsBy = NSPushInCellMask|NSChangeGrayCellMask;
-	      _showsStateBy = NSChangeBackgroundCellMask;
+	      options._highlightsBy = NSPushInCellMask|NSChangeGrayCellMask;
+	      options._showsStateBy = NSChangeBackgroundCellMask;
          _imageDimsWhenDisabled = YES;
          break;
 
       case NSOnOffButton:
-	      _highlightsBy = NSChangeBackgroundCellMask|NSChangeGrayCellMask;
-	      _showsStateBy = NSChangeBackgroundCellMask|NSChangeGrayCellMask;
+	      options._highlightsBy = NSChangeBackgroundCellMask|NSChangeGrayCellMask;
+	      options._showsStateBy = NSChangeBackgroundCellMask|NSChangeGrayCellMask;
          _imageDimsWhenDisabled = YES;
          break;
 
       case NSToggleButton:
-	      _highlightsBy = NSPushInCellMask|NSContentsCellMask;
-	      _showsStateBy = NSContentsCellMask;
+	      options._highlightsBy = NSPushInCellMask|NSContentsCellMask;
+	      options._showsStateBy = NSContentsCellMask;
          _imageDimsWhenDisabled = YES;
          break;
 
       case NSSwitchButton:
-	      _highlightsBy = NSContentsCellMask;
-	      _showsStateBy = NSContentsCellMask;
+	      options._highlightsBy = NSContentsCellMask;
+	      options._showsStateBy = NSContentsCellMask;
          _imagePosition = NSImageLeft;
          _imageDimsWhenDisabled = NO;
 	      [self setImage:[NSImage imageNamed:@"NSSwitch"]];
@@ -496,8 +496,8 @@ static const float kImageMargin = 2.;
          break;
 
       case NSRadioButton:
-	      _highlightsBy = NSContentsCellMask;
-	      _showsStateBy = NSContentsCellMask;
+	      options._highlightsBy = NSContentsCellMask;
+	      options._showsStateBy = NSContentsCellMask;
          _imagePosition = NSImageLeft;
          _imageDimsWhenDisabled = NO;
 	      [self setImage:[NSImage imageNamed:@"NSRadioButton"]];
@@ -661,7 +661,7 @@ static const float kImageMargin = 2.;
 				break;
 		}
 	}
-	else if((_bezelStyle==NSRoundedBezelStyle) && (_highlightsBy&NSPushInCellMask) && (_highlightsBy&NSChangeGrayCellMask) && (_showsStateBy==NSNoCellMask)) 
+	else if((_bezelStyle==NSRoundedBezelStyle) && (options._highlightsBy&NSPushInCellMask) && (options._highlightsBy&NSChangeGrayCellMask) && (options._showsStateBy==NSNoCellMask)) 
 	{
         switch (_controlSize) 
         {

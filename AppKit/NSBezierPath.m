@@ -83,13 +83,13 @@ static void CGPathConverter( void* info, const CGPathElement* element )
    _dashCount=0;
    _dashes=NULL;
    _dashPhase=0;
-   _cachesPath=NO;
-   _lineWidthIsDefault=YES;
-   _miterLimitIsDefault=YES;
-   _flatnessIsDefault=YES;
-   _windingRuleIsDefault=YES;
-   _lineCapStyleIsDefault=YES;
-   _lineJoinStyleIsDefault=YES;
+   flags._cachesPath=NO;
+   flags._lineWidthIsDefault=YES;
+   flags._miterLimitIsDefault=YES;
+   flags._flatnessIsDefault=YES;
+   flags._windingRuleIsDefault=YES;
+   flags._lineCapStyleIsDefault=YES;
+   flags._lineJoinStyleIsDefault=YES;
    return self;
 }
 
@@ -262,42 +262,42 @@ static void CGPathConverter( void* info, const CGPathElement* element )
 }
 
 -(float)lineWidth {
-   if(_lineWidthIsDefault)
+   if(flags._lineWidthIsDefault)
     return _defaultLineWidth;
    else
     return _lineWidth;
 }
 
 -(float)miterLimit {
-   if(_miterLimitIsDefault)
+   if(flags._miterLimitIsDefault)
     return _defaultMiterLimit;
    else
     return _miterLimit;
 }
 
 -(float)flatness {
-   if(_flatnessIsDefault)
+   if(flags._flatnessIsDefault)
     return _defaultFlatness;
    else
     return _flatness;
 }
 
 -(NSWindingRule)windingRule {
-   if(_windingRuleIsDefault)
+   if(flags._windingRuleIsDefault)
     return _defaultWindingRule;
    else
     return _windingRule;
 }
 
 -(NSLineCapStyle)lineCapStyle {
-   if(_lineCapStyleIsDefault)
+   if(flags._lineCapStyleIsDefault)
     return _defaultLineCapStyle;
    else
     return _lineCapStyle;
 }
 
 -(NSLineJoinStyle)lineJoinStyle {
-   if(_lineJoinStyleIsDefault)
+   if(flags._lineJoinStyleIsDefault)
     return _defaultLineJoinStyle;
    else
     return _lineJoinStyle;
@@ -317,7 +317,7 @@ static void CGPathConverter( void* info, const CGPathElement* element )
 }
 
 -(BOOL)cachesBezierPath {
-   return _cachesPath;
+   return flags._cachesPath;
 }
 
 -(int)elementCount {
@@ -362,32 +362,32 @@ static int numberOfPointsForOperator(int op){
 
 -(void)setLineWidth:(float)width {
    _lineWidth=width;
-   _lineWidthIsDefault=NO;
+   flags._lineWidthIsDefault=NO;
 }
 
 -(void)setMiterLimit:(float)limit {
    _miterLimit=limit;
-   _miterLimitIsDefault=NO;
+   flags._miterLimitIsDefault=NO;
 }
 
 -(void)setFlatness:(float)flatness {
    _flatness=flatness;
-   _flatnessIsDefault=NO;
+   flags._flatnessIsDefault=NO;
 }
 
 -(void)setWindingRule:(NSWindingRule)rule {
    _windingRule=rule;
-   _windingRuleIsDefault=NO;
+   flags._windingRuleIsDefault=NO;
 }
 
 -(void)setLineCapStyle:(NSLineCapStyle)style {
    _lineCapStyle=style;
-   _lineCapStyleIsDefault=NO;
+   flags._lineCapStyleIsDefault=NO;
 }
 
 -(void)setLineJoinStyle:(NSLineJoinStyle)style {
    _lineJoinStyle=style;
-   _lineJoinStyleIsDefault=NO;
+   flags._lineJoinStyleIsDefault=NO;
 }
 
 -(void)setLineDash:(const CGFloat *)dashes count:(int)count phase:(CGFloat)phase {
@@ -409,7 +409,7 @@ static int numberOfPointsForOperator(int op){
 }
 
 -(void)setCachesBezierPath:(BOOL)flag {
-   _cachesPath=flag;
+   flags._cachesPath=flag;
 }
 
 -(BOOL)isEmpty {
